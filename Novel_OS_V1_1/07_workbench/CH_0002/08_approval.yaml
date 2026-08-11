@@ -1,0 +1,25 @@
+chapter: CH_0002
+approved: true
+approved_by: human_author
+approved_at: 2026-08-12
+approve_final_prose: true
+approve_memory_delta: true
+approve_setting_changes: true
+approved_change_ids:
+  - CHANGE_0008
+  - CHANGE_0009
+  - CHANGE_0010
+approved_stable_ids:
+  - FAC_0002
+  - FAC_0003
+  - SYS_0005
+  - SYS_0006
+  - EVT_000003
+  - QUESTION_0004
+  - QUESTION_0005
+approve_controlled_writeback: true
+stage_requested_after_successful_writeback: true
+commit_requested_after_successful_writeback: true
+push_requested_after_successful_writeback: true
+push_request_date: 2026-08-12
+notes: "Author explicitly approved CH_0002 final prose and title, the complete Delta, FAC_0002–0003, SYS_0005–0006, EVT_000003, QUESTION_0004–0005, CHANGE_0008–0010, controlled writeback, exact staging, commit, and push."
