@@ -1,7 +1,22 @@
 chapter: CH_0001
-approved: false
+approved: true
 approved_by: human_author
-approved_at: null
-approve_final_prose: false
-approve_memory_delta: false
-notes: ""
+approved_at: 2026-08-11
+prose_approved_at: 2026-08-11
+approve_final_prose: true
+approve_memory_delta: true
+approve_setting_changes: true
+approved_change_ids:
+  - CHANGE_0001
+  - CHANGE_0002
+approved_stable_ids:
+  - CHR_0001
+  - CHR_0002
+  - LOC_0001
+  - FAC_0001
+  - SYS_0001
+  - QUESTION_0001
+  - QUESTION_0002
+  - EVT_000001
+approve_controlled_writeback: true
+notes: "Author approved the complete CH_0001 Delta, CHANGE_0001, CHANGE_0002, all proposed stable IDs, and formal controlled writeback."

@@ -1,5 +1,7 @@
 # Reveal Matrix — Pass 1
 
+> **SUPERSEDED FOR PRODUCTION:** 本文件只保留第一次原稿暴露面审计。其 `FORESHADOWED/PARTIAL` 描述旧稿读者可能接触到的线索，不代表新生产线的揭示状态。当前有效门见 `01_canon/secret/ontology.md` 与 `12_reveal_guard_pass2.md`：`HIDDEN / earliest_reveal: UNDECIDED`。
+
 This matrix tracks the difference between author truth and what the reader is currently allowed to infer.
 
 | Topic | Author truth | Current draft exposure | Reader state | Recommended status |

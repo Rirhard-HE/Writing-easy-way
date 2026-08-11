@@ -1,11 +1,26 @@
 ---
 id: CANON_SECRET_ONTOLOGY_001
 status: AUTHOR_SECRET
+audience: AUTHOR_ONLY
+context_policy: EXCLUDE_FROM_DRAFT_GENERATION
+reader_state_effect: NONE
 truth_layer: L0_OBJECTIVE_TRUTH
 reveal_status: HIDDEN
 earliest_reveal: UNDECIDED
 source: author_statement
 last_updated: 2026-08-11
+decision_provenance:
+  erasure_model: GENESIS_DECISION_001/AD-003-A
+  identity_model: GENESIS_DECISION_001/AD-004-C
+allowed_manifestations:
+  - preservation, verification, continuity, duplicate, missing, and conflict effects
+  - erasure-like anomalies without a narrator-certified mechanism
+  - uncertain in-world theories that do not validate L0
+forbidden_exposition:
+  - direct statement of the L0 ontology
+  - complete causal-graph erasure mechanics
+  - narrator-certified explanation of branching identity
+  - automatic resolution of He Yun, Echo Well, or the Collapse
 ---
 
 # Objective Ontology — Information Is Reality
@@ -118,11 +133,24 @@ last_updated: 2026-08-11
 - `DUPLICATE`：同一身份信息链出现两个或更多具有有效连续依据的分支；
 - `CONFLICT`：不同信息集合同时对同一身份/事件提出互斥定义。
 
-这为克隆、人格回传、何筠的“存在重复 / 存在缺失”提供底层解释接口，但具体机制仍需作者逐项确认。
+### Author-approved branching continuity rule
 
-## Reality erasure — current constraint
+作者已通过 `GENESIS_DECISION_001 / AD-004-C` 确认以下隐藏工作规则：
+
+1. 有效身份连续性同时需要**因果传递**与**足够的身份信息**；仅有表面相似或独立复制不足以自动确认连续性。
+2. 一次有效传递可以形成两个或更多有效分支；多个分支可以同时具有连续依据。
+3. 多个有效分支并存时标记为 `DUPLICATE`，但该标记本身不裁定哪个分支是“原版”。
+4. 连续链存在无法补足的信息缺口时标记为 `MISSING`。
+5. 多个信息集合对同一身份提出互斥定义时标记为 `CONFLICT`。
+6. 法律身份、机构说法和角色自我认知属于 L2-L4 模型，不能自动覆盖 L0 判定。
+
+“足够的身份信息”与“有效因果传递”的精确阈值仍为 `OPEN_CANON`。何筠的最终 L0 身份也继续保持 `OPEN_CANON`；迁移中应将其记录为一个叙事身份及多个可能的状态/实例，不得预判最终答案。
+
+## Reality erasure — author-approved hidden working model
 
 “擦除”不能简单等同于物理摧毁。
+
+作者已通过 `GENESIS_DECISION_001 / AD-003-A` 确认采用**图谱式定向擦除**作为 L0 隐藏工作模型。
 
 若某种能力真正针对事件的信息集合，它理论上可能作用于：
 
@@ -134,11 +162,13 @@ last_updated: 2026-08-11
 - 事件产生的部分因果后果；
 - 事件与其他事件之间的关联。
 
-但**擦除必须处理事件已经分布到多少独立信息载体和因果链中**。
+事件的信息载体、复制版本、记录、记忆、痕迹与因果后果构成相关图谱。擦除作用于被指定和覆盖的节点及关联；未被覆盖的远端记录、记忆、复制品或因果后果可以继续残留。
+
+但**擦除必须处理事件已经分布到多少独立信息载体和因果链中**。绝对删除在原则上可能，前提是穷尽与该事件相关的全部有效图谱。任何具体事件是否真正完成这种穷尽，必须保持为事件级 `UNRESOLVED`，除非作者另行确认。
 
 因此，越是被大量独立观察、记录并产生广泛后果的事件，理论上越难彻底从现实中消除。
 
-具体擦除范围、成本、失败形态与极限仍为 OPEN_CANON。
+具体能力能够覆盖的范围、成本、传播方式、追溯深度、失败形态与实际极限仍为 `OPEN_CANON`。
 
 ## Echo Well compatibility
 
@@ -157,11 +187,11 @@ last_updated: 2026-08-11
 同一个现象必须区分：
 
 - `L0_OBJECTIVE_TRUTH`：作者确认的现实本体规则；
-- `L1_OLD_FEDERATION_THEORY`：旧联邦对底层规律的理解；
-- `L2_MODERN_FEDERATION_SCIENCE`：现代联邦可验证的工程理论；
-- `L3_ORG_KNOWLEDGE`：科隆诺、遗迹事务部、军方等机构掌握的信息；
+- `L1_OLD_FEDERATION_MODEL`：旧联邦对底层规律的理解；
+- `L2_MODERN_FEDERATION_MODEL`：现代联邦可验证的工程理论；
+- `L3_ORGANIZATION_MODEL`：科隆诺、遗迹事务部、军方等机构掌握的信息；
 - `L4_CHARACTER_KNOWLEDGE`：具体角色认知；
-- `L5_READER_REVEAL`：读者已经获知的真相层级。
+- `L5_READER_KNOWLEDGE`：读者已经获知的真相层级。
 
 任何 L1-L4 的陈述都可以是不完整、近似甚至错误的，不能自动覆盖 L0。
 
@@ -187,8 +217,10 @@ last_updated: 2026-08-11
 - 互相矛盾但都达到阈值的两个信息集合会发生什么？
 - 两个现实版本能否并存？
 - 现实是否会主动选择一致性更高的版本？
-- 信息是否可以被真正销毁？
+- 绝对删除是否曾在某个具体事件中真正实现？
+- 何种能力、成本或条件能够穷尽一个事件的全部有效图谱？
 - 擦除必须追溯到多深的因果链才能使一个事件彻底失去现实性？
+- “足够的身份信息”与“有效因果传递”的精确阈值是什么？
 - 观察者本身是否必须具备意识，还是传感器/数据库/物理痕迹也可作为信息载体？
 - “信息集合”是否存在最小不可约构成单位？
 - 时间是否只是信息集合之间的有序关系？

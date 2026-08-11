@@ -1,37 +1,40 @@
-# 从这里开始
-
-当前工程已经创建好 `CH_0001` 的完整工作区。
-
-## 你现在只需要做一件事
+# 从这里开始生产 CH_0001
 
 打开：
 
 `07_workbench/CH_0001/00_author_brief.md`
 
-把第一章剧情按以下四部分写进去：
+## 作者需要填写
 
-1. `本章核心剧情`
-2. `must_happen`
-3. `must_not_happen`
-4. `flexible`
+1. **作者写作材料**：场景草稿、关键对话、动作顺序或详细剧情梗概；
+2. **本章核心剧情**：这一章最终发生什么；
+3. **must_happen**：不可删改的关键事件；
+4. **must_not_happen**：禁止发生、禁止透露的内容；
+5. **flexible**：允许 Agent 扩写的区域；
+6. **本章新增或修改设定**：没有则写“无”，有覆盖时明确写“修改为/Retcon 为”。
 
-其中最重要的是前三项。其他字段暂时不完整也可以。
+材料完成后同时设置：
 
-## 写完后，在 Codex 里输入
-
-```text
-准备 CH_0001。使用 prepare-chapter skill。
-读取我的 author brief，构建 context pack，提出情节补充，并调用相关只读 subagents 并行检查人物、时间线、世界规则、剧情因果和伏笔冲突。
-不要生成正文，不要修改 Canon。
+```yaml
+status: ready
+author_input_complete: true
 ```
 
-完成后你主要检查两个文件：
+这两个 Gate 都满足后，Agent 才能生成上下文与边界合同。
 
-- `02_expansion.agent.md`：Agent 对你的剧情做了哪些补充
-- `03_conflict_report.agent.md`：是否存在冲突/风险/可利用的旧伏笔
+## 然后输入
 
-然后把你的决定写入：
+```text
+准备 CH_0001。读取我的作者材料，构建最小 context pack；先生成边界合同，再提出内容扩写方案。检查人物、时间线、世界规则、剧情因果、伏笔和秘密揭示边界。发现新设定与旧设定明显冲突时提醒我，但不要用旧设定否决我的明确修改。不要生成正文，不要写回 Canon。
+```
 
-`04_author_decision.md`
+主要检查：
 
-之后再让 Codex 生成正文。
+- `02_expansion.agent.md`：边界合同与扩写方案；
+- `03_conflict_report.agent.md`：连续性、设定冲突和揭示风险。
+
+把决定写入 `04_author_decision.md` 并授权扩写后，再让 Agent 生成 `05_draft.md`。
+
+## 设定修改原则
+
+作者可以增加、澄清或覆盖原设定。Agent 会说明受影响的卡片、事件、章节和伏笔；明确覆盖会按作者决定执行，旧版本保留来源与历史。

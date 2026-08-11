@@ -3,6 +3,9 @@ id: CHR_XXXX
 name: TBD
 status: alive
 importance: TBD
+canon_status: AUTHOR_CONFIRMED
+provenance: []
+last_updated: null
 ---
 # Profile
 
@@ -17,3 +20,7 @@ importance: TBD
 
 ## 硬约束
 - 
+
+## Superseded facts
+
+> 只记录已被作者覆盖但需要保留溯源的旧事实。

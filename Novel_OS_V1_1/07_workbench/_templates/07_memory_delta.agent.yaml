@@ -1,11 +1,15 @@
 chapter: CH_XXXX
 source_draft: 05_draft.md
-status: proposed
+source_draft_sha256: null
+status: not_started
 character_changes: {}
 knowledge_changes: {}
 relationship_changes: {}
 world_changes: {}
+setting_changes: []
+superseded_facts: []
 foreshadow_changes: {}
 events_created: []
 canon_changes: []
+manuscript_impacts: []
 notes: []
