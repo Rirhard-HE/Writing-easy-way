@@ -7,6 +7,8 @@ answer_reveal_status: HIDDEN
 provenance:
   - 07_workbench/CH_0001/07_memory_delta.agent.yaml
   - 07_workbench/CH_0001/08_approval.yaml
+  - 07_workbench/CH_0001/revisions/REV_0001/07_memory_delta.agent.yaml
+  - 07_workbench/CH_0001/revisions/REV_0001/08_approval.yaml
 ---
 
 # Open Canon Question
@@ -24,12 +26,16 @@ provenance:
 - 死亡记忆后再次苏醒。
 - 工作人员使用“克隆飞行员”称谓并谈论记忆复制。
 - 当前身体/手部感觉与记忆中的熟悉感并不完全一致。
+- 公司展示一段签约录像，并把其中的签署者与 `CHR_0001` 的过去版本相关联；`CHR_0001` 对其产生主观熟悉感。
+- `CHR_0001` 发现大量自传性记忆断层，无法回忆录像中的签署时刻。
+- 匿名内部记录展示互相冲突的记忆与身份疑问。
 - 上述均为线索，不认证复制、连续性或复活机制。
 
 ## Affected IDs / chapters
 
-- `CHR_0001`、`CHR_0002`、`EVT_000001`、`CH_0001`。
+- `CHR_0001`、`CHR_0002`、`EVT_000001`、`EVT_000002`、`CH_0001`。
 
 ## Decisions that must wait
 
 - 未经后续明确作者决定与 reveal approval，不得回答客观身份连续性。
+- 章节标题、公司映射、签署录像及主观熟悉感均不得作为 `L0_OBJECTIVE_TRUTH` 的身份认证。

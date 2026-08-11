@@ -1,16 +1,15 @@
 ---
 chapter: CH_0001
-status: AUTHOR_APPROVED
-approved_by: human_author
-approved_at: 2026-08-11
-approval_source: 07_workbench/CH_0001/revisions/REV_0001/08_approval.yaml
-source_draft: 07_workbench/CH_0001/revisions/REV_0001/05_draft.md
-source_draft_sha256: bd712cfb5bc5a1425b6501ec1f8ffb4a48ef0a40f4a22be4995caa97d0fbb7b4
-provenance:
-  - 07_workbench/CH_0001/revisions/REV_0001/04_author_decision.md
-  - 07_workbench/CH_0001/revisions/REV_0001/06_final_review.agent.md
-  - 07_workbench/CH_0001/revisions/REV_0001/07_memory_delta.agent.yaml
-  - 07_workbench/CH_0001/revisions/REV_0001/08_approval.yaml
+revision_id: CH_0001_REV_0001
+status: expanded_draft
+base_manuscript: 05_manuscript/CH_0001.md
+base_manuscript_sha256: 8f5daf735e0cdc1121a006069770001bc8190bbccda71288b07a281fd86a4588
+source_proposal: 08_review/pending/03_CH_0001_revision_001.md
+source_proposal_sha256: 5101fd1a7fd95bda9d356aed41330ba6e64d2605d7cd55d14adeeeb935a1837f
+source_author_decision: 04_author_decision.md
+source_author_decision_sha256: 61557c9f0b26ee7290f6ab1abea22e4f020832c7427f58380398a4dd1f556274
+canonical: false
+formal_writeback_authorized: false
 ---
 
 # 我从地狱归来
