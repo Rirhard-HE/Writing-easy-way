@@ -1,0 +1,416 @@
+chapter: CH_0001
+revision_id: CH_0001_REV_0001
+status: applied
+source_draft: 05_draft.md
+source_draft_sha256: bd712cfb5bc5a1425b6501ec1f8ffb4a48ef0a40f4a22be4995caa97d0fbb7b4
+source_final_review: 06_final_review.agent.md
+source_final_review_sha256: 02d205cd6712c99ee278a5f57047f9a5692e15b2fac452efb01a9feb0a61d745
+provenance:
+  author_decision: 04_author_decision.md
+  revision_proposal: 08_review/pending/03_CH_0001_revision_001.md
+  base_manuscript: 05_manuscript/CH_0001.md
+
+chapter_changes:
+  title:
+    before: UNSET / workbench heading Draft
+    after: 我从地狱归来
+    status: AUTHOR_CONFIRMED
+  scene_extension:
+    insertion_point: after the existing asset-record ending
+    new_sequence:
+      - FAC_0001 debt ledger disclosure
+      - three standard repayment offers
+      - CHR_0002 personal recommendation to choose none
+      - one personal debtor testimony and two anonymized experiment records
+      - limited FAC_0001 Echo-Well engineering explanation
+      - CHR_0001 discovers large memory gaps
+      - recorded pre-awakening contract signing
+
+proposed_entities:
+  - id: SYS_0002
+    type: currency_unit
+    display_name: 信用点
+    scope: confirmed as the unit used in the FAC_0001 ledger and offers shown in CH_0001
+    excluded_inference: no universal economy, exchange rate, purchasing power, or non-company circulation is established
+  - id: SYS_0003
+    type: organization_technology_model
+    display_name: 科隆诺“回声井”技术链
+    truth_layer: L3_ORGANIZATION_MODEL
+    information_class: UNRESOLVED
+    claim_information_classes:
+      memory_and_personality_modeling: IDENTITY_INFORMATION
+      interfaces_measurements_storage_and_process_control: UNRESOLVED
+      ontological_classification: FORBIDDEN_WITHOUT_LATER_AUTHOR_DECISION
+    referent_boundary: FAC_0001 umbrella term for interfaces, engineering processes, and a technology chain; not the Echo Well ontology or a single machine
+  - id: SYS_0004
+    type: organization_debt_process
+    display_name: 科隆诺债务资产循环
+    truth_layer: L3_ORGANIZATION_MODEL
+    scope: the ledger, offers, and debt-accrual structure shown or stated in CH_0001 only
+  - id: EVT_000002
+    type: historical_event
+    display_name: 克隆服务协议签署录像所示事件
+    temporal_position: before CH_0001 awakening; exact date unresolved
+  - id: QUESTION_0003
+    type: open_question
+    display_name: 回声井技术链的真实本质及其与记忆断层的客观关系
+
+character_changes:
+  CHR_0001:
+    before_revision:
+      name: UNREVEALED_AND_UNRESOLVED
+      memory_state: only the loss-of-control / white-flash / subjective-death fragment and immediate awakening uncertainty were established
+      institutional_status: FAC_0001 asset-record claim only
+    after_revision:
+      name: UNREVEALED_AND_UNRESOLVED
+      location: LOC_0001
+      memory_state:
+        confirmed_character_state:
+          observations:
+            - CHR_0001 subjectively discovers multiple large gaps across his autobiographical memory
+            - he cannot recall the recorded contract-signing moment
+          truth_layer: L4_CHARACTER_KNOWLEDGE
+          reader_status: L5_CONFIRMED_ON_PAGE
+        organization_claim:
+          claim: FAC_0001 classifies broad memory loss as an observed side effect associated with its SYS_0003 process
+          truth_layer: L3_ORGANIZATION_MODEL
+          evidence_status: TEXT_CONFIRMED_COMPANY_MODEL
+        causal_status:
+          status: UNRESOLVED
+          answer_reveal_status: HIDDEN
+      institutional_status:
+        company_record_claim: FAC_0001 ledger records current debt of 3,416,200 SYS_0002 units and treats obligations as continuing after awakening
+        evidence_status: TEXT_CONFIRMED_COMPANY_RECORD
+        truth_layer: L3_ORGANIZATION_MODEL
+        objective_legal_status: UNRESOLVED
+      repayment_offer_status:
+        offers_seen:
+          - deep-space military contracting
+          - cognitive and neural-mapping experiment authorization
+          - outer-arm colonial labor assignment
+        selection_status: NO_SELECTION_SHOWN
+        evidence_status: TEXT_CONFIRMED_COMPANY_OFFER
+      historical_record_seen:
+        event: EVT_000002
+        interpretation_boundary: the company and CHR_0001 treat the signer as his past version; L0 identity continuity remains unresolved
+  CHR_0002:
+    before_revision:
+      canonical_name_status: UNRESOLVED
+      display_name: 匿名复苏技术主管
+    after_revision:
+      canonical_name: 林赛
+      canonical_name_status: AUTHOR_CONFIRMED
+      legacy_spelling: 林塞
+      legacy_spelling_status: LEGACY_ONLY_NOT_PRODUCTION_NAME
+      existing_role_boundary: self-identified FAC_0001 recovery technical supervisor
+      chapter_actions:
+        - communicates the FAC_0001 ledger and three standard offers
+        - personally recommends that CHR_0001 choose none
+        - gives L4 testimony about a repeatedly deployed debtor
+        - shows two anonymized L3 internal experiment records
+        - describes SYS_0003 only within FAC_0001 operational knowledge limits
+
+knowledge_changes:
+  CHR_0001:
+    learns_or_observes:
+      - CHR_0002's production name is 林赛
+      - FAC_0001 records him as owing 3,416,200 credit points in the displayed ledger
+      - FAC_0001 offers three standard high-risk debt-handling paths
+      - 林赛 personally advises choosing none and describes the debt-value cycle
+      - FAC_0001 uses SYS_0003 as an umbrella term for an interface/process/technology chain
+      - FAC_0001 associates broad memory gaps with that process but does not know a unique cause
+      - EVT_000002 is shown in a company recording
+    explicitly_does_not_know:
+      - whether the displayed debt is objectively valid outside FAC_0001's record and contract model
+      - the true nature, origin, or complete mechanism of the Echo Well
+      - whether SYS_0003 uniquely caused his memory gaps
+      - his objective identity continuity with the recorded signer
+      - the accident cause
+  CHR_0002:
+    demonstrates_or_claims:
+      L3_ORGANIZATION_MODEL:
+        - familiarity with the FAC_0001 ledger, offers, internal records, and operational SYS_0003 terminology
+      L4_CHARACTER_KNOWLEDGE:
+        - CHR_0002 personally witnessed a repeatedly deployed debtor deteriorate until the system changed its asset-value assessment
+    knowledge_ceiling:
+      - explicitly does not claim to know why SYS_0003 works or the unique cause of failures
+      - does not certify CHR_0001's objective identity continuity
+
+relationship_changes:
+  CHR_0001__CHR_0002:
+    from: procedural assessor and assessed subject; no trust established
+    to: procedural relationship plus CHR_0002's first non-company recommendation and limited warning
+    trust_or_affinity_change: no trust, alliance, or friendship is automatically established
+
+world_changes:
+  FAC_0001:
+    proposed_facts:
+      - uses SYS_0002 as the accounting unit in the CH_0001 ledger and offers
+      - presents the ledger total and itemized costs as its current company record for CHR_0001
+      - offers the three listed high-risk debt-handling paths
+      - states that signing is not forced while maintenance and related costs may continue to accrue
+      - uses SYS_0003 as an operational umbrella term
+    truth_layer: L3_ORGANIZATION_MODEL
+    ledger_items_as_displayed:
+      evidence_status: TEXT_CONFIRMED_COMPANY_RECORD
+      truth_layer: L3_ORGANIZATION_MODEL
+      currency: SYS_0002
+      items:
+        - label: 事故资产损耗暂计
+          amount: 1840000
+        - label: 舰载设备租赁未结算
+          amount: 472000
+        - label: 深空航道保险违约金
+          amount: 310000
+        - label: 克隆载体培育与激活
+          amount: 690000
+        - label: 记忆校准与神经修复
+          amount: 87600
+        - label: 冷冻管及生命维持占用
+          amount: 12400
+        - label: 空间站复苏护理
+          amount: 4200
+      displayed_total: 3416200
+      objective_validity: UNRESOLVED
+    ongoing_fee_claim:
+      evidence_status: TEXT_CONFIRMED_CHARACTER_STATEMENT
+      speaker: CHR_0002
+      truth_layer: L3_ORGANIZATION_MODEL
+      claim: after assessment, continued medical-area occupancy adds 30 SYS_0002 units per hour for life support and space
+      objective_validity: UNRESOLVED
+    offer_parameters_as_displayed:
+      evidence_status: TEXT_CONFIRMED_COMPANY_OFFER
+      truth_layer: L3_ORGANIZATION_MODEL
+      offers:
+        - offer: deep-space military contracting
+          term_years: 15
+          work_scope:
+            - dangerous-route escort
+            - pirate-region clearing
+            - high-risk border operations
+          task_revenue_share_percent: 7
+          company_terms:
+            - reactivation may occur after execution-carrier termination
+            - related costs are added to remaining debt
+            - original contract term continues
+        - offer: cognitive and neural-mapping experiment authorization
+          authorized_projects:
+            - memory modeling
+            - behavior prediction
+            - combat neural mapping
+          one_time_debt_reduction_percent: 65
+          risk_label: moderate_to_severe
+          long_term_personality_and_cognitive_effects: not_guaranteed
+        - offer: outer-arm colonial labor assignment
+          expected_term_years: 22
+          work_scope:
+            - resource-world extraction
+            - facility emergency repair
+            - contaminated-zone maintenance
+          company_modeled_mortality_percent: 39
+          accommodation_term: basic accommodation provided and deducted from labor income
+      parameter_boundary: these are FAC_0001 displayed offer terms and model outputs, not verified real-world rates or universal rules
+    excluded_inferences:
+      - no universal federal debt law, economy-wide price scale, verified mortality rate, or objective validity of the debt is established
+      - no Echo Well ontology, origin, single-machine identity, or complete mechanism is established
+  SYS_0002:
+    proposed_fact: a unit called 信用点 appears in the FAC_0001 ledger and offers
+    scope_boundary: CH_0001 company-facing usage only
+  SYS_0003:
+    proposed_fact: FAC_0001 uses this term for a technology chain it can operate partially but does not fully understand
+    truth_layer: L3_ORGANIZATION_MODEL
+    forbidden_promotion:
+      - do not merge with Echo Well ontology, source interfaces, or source objects without a later author decision
+      - do not promote associated memory gaps to a unique L0 cause
+  SYS_0004:
+    proposed_fact: FAC_0001's ledger and offers can produce a cycle in which high-risk work and new service/loss costs continue the debt
+    truth_layer: L3_ORGANIZATION_MODEL
+    scope_boundary: company record and 林赛 explanation shown in CH_0001
+
+setting_changes:
+  - change_id: CHANGE_0003
+    type: RETCON
+    status: proposed
+    affected_ids:
+      - CH_0001
+      - EVT_000001
+    exact_author_decision: chapter-title decision + R002:A — extend approved CH_0001 after the asset-record ending and set the normative title to 我从地狱归来
+    previous_fact: CH_0001 ended at the asset-record reveal and had no normative production title
+    new_fact: CH_0001 continues through debt disclosure, repayment offers, warnings, Echo-Well institutional explanation, memory-gap discovery, and the signing recording
+    manuscript_impact: replace 05_manuscript/CH_0001.md with the author-approved revision body only after separate final approval
+  - change_id: CHANGE_0004
+    type: ADD
+    status: proposed
+    affected_ids:
+      - CHR_0002
+    exact_author_decision: R001:A
+    new_fact: CHR_0002's production name is 林赛; 林塞 remains legacy-only spelling evidence
+  - change_id: CHANGE_0005
+    type: ADD
+    status: proposed
+    affected_ids:
+      - FAC_0001
+      - SYS_0002
+      - SYS_0004
+    exact_author_decision: R003:A + R004:A + author-fixed debt-cycle addition — add the exact credit-point ledger, three standard offers, and debt-value cycle in CH_0001
+    new_fact: the listed records and offers exist as FAC_0001's L3 company model in CH_0001
+  - change_id: CHANGE_0006
+    type: RETCON
+    status: proposed
+    affected_ids:
+      - CHR_0001
+      - CH_0001
+    exact_author_decision: explicit author RETCON in Current author-owned additions item 6 — establish that CHR_0001 discovers large autobiographical memory gaps
+    previous_fact: approved CH_0001 state deliberately avoided establishing broad memory loss
+    new_fact: large subjective memory gaps are confirmed; unique cause remains unresolved
+  - change_id: CHANGE_0007
+    type: ADD
+    status: proposed
+    affected_ids:
+      - SYS_0003
+      - FAC_0001
+      - QUESTION_0003
+    exact_author_decision: R005:A + R006:A
+    new_fact: FAC_0001 uses Echo Well as an L3 umbrella term for interfaces/processes/technology chain and associates it with observed memory-gap risk without knowing the unique cause
+
+superseded_or_expanded_facts:
+  - prior: CHR_0002 name unresolved and unrevealed in CH_0001
+    status_after_approval: SUPERSEDED_BY_AUTHOR_NAME_REVEAL
+    replacement: 林赛 / CHANGE_0004
+  - prior: CH_0001 established only narrow accident-end memory fragments and avoided broad memory loss
+    status_after_approval: EXPANDED_BY_RETCON
+    replacement: large subjective autobiographical gaps / CHANGE_0006
+  - prior: FAC_0001 card excluded debt/contract system inference from the original CH_0001
+    status_after_approval: PARTIALLY_SUPERSEDED_BY_EXPLICIT_AUTHOR_ADDITION
+    replacement: only the specific L3 ledger/offers/cycle shown in the revision / CHANGE_0005
+
+foreshadow_changes:
+  existing_questions:
+    QUESTION_0001:
+      add_evidence:
+        - company recording of a past contract signer whom FAC_0001 and CHR_0001 associate with his past version
+        - large autobiographical memory gaps
+        - anonymous records of conflicting memory/personality outcomes
+      answer_reveal_status: HIDDEN
+      forbidden_resolution: title, recording, company mapping, and subjective familiarity do not certify L0 identity continuity
+    QUESTION_0002:
+      change: none
+      answer_reveal_status: HIDDEN
+  questions_created:
+    - id: QUESTION_0003
+      question: What is the true nature of the Echo Well technology chain, and what is its objective relationship to memory gaps and continuity failures?
+      status: OPEN
+      reader_question_status: ACTIVE
+      answer_reveal_status: HIDDEN
+      current_models:
+        - FAC_0001 operational umbrella term and observed correlation
+      forbidden_resolution:
+        - do not identify the ontology, origin, single physical referent, complete mechanism, or unique causal role without later author and reveal approval
+
+events_changed:
+  - id: EVT_000001
+    action: EXPAND
+    added_summary: 林赛 discloses the FAC_0001 debt ledger and offers, advises CHR_0001 to choose none, presents debtor/experiment outcomes and a limited SYS_0003 model; CHR_0001 discovers large memory gaps and views the signing record.
+    added_immediate_results:
+      - CHR_0002's name 林赛 becomes reader- and character-known
+      - CHR_0001 learns the company debt and offer model but makes no on-page selection
+      - QUESTION_0001 gains new evidence and QUESTION_0003 becomes active
+    truth_boundary:
+      - company records/offers/SYS_0003 explanation remain L3
+      - 林赛 personal case remains L4 testimony
+      - anonymous cases remain L3 internal records
+      - large memory gaps are a confirmed subjective character state; unique cause remains unresolved
+  - id: EVT_000002
+    action: CREATE
+    status: proposed
+    temporal_position: before CH_0001 awakening; exact date unresolved
+    participants: []
+    recorded_signer:
+      stable_character_id: null
+      label: unidentified pre-awakening agreement signer shown in the FAC_0001 recording
+    claimed_or_associated_identity:
+      associated_id: CHR_0001
+      relation_type: NARRATIVE_ASSOCIATION_ONLY
+      association_layers:
+        - L3_ORGANIZATION_MODEL
+        - L4_CHARACTER_KNOWLEDGE
+      claim_source:
+        - FAC_0001 recording metadata
+        - CHR_0001 subjective recognition
+      objective_continuity: UNRESOLVED
+      controlling_question: QUESTION_0001
+    other_recorded_person:
+      stable_character_id: null
+      label: unidentified FAC_0001 sales representative
+    source_in_story: company signing recording shown during EVT_000001
+    summary: a debt-distressed, exhausted, agitated signer accepts a FAC_0001 recovery/debt-inheritance/clone-service agreement
+    identity_boundary: occurrence and signing are author-confirmed; continuity between recorded signer and awakened instance remains QUESTION_0001
+
+reader_knowledge_after_revision:
+  confirmed_on_page:
+    - CH_0001 is titled 我从地狱归来
+    - CHR_0002 is named 林赛
+    - FAC_0001 displays a 3,416,200-credit-point ledger and three high-risk offers
+    - 林赛 advises selecting none and provides personal testimony plus anonymized records
+    - FAC_0001 uses Echo Well as an operational umbrella term it does not fully understand
+    - CHR_0001 discovers large autobiographical memory gaps and sees EVT_000002
+  unconfirmed_or_source_bound:
+    - objective validity of the debt and risk model
+    - objective identity continuity with the recorded signer
+    - Echo Well ontology, origin, complete mechanism, and unique causal role
+    - accident cause
+
+manuscript_impacts:
+  - action: REPLACE_WITH_APPROVED_REVISION
+    source: 07_workbench/CH_0001/revisions/REV_0001/05_draft.md
+    target: 05_manuscript/CH_0001.md
+    status: applied_2026-08-11
+
+controlled_writeback_targets:
+  modify:
+    - 05_manuscript/CH_0001.md
+    - 02_characters/CHR_0001/state.md
+    - 02_characters/CHR_0001/knowledge.md
+    - 02_characters/CHR_0001/relationships.md
+    - 02_characters/CHR_0002/profile.md
+    - 02_characters/CHR_0002/state.md
+    - 02_characters/CHR_0002/knowledge.md
+    - 02_characters/CHR_0002/relationships.md
+    - 03_world/factions/FAC_0001.md
+    - 04_story/open_questions/QUESTION_0001.md
+    - 06_memory/chapters/CH_0001.md
+    - 06_memory/events/EVT_000001.md
+  create:
+    - 03_world/systems/SYS_0002.md
+    - 03_world/systems/SYS_0003.md
+    - 03_world/systems/SYS_0004.md
+    - 04_story/open_questions/QUESTION_0003.md
+    - 06_memory/events/EVT_000002.md
+    - 06_memory/setting_changes/CHANGE_0003.md
+    - 06_memory/setting_changes/CHANGE_0004.md
+    - 06_memory/setting_changes/CHANGE_0005.md
+    - 06_memory/setting_changes/CHANGE_0006.md
+    - 06_memory/setting_changes/CHANGE_0007.md
+  derived:
+    - 09_index/file_index.json
+    - 09_index/secret_guard_index.json
+  explicitly_unchanged:
+    - 01_canon/**
+    - 02_characters/CHR_0001/profile.md
+    - 03_world/systems/SYS_0001.md
+    - 04_story/open_questions/QUESTION_0002.md
+    - 06_memory/setting_changes/CHANGE_0001.md
+    - 06_memory/setting_changes/CHANGE_0002.md
+
+approval_required:
+  - approve the revised CH_0001 prose and title
+  - approve SYS_0002, SYS_0003, SYS_0004, EVT_000002, and QUESTION_0003 stable IDs
+  - approve CHANGE_0003 through CHANGE_0007
+  - approve character, relationship, world, event, reader-state, and foreshadow deltas
+  - approve replacing the controlled manuscript and synchronizing all affected controlled files
+
+notes:
+  - no L0 or secret canon change is proposed
+  - the title is paratext and must not be used as evidence that identity continuity is objectively resolved
+  - no repayment option is selected on page
+  - no staging, commit, or push is authorized by this Delta artifact
