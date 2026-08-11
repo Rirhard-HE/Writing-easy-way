@@ -9,6 +9,8 @@ provenance:
   - 07_workbench/CH_0001/08_approval.yaml
   - 07_workbench/CH_0001/revisions/REV_0001/07_memory_delta.agent.yaml
   - 07_workbench/CH_0001/revisions/REV_0001/08_approval.yaml
+  - 07_workbench/CH_0002/07_memory_delta.agent.yaml
+  - 07_workbench/CH_0002/08_approval.yaml
 ---
 
 # Open Canon Question
@@ -30,10 +32,12 @@ provenance:
 - `CHR_0001` 发现大量自传性记忆断层，无法回忆录像中的签署时刻。
 - 匿名内部记录展示互相冲突的记忆与身份疑问。
 - 上述均为线索，不认证复制、连续性或复活机制。
+- 林赛依据公司档案先行告知姓名为何筠，`CHR_0001` 对名字产生熟悉感；姓名获作者确认，但该熟悉感不认证客观连续性。
+- 损坏日志的身份密钥与旧档案一致；林赛仍拒绝认证当前何筠与日志发送者的客观连续性。
 
 ## Affected IDs / chapters
 
-- `CHR_0001`、`CHR_0002`、`EVT_000001`、`EVT_000002`、`CH_0001`。
+- `CHR_0001`、`CHR_0002`、`EVT_000001`、`EVT_000002`、`EVT_000003`、`CH_0001`、`CH_0002`。
 
 ## Decisions that must wait
 

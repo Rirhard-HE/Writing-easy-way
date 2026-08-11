@@ -1,0 +1,336 @@
+chapter: CH_0002
+status: applied
+transaction_status: APPLIED
+source_draft: 05_draft.md
+source_draft_sha256: d5813fb75bc5ab5ddcd55afdd5cdf6dc559d1cb7713d4afb86c7be76f7f19637
+source_final_review: 06_final_review.agent.md
+source_final_review_sha256: 57fa09f39a92276af1392555747114d2def5860bd1c4eca88de880e2afb62633
+provenance:
+  author_decision: 04_author_decision.md
+  author_decision_sha256: 5713785d2dece92d9f62d67c4c129fabb5a5e07e7167c6c44c880fb163de87b7
+  previous_chapter: 05_manuscript/CH_0001.md
+
+chapter_changes:
+  title:
+    after: 蠢货
+    status: AUTHOR_CONFIRMED
+  sequence:
+    - 林赛告知主角其档案姓名为何筠；何筠认出名字的熟悉感，但未恢复完整身份记忆
+    - 两人从复苏区进入 LOC_0001 同层的崭新科隆诺企业区
+    - 林赛介绍 FAC_0002、SYS_0005 与科隆诺的旧联邦技术业务
+    - FAC_0001 展示异常舰船日志、主角舰船搜索结果与 FAC_0003 舰队残骸
+    - 何筠暂时接受调阅材料和参与初步调查，但未签约、未入职
+
+proposed_entities:
+  - id: FAC_0002
+    type: organization_department
+    display_name: 深空遗迹事务部
+    parent: FAC_0001
+    scope: FAC_0001 核心部门；负责对 SYS_0005 之前的旧联邦技术进行挖掘或破解
+  - id: FAC_0003
+    type: pirate_organization
+    display_name: 黑脊犬
+    scope: 只确认组织标记、追踪记录及残骸归属；规模、成员、历史和毁损原因均未建立
+  - id: SYS_0005
+    type: public_historical_event_model
+    display_name: 大崩裂
+    truth_layers:
+      - L0_OBJECTIVE_TRUTH
+      - L2_MODERN_FEDERATION_MODEL
+    scope: 原因不明；造成仙女座与旧联邦星区之间的连接星门断开
+  - id: SYS_0006
+    type: organization_anomaly_label
+    display_name: 科隆诺“信息抹除”工作标签
+    truth_layer: L3_ORGANIZATION_MODEL
+    information_class: UNRESOLVED
+    scope: FAC_0001 对主角舰船推定毁灭坐标处证据缺失的项目工作标签，不是已证明机制
+  - id: EVT_000003
+    type: chapter_event
+    display_name: 何筠查看异常日志并接受初步调查
+  - id: QUESTION_0004
+    type: open_question
+    display_name: 日志发送者所称旧联邦遗迹在哪里、如何再次找到
+  - id: QUESTION_0005
+    type: open_question
+    display_name: 主角舰船证据缺失、黑脊犬舰队毁损与相关异常之间是什么关系
+
+character_changes:
+  CHR_0001:
+    before_chapter:
+      canonical_name: UNRESOLVED
+      location: LOC_0001 复苏区
+      physical_state: 能勉强站立，存在运动迟滞和协调不良
+      decision_state: 未选择三项标准处理方案
+    after_chapter:
+      canonical_name: 何筠
+      canonical_name_status: AUTHOR_CONFIRMED
+      name_reveal_boundary:
+        source: CHR_0002 first states the name from FAC_0001 records
+        subjective_response: CHR_0001 recognizes and accepts the name as familiar
+        objective_identity_continuity: UNRESOLVED
+      location: LOC_0001 同层科隆诺企业区的简报室
+      physical_state:
+        - 仍有右腿迟滞、膝软、发抖和冷汗
+        - 使用临时医疗支撑杆；不建立长期持有关系
+      procedural_knowledge:
+        - 能从日志动作理解 SYS_0001 的控制处置
+        - 能依据影像识别海盗舰的拼装装甲、推进模组、火控接口和限制机动阵列
+      autobiographical_memory:
+        - 仍不记得日志发送、遗迹发现或追击经过
+        - 专业/程序性知识不等于恢复自传性记忆
+      decision_state:
+        - 暂时接受继续调阅项目材料和参与初步事故调查
+        - 未签正式合同、未重组债务、未成为 FAC_0002 员工
+  CHR_0002:
+    before_chapter:
+      location: LOC_0001 复苏区
+      chapter_function: 提供债务与标准方案告知和有限个人警告
+    after_chapter:
+      location: LOC_0001 同层科隆诺企业区的简报室
+      chapter_actions:
+        - 告知 CHR_0001 档案姓名为何筠
+        - 介绍 FAC_0002、SYS_0005 与科隆诺的旧联邦技术业务
+        - 展示异常日志、搜索结果和 FAC_0003 残骸记录
+        - 提供不构成聘用、债务重组或专项合同的临时调查授权
+      knowledge_ceiling:
+        - 不认证 CHR_0001、日志发送者或录像签署者之间的客观身份连续性
+        - 不知道 SYS_0006 的真实机制、遗迹位置或两组舰船异常的客观因果
+
+knowledge_changes:
+  CHR_0001:
+    learns_or_observes:
+      - FAC_0001 档案与签署记录把他的姓名记为何筠
+      - LOC_0001 的复苏区与崭新科隆诺企业区位于同层
+      - FAC_0002 是 FAC_0001 的核心部门，含战斗、逆向、科研及封存/风险评估职能
+      - SYS_0005 是仙女座航区公共历史，其原因仍不明
+      - 一份身份密钥与其旧档案一致的损坏日志声称发现大崩裂前设施，且发送者称能再次找到
+      - 主角舰船推定毁灭坐标没有符合舰船毁灭的物理证据
+      - FAC_0001 把该证据异常称为 SYS_0006，但明确未证明机制
+      - FAC_0003 舰队残骸表现出高温熔化与直接撕裂两类异常毁损，且无可确认幸存者
+      - 本次特殊项目邀约源于异常事故、日志和潜在遗迹价值
+    explicitly_does_not_know:
+      - 日志发送者与当前自己的客观身份连续性
+      - 遗迹坐标、性质与再次定位方法
+      - SYS_0006 是否对应真实机制、抹除对象或影响范围
+      - 主角舰船去向及 FAC_0003 舰队毁损原因
+      - 上述异常与 SYS_0003、白光、遗迹之间的客观因果
+  CHR_0002:
+    demonstrates_or_claims:
+      L3_ORGANIZATION_MODEL:
+        - 熟悉 FAC_0002 组织职能、日志校验、搜索记录、残骸记录和临时授权
+        - 把证据缺失归为 SYS_0006 项目工作标签
+      L4_CHARACTER_KNOWLEDGE:
+        - 认为该事件不是正常死亡，并把 CHR_0001 视为未闭合异常事故与潜在遗迹线索
+    explicitly_does_not_know:
+      - SYS_0006 的真实机制
+      - 遗迹位置
+      - 主角舰船缺失与 FAC_0003 毁损的客观原因
+
+relationship_changes:
+  CHR_0001__CHR_0002:
+    from: 程序性评估关系；林赛已提供有限非公司化警告，信任未建立
+    to: 林赛进一步提供姓名、异常证据和临时调查入口；何筠继续试探其公司理由与个人理由
+    trust_or_affinity_change: 未建立信任、同盟、亲近或长期合作承诺
+    active_tension: 林赛既代表公司流程，又拒绝把公司记录包装成客观身份或事故答案
+
+world_changes:
+  LOC_0001:
+    add_facts:
+      - 复苏区同层存在一处崭新、洁净、权限化的 FAC_0001 企业区
+      - 企业区内有 FAC_0002 赫卡忒七号项目区和简报室
+    excluded_inferences:
+      - 不建立空间站完整地图、所有权、企业区规模或其他楼层结构
+  FAC_0001:
+    add_facts:
+      - 主要业务包括挖掘或破解 SYS_0005 之前的旧联邦技术
+      - FAC_0002 是其核心部门
+      - 公司记录把 CHR_0001 相关事故列为未完成分类的异常，并提供临时调查授权
+    authorization_boundary:
+      - 调阅材料与参与初步事故调查
+      - 不构成正式聘用、债务重组或专项合同
+  FAC_0002:
+    stable_facts:
+      - FAC_0001 核心部门
+      - 主要职能包括战斗、逆向、科研、封存与风险评估
+    reveal_boundary:
+      - 不由本章补出完整层级、规模、领导、预算、项目史或权限体系
+  FAC_0003:
+    text_confirmed_facts:
+      - 黑色犬首与舰体脊部锯齿线构成可见组织标记
+      - FAC_0001 记录把相关舰船标为追踪者
+      - 残骸无可确认幸存者；部分似高温熔化，部分似被直接撕裂
+    unresolved:
+      - 舰队精确规模、人员名单、行动目的、毁损机制及与主角事故的因果
+  SYS_0001:
+    add_evidence:
+      - 损坏日志界面将主角所驾驶舰型标为矿骡级探勘型驱逐舰
+      - 控制动作涉及切断自动轨迹修正、重分配姿态推进器、绕开失效导航节点
+    excluded_inferences:
+      - 不建立具体舰名、所有权、完整规格或事故原因
+  SYS_0005:
+    stable_facts:
+      - 原因不明
+      - 造成仙女座与旧联邦星区连接星门断开
+      - 属于仙女座航区普遍知道的公共历史
+  SYS_0006:
+    observed_evidence:
+      - 未发现舰体残骸
+      - 未发现逃生舱
+      - 未发现武器碎片
+      - 未发现高温蒸发痕迹
+      - 未发现生物残留
+      - 区域内不存在符合舰船毁灭的任何物理证据
+    model_boundary:
+      - 仅为 FAC_0001 项目组工作标签
+      - 不认证证据、舰船、事件或现实被客观抹除
+      - 不与 ONTOLOGICAL_INFORMATION、SYS_0003 或作者秘密自动合并
+
+setting_changes:
+  - change_id: CHANGE_0008
+    type: ADD
+    status: AUTHOR_APPROVED
+    affected_ids:
+      - CHR_0001
+      - QUESTION_0001
+    exact_author_decision: C001-A author refinement
+    previous_fact: CHR_0001 生产规范姓名未揭示且未确定
+    new_fact: 生产规范名确定为何筠，由林赛先依据公司档案告知；名字熟悉感不解决客观身份连续性
+  - change_id: CHANGE_0009
+    type: ADD
+    status: AUTHOR_APPROVED
+    affected_ids:
+      - FAC_0001
+      - FAC_0002
+    exact_author_decision: 批准“深空遗迹事务部”新增设定
+    new_fact: FAC_0002 是 FAC_0001 核心部门；公司主要业务包括挖掘或破解大崩裂前旧联邦技术；主要职能含战斗、逆向、科研
+  - change_id: CHANGE_0010
+    type: ADD
+    status: AUTHOR_APPROVED
+    affected_ids:
+      - SYS_0005
+    exact_author_decision: 批准“大崩裂”新增设定
+    new_fact: SYS_0005 原因不明，造成仙女座与旧联邦星区连接星门断开，并是角色普遍知道的公共历史
+
+foreshadow_changes:
+  existing_questions:
+    QUESTION_0001:
+      add_evidence:
+        - 林赛先依据公司档案告知姓名为何筠，CHR_0001 对名字产生熟悉感
+        - 林赛拒绝认证当前主角与日志发送者的客观连续性
+      answer_reveal_status: HIDDEN
+    QUESTION_0002:
+      add_evidence:
+        - 损坏日志及主角舰船推定毁灭坐标没有任何符合毁灭的物理证据
+        - FAC_0003 舰队在后续区域留下两类异常毁损残骸
+      answer_reveal_status: HIDDEN
+    QUESTION_0003:
+      change: none
+      answer_reveal_status: HIDDEN
+  questions_created:
+    - id: QUESTION_0004
+      question: 日志发送者所称的大崩裂前遗迹在哪里、是什么，以及如何再次找到？
+      status: OPEN
+      reader_question_status: ACTIVE
+      answer_reveal_status: HIDDEN
+    - id: QUESTION_0005
+      question: 主角舰船为何没有留下任何毁灭证据，FAC_0003 舰队为何呈现两类异常毁损，二者与遗迹、白光及“信息抹除”标签之间是什么关系？
+      status: OPEN
+      reader_question_status: ACTIVE
+      answer_reveal_status: HIDDEN
+
+events_created:
+  - id: EVT_000003
+    action: CREATE
+    status: AUTHOR_CONFIRMED
+    chapter: CH_0002
+    participants:
+      - CHR_0001
+      - CHR_0002
+    location: LOC_0001
+    summary: 林赛告知何筠档案姓名，带他进入同层科隆诺企业区，介绍 FAC_0002，并展示遗迹日志、无毁灭证据的搜索结果及 FAC_0003 残骸；何筠暂时接受调阅材料和参与初步调查。
+    immediate_results:
+      - CHR_0001 的生产规范名向角色和读者揭示为何筠
+      - FAC_0002、FAC_0003、SYS_0005 与 SYS_0006 进入读者知识
+      - QUESTION_0004 与 QUESTION_0005 激活
+      - CHR_0001 未签约、未入职、未重组债务
+    truth_boundary:
+      - 公司档案、日志校验、搜索与项目标签保持 L3 来源边界
+      - 姓名获作者确认，但客观身份连续性仍由 QUESTION_0001 控制
+      - 遗迹位置、信息抹除机制、舰船去向和海盗毁损原因均未解决
+
+reader_knowledge_after_chapter:
+  confirmed_on_page:
+    - 主角生产规范名为何筠，名字由林赛先依据公司记录告知
+    - LOC_0001 复苏区同层存在一处崭新科隆诺企业区
+    - FAC_0002 是 FAC_0001 核心部门，处理大崩裂前旧联邦技术
+    - SYS_0005 切断仙女座与旧联邦星区的连接星门，原因不明
+    - 损坏日志声称发现一处大崩裂前设施，发送者称能再次找到
+    - 主角舰船推定毁灭坐标没有符合毁灭的物理证据
+    - FAC_0003 舰队留下异常残骸且无可确认幸存者
+    - 何筠暂时接受初步调查，但未签合同或入职
+  unconfirmed_or_source_bound:
+    - 当前何筠与日志发送者、录像签署者及死亡记忆人物的客观身份连续性
+    - 日志真实性超出公司校验范围的客观状态
+    - 遗迹位置、性质和再次定位方法
+    - SYS_0006 是否对应真实机制及其作用对象
+    - 主角舰船去向、FAC_0003 舰队毁损原因及全部异常之间的因果
+
+manuscript_impacts:
+  - action: COPY_APPROVED_PROSE
+    source: 07_workbench/CH_0002/05_draft.md
+    target: 05_manuscript/CH_0002.md
+    status: applied
+
+controlled_writeback_targets:
+  modify:
+    - 02_characters/CHR_0001/profile.md
+    - 02_characters/CHR_0001/state.md
+    - 02_characters/CHR_0001/knowledge.md
+    - 02_characters/CHR_0001/relationships.md
+    - 02_characters/CHR_0002/state.md
+    - 02_characters/CHR_0002/knowledge.md
+    - 02_characters/CHR_0002/relationships.md
+    - 03_world/factions/FAC_0001.md
+    - 03_world/locations/LOC_0001.md
+    - 03_world/systems/SYS_0001.md
+    - 04_story/open_questions/QUESTION_0001.md
+    - 04_story/open_questions/QUESTION_0002.md
+  create:
+    - 03_world/factions/FAC_0002.md
+    - 03_world/factions/FAC_0003.md
+    - 03_world/systems/SYS_0005.md
+    - 03_world/systems/SYS_0006.md
+    - 04_story/open_questions/QUESTION_0004.md
+    - 04_story/open_questions/QUESTION_0005.md
+    - 05_manuscript/CH_0002.md
+    - 06_memory/chapters/CH_0002.md
+    - 06_memory/events/EVT_000003.md
+    - 06_memory/setting_changes/CHANGE_0008.md
+    - 06_memory/setting_changes/CHANGE_0009.md
+    - 06_memory/setting_changes/CHANGE_0010.md
+  derived:
+    - 09_index/file_index.json
+    - 09_index/secret_guard_index.json
+  explicitly_unchanged:
+    - 01_canon/**
+    - 02_characters/CHR_0002/profile.md
+    - 03_world/systems/SYS_0002.md
+    - 03_world/systems/SYS_0003.md
+    - 03_world/systems/SYS_0004.md
+    - 04_story/open_questions/QUESTION_0003.md
+    - 06_memory/events/EVT_000001.md
+    - 06_memory/events/EVT_000002.md
+
+approval_required:
+  - approve final CH_0002 prose and title 蠢货
+  - approve FAC_0002, FAC_0003, SYS_0005, SYS_0006, EVT_000003, QUESTION_0004, and QUESTION_0005 stable IDs
+  - approve CHANGE_0008 through CHANGE_0010
+  - approve all character, knowledge, relationship, world, event, reader-state, and foreshadow deltas
+  - approve copying prose and synchronizing the listed controlled files
+
+notes:
+  - no secret canon or L0 anomaly-mechanism change is proposed
+  - SYS_0005 event boundary is author-confirmed, but its cause remains unresolved
+  - SYS_0006 is an L3 work label and must not be promoted to ontological information
+  - FAC_0003 casualties are recorded only as no confirmed survivors; exact deaths and fleet size are not established
+  - Git push authorization is external to this Delta and does not substitute for exact controlled-writeback approval
