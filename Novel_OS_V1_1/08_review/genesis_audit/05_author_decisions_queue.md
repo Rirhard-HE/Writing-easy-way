@@ -1,5 +1,7 @@
 # Author Decisions Queue
 
+> **PARTIALLY SUPERSEDED:** `GENESIS_DECISION_001` 已解决信息分类、擦除隐藏模型与分支身份基础规则；相关问题不再重复排队。回声井、大崩溃、何筠最终身份、AI/FTL 本体关系与具体揭示节奏仍为开放问题。开放问题只有在生产章节实际触及时才形成作者决策，不阻止 `CHAPTER_PRODUCTION` 启动。
+
 These questions are intentionally queued instead of guessed. They do not need to be answered all at once.
 
 ## Ontology — highest priority

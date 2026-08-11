@@ -5,6 +5,8 @@
 The human author is the sole authority over plot, canon, retcons, character death/resurrection, world rules, mystery resolution, and final prose approval.
 Agents propose. Humans approve. Only approved changes may become canonical state.
 
+The author may add, revise, or replace an earlier setting at any time. An explicit current author change outranks older canon and draft evidence. The agent must identify obvious conflicts and impact before applying the change, but must not treat existing files as a veto over an explicit author override.
+
 ## Source-of-truth hierarchy
 
 When sources conflict, use this precedence unless an explicit author decision says otherwise:
@@ -38,9 +40,9 @@ Never treat `09_index/` as canonical. It must be rebuildable from source files.
 ## Chapter transaction workflow
 
 Every chapter is a transaction:
-1. Author writes `00_author_brief.md`.
+1. Author writes the core chapter material in `00_author_brief.md`, including intended events, any usable prose/dialogue fragments, prohibited content, and deliberate setting changes.
 2. Build `01_context.auto.md` from relevant authoritative sources.
-3. Produce `02_expansion.agent.md` without changing canon.
+3. Produce a boundary contract and expansion proposal in `02_expansion.agent.md` without changing canon.
 4. Run parallel continuity review and write `03_conflict_report.agent.md`.
 5. Stop for human decisions in `04_author_decision.md` when blockers/high-impact choices exist.
 6. Write `05_draft.md` only from approved constraints.
@@ -48,6 +50,21 @@ Every chapter is a transaction:
 8. Extract only chapter deltas into `07_memory_delta.agent.yaml`.
 9. Do not commit deltas until `08_approval.yaml` explicitly says `approved: true`.
 10. After approval, update canonical state, copy final prose into `05_manuscript/`, and record provenance.
+
+The author supplies the chapter's creative payload. Agents may set continuity/reveal boundaries and expand transitions, scene mechanics, sensory detail, dialogue support, emotional subtext, and pacing. Agents may not originate a major plot turn, mystery answer, permanent setting rule, death/resurrection, identity resolution, or irreversible relationship change unless the brief marks it as author-owned material or the author later approves it.
+
+## Author-led setting change policy
+
+When the author introduces or changes a setting:
+
+1. Distinguish brainstorming from an explicit setting decision. Brainstorming remains a proposal.
+2. Classify an explicit decision as `ADD`, `CLARIFY`, `OVERRIDE`, `RETCON`, or `DEPRECATE`.
+3. Scan current canon, entity state, approved memory, story plans, final manuscript, and relevant source evidence for impact.
+4. If an obvious conflict exists, report a concise `SETTING_CONFLICT` containing the old fact, new author fact, affected files/IDs/chapters, and likely consequences.
+5. If the author explicitly requested the override, apply it after the warning and preserve the old version as superseded provenance. If the author's intent is ambiguous, stop for confirmation.
+6. Never silently reconcile, erase, or conceal a contradiction.
+
+Detailed procedure: `00_system/change_control.md`.
 
 ## MUST / MUST NOT / FLEXIBLE
 
@@ -83,8 +100,10 @@ Do not dump the entire manuscript into a chapter context. Prefer this order:
 4. Directly linked events, threads, and foreshadowing.
 5. Exact-text/metadata search.
 6. Semantic retrieval only when needed.
+7. Legacy source evidence only when the author brief requests original-draft continuity, reuse, comparison, or rewrite.
 
 Context packs should be concise, evidence-backed, and oriented toward the current chapter.
+Legacy source evidence never overrides a current author decision or Canon, and legacy draft exposure never sets `L5_READER_KNOWLEDGE` for the production manuscript.
 
 ## Data conventions
 

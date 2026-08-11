@@ -1,11 +1,199 @@
 chapter: CH_0001
 source_draft: 05_draft.md
-status: proposed
-character_changes: {}
-knowledge_changes: {}
-relationship_changes: {}
-world_changes: {}
-foreshadow_changes: {}
-events_created: []
+source_draft_sha256: 402826ff1c647ca72a0ed50db040730e8d3183aafcbccef2978e8310964b5942
+status: applied
+transaction_status: AUTHOR_APPROVED_AND_APPLIED
+approval_source: 08_approval.yaml
+approved_at: 2026-08-11
+writeback_applied_at: 2026-08-11
+provenance:
+  prose_approved_by: human_author
+  prose_approved_at: 2026-08-11
+  author_decision: 04_author_decision.md
+  final_review: 06_final_review.agent.md
+proposed_entities:
+  - id: CHR_0001
+    type: character
+    display_name: 主角（姓名未揭示）
+    canonical_name_status: UNRESOLVED
+  - id: CHR_0002
+    type: character
+    display_name: 匿名复苏技术主管
+    canonical_name_status: UNRESOLVED
+  - id: LOC_0001
+    type: location
+    display_name: 赫卡忒七号空间站
+  - id: FAC_0001
+    type: faction
+    display_name: 科隆诺科技
+  - id: SYS_0001
+    type: ship_class
+    display_name: 矿骡级探勘型驱逐舰
+character_changes:
+  CHR_0001:
+    before_chapter: production state not yet established
+    after_chapter:
+      location: LOC_0001
+      physical_state:
+        - conscious and breathing after awakening from a cold-storage tube
+        - temporary dizziness, motor lag, and poor limb coordination are observable
+      remembered_experience:
+        - remembers piloting a SYS_0001 vessel while it was losing control
+        - remembers a white flash and interprets the endpoint as death
+      institutional_status:
+        claim: currently registered by FAC_0001 as company property/asset
+        claim_source: CHR_0002 dialogue / organizational wording
+        evidence_status: TEXT_CONFIRMED_STATEMENT
+        truth_layer: L3_ORGANIZATION_MODEL
+      identity_truth: UNRESOLVED
+  CHR_0002:
+    before_chapter: production state not yet established
+    after_chapter:
+      self_identified_role: recovery technical supervisor belonging to FAC_0001
+      role_evidence_status: TEXT_CONFIRMED_SELF_REPORT
+      name: UNREVEALED_AND_UNRESOLVED
+      chapter_function: performs initial assessment and communicates company status
+knowledge_changes:
+  CHR_0001:
+    learns:
+      - current location is LOC_0001 in the Andromeda outer-arm frontier region
+      - nearby workers call him a clone pilot
+      - claim: CHR_0002 states that the FAC_0001 system currently records him as an asset
+        evidence_status: TEXT_CONFIRMED_STATEMENT
+        truth_layer: L3_ORGANIZATION_MODEL
+      - CHR_0002 is a recovery technical supervisor for FAC_0001
+    hears_unverified_claims:
+      - memories can be copied completely
+      - a copied person may not count as human
+    explicitly_does_not_know:
+      - objective identity continuity
+      - whether the workers' clone terminology is technically complete or correct
+      - the cause of the vessel's loss of control and the white flash
+      - the objective mechanism of his awakening
+  CHR_0002:
+    demonstrates_knowledge:
+      - CHR_0001 is awake, breathing, responsive, and experiencing motor delay
+      - claim: CHR_0002 states that the FAC_0001 system currently classifies CHR_0001 as an asset
+        evidence_status: TEXT_CONFIRMED_STATEMENT
+        truth_layer: L3_ORGANIZATION_MODEL
+    knowledge_ceiling:
+      - does not provide or certify the objective identity answer
+relationship_changes:
+  CHR_0001__CHR_0002:
+    from: no production relationship established
+    to: first direct on-page interaction; procedural assessor and assessed subject
+    trust_or_affinity_change: none established
+world_changes:
+  LOC_0001:
+    proposed_facts:
+      - exists in the Andromeda outer-arm frontier region
+      - contains the local recovery area shown in CH_0001
+    excluded_inferences:
+      - no station-wide map, ownership, government, or full facility role is established
+  FAC_0001:
+    proposed_facts:
+      - normative production name is 科隆诺科技
+      - claim: CHR_0002 identifies as a recovery technical supervisor belonging to FAC_0001
+        evidence_status: TEXT_CONFIRMED_SELF_REPORT
+      - claim: CHR_0002 states that the FAC_0001 system currently records CHR_0001 as an asset
+        evidence_status: TEXT_CONFIRMED_STATEMENT
+        truth_layer: L3_ORGANIZATION_MODEL
+    excluded_inferences:
+      - no universal clone law, contract, debt system, or station deployment relationship is established
+  SYS_0001:
+    proposed_facts:
+      - a Miner-Mule-class exploration destroyer exists in CHR_0001's remembered experience
+    excluded_inferences:
+      - no vessel name, specifications, crew, owner, enemy, damage source, or accident cause is established
+setting_changes:
+  - change_id: CHANGE_0001
+    type: CLARIFY
+    status: AUTHOR_APPROVED_AND_APPLIED
+    affected_ids:
+      - FAC_0001
+    exact_author_decision: C001:B — use 科隆诺科技; 克诺龙公司 was a typo
+    previous_fact: CH_0001 author brief contained 克诺龙公司
+    new_fact: production organization name is 科隆诺科技
+    supersedes:
+      - 07_workbench/CH_0001/00_author_brief.md typo only
+    manuscript_impact: already reflected in approved CH_0001 prose
+  - change_id: CHANGE_0002
+    type: ADD
+    status: AUTHOR_APPROVED_AND_APPLIED
+    affected_ids:
+      - SYS_0001
+    exact_author_decision: C004:A — use 矿骡级探勘型驱逐舰 in CH_0001
+    previous_fact: legacy source used the broader term 矿骡级驱逐舰
+    new_fact: 探勘型 is proposed as a production subtype/designation
+    supersedes: []
+    manuscript_impact: already reflected in approved CH_0001 prose
+superseded_facts:
+  - fact: 克诺龙公司
+    source: 07_workbench/CH_0001/00_author_brief.md
+    status: TYPO_SUPERSEDED
+    superseded_by: 科隆诺科技 / CHANGE_0001
+foreshadow_changes:
+  questions_created:
+    - id: QUESTION_0001
+      question: What is the objective continuity/identity status of the awakened protagonist?
+      status: OPEN
+      reader_question_status: ACTIVE
+      answer_reveal_status: HIDDEN
+      evidence:
+        - death memory followed by awakening
+        - clone-pilot terminology and copy rumors
+        - body/hand sensations that do not fully match remembered familiarity
+      forbidden_resolution: do not answer without a later explicit author decision and reveal approval
+    - id: QUESTION_0002
+      question: What caused the remembered vessel to lose control and the white flash?
+      status: OPEN
+      reader_question_status: ACTIVE
+      answer_reveal_status: HIDDEN
+      evidence:
+        - fragmentary subjective memory only
+      forbidden_resolution: do not infer an enemy, failure, or hidden mechanism
+  reader_knowledge_after_chapter:
+    confirmed_on_page:
+      - an unnamed protagonist awakens from a cold-storage tube at LOC_0001
+      - he remembers a SYS_0001 vessel losing control, a white flash, and what he experiences as death
+      - workers use clone-pilot and memory-copy language
+      - CHR_0002 states that the FAC_0001 system currently records him as an asset
+    unconfirmed_or_character_bound:
+      - memory copying completeness
+      - whether he is objectively a clone or the same person
+      - the objective meaning of resurrection
+      - the accident cause
+events_created:
+  - id: EVT_000001
+    status: AUTHOR_CONFIRMED
+    chapter: CH_0001
+    participants:
+      - CHR_0001
+      - CHR_0002
+    location: LOC_0001
+    summary: CHR_0001 awakens from a cold-storage tube, recalls a loss-of-control/death fragment, meets CHR_0002, and is told that FAC_0001 currently records him as an asset.
+    immediate_results:
+      - CHR_0001 is conscious but physically unsteady
+      - CHR_0001 learns his location and CHR_0002's claim about his company-recorded status
+      - QUESTION_0001 and QUESTION_0002 become active reader-facing mysteries
+    truth_boundary:
+      - records observable events and character/institutional claims only
+      - does not certify identity continuity, clone mechanics, resurrection mechanics, or accident cause
 canon_changes: []
-notes: []
+manuscript_impacts:
+  - action: COPY_APPROVED_PROSE
+    source: 07_workbench/CH_0001/05_draft.md
+    target: 05_manuscript/CH_0001.md
+    status: APPLIED
+approval_required:
+  - approve proposed IDs and entity creation
+  - approve CHANGE_0001 and CHANGE_0002
+  - approve character, knowledge, relationship, world, foreshadow, reader-state, and event deltas
+  - approve copying prose into the controlled manuscript directory
+notes:
+  - no secret or L0 canon change is proposed
+  - legacy source similarity does not promote any unlisted legacy claim
+  - CHR_0001 and CHR_0002 names remain unresolved; stable IDs can exist before names are revealed
+  - top-level status records that the approved transaction has been applied to controlled state
+  - author approved the complete Delta, CHANGE_0001, CHANGE_0002, all proposed stable IDs, and controlled writeback on 2026-08-11
+  - approved entries were written to character, world, story, manuscript, and memory controlled state

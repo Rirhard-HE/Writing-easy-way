@@ -1,12 +1,13 @@
 # Novel OS V1
 
-一个以“作者掌握剧情权、Agent负责补充与连续性审查”为核心的超长篇小说工程骨架。
+一个以“作者提供每章创作核心、Agent 负责边界设定、受约束扩写与连续性审查”为核心的超长篇小说工程。
 
 ## 核心原则
 
 - **Author = 剧情与 Canon 的最终权威**
 - **Agent = 提案、检索、补充、冲突检查、Delta 提取**
 - **Approval before Commit**：未经人工批准，不得把 Agent 新增事实写回长期状态
+- **Author may revise settings**：作者可以修改原设定；Agent 负责提示明显冲突与影响，不用旧设定否决作者
 - **Markdown/YAML = Source of Truth**
 - **09_index = Derived Data**，可随时重建
 
@@ -43,10 +44,13 @@ python scripts/new_chapter.py CH_0001
 07_workbench/CH_0001/00_author_brief.md
 ```
 
+这里不仅写剧情摘要，也写作者自己的场景材料、关键对话/行动，以及本章是否新增或修改设定。
+完成后把 front matter 中的 `status` 改为 `ready`，并把 `author_input_complete` 改为 `true`。
+
 6. 在 Codex 中给出：
 
 ```text
-准备 CH_0001。使用 prepare-chapter skill；读取作者 brief，生成 context pack、扩写建议，并用并行连续性 subagents 完成冲突报告。不要写正文，不要改 Canon。
+准备 CH_0001。读取作者材料，生成 context pack、边界合同、扩写建议，并用并行连续性审查完成冲突报告。不要写正文，不要改 Canon。
 ```
 
 7. 你完成 `04_author_decision.md` 后：
@@ -69,7 +73,10 @@ python scripts/new_chapter.py CH_0001
 - `生成 CH_0123 正文`：按作者决定写 Draft + Final Review
 - `提取 CH_0123 状态变化`：生成 Memory Delta
 - `完成 CH_0123`：仅在批准后正式写回
+- `设定修改为……`：记录明确作者变更；如与旧设定冲突，先提示影响再按你的明确决定执行
 
 ## 当前 V1 的边界
 
 V1 不依赖向量数据库。优先通过稳定 ID、目录关系、YAML 元数据和全文搜索工作。等进入几十万到百万字后，再把 `09_index/` 升级为 SQLite/FTS/语义检索，不改变 Canon 文件格式。
+
+设定变更规则见 `00_system/change_control.md`，作者与 Agent 的生产分工见 `00_system/production_contract.md`。

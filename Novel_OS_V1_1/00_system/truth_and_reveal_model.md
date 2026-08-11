@@ -26,6 +26,22 @@ Every important setting statement should identify one or more layers:
 
 Statements at L1-L4 may be incomplete or false without contradicting L0.
 
+## Internal information classes
+
+Author-approved by `GENESIS_DECISION_001 / AD-002-A`. These labels are Novel OS metadata, not automatically available as in-world terminology:
+
+- `SIGNAL_INFORMATION` — communication, ordinary data, measurements, records, transmissions, and other non-identity engineering information.
+- `IDENTITY_INFORMATION` — memory, personality, identity state, and evidence used to evaluate personal continuity.
+- `ONTOLOGICAL_INFORMATION` — L0 constitutive information that participates in defining an event, object, or state as reality.
+- `UNRESOLVED` — the source does not provide enough evidence to choose safely.
+
+Migration and retrieval rules:
+
+1. A shared word or metaphor does not make two classes equivalent.
+2. Character or institutional claims at L1-L4 do not promote a statement to `ONTOLOGICAL_INFORMATION`.
+3. When classification is uncertain, use `UNRESOLVED`; never default upward to L0.
+4. A single source passage may reference multiple classes, but each claim must be classified separately.
+
 ## Reveal gate
 
 Secret canon must include:

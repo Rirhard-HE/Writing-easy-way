@@ -4,4 +4,6 @@ approved_by: human_author
 approved_at: null
 approve_final_prose: false
 approve_memory_delta: false
+approve_setting_changes: false
+approved_change_ids: []
 notes: ""
