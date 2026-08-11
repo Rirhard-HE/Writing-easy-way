@@ -1,0 +1,347 @@
+{
+  "version": 1,
+  "files": [
+    {
+      "path": "START_HERE.md",
+      "ids": [
+        "CH_0001"
+      ],
+      "bytes": 977
+    },
+    {
+      "path": "README.md",
+      "ids": [
+        "CH_0001",
+        "CH_0123"
+      ],
+      "bytes": 2520
+    },
+    {
+      "path": "AGENTS.md",
+      "ids": [],
+      "bytes": 6248
+    },
+    {
+      "path": "00_system/style_guide.md",
+      "ids": [],
+      "bytes": 408
+    },
+    {
+      "path": "00_system/truth_and_reveal_model.md",
+      "ids": [],
+      "bytes": 2511
+    },
+    {
+      "path": "00_system/naming_convention.md",
+      "ids": [
+        "ARC_0001",
+        "ARC_0005",
+        "CHR_0001",
+        "CHR_0012",
+        "CH_0001",
+        "CH_0843",
+        "EVT_000001",
+        "EVT_001922",
+        "FAC_0001",
+        "FAC_0007",
+        "F_0001",
+        "F_0102",
+        "ITEM_0001",
+        "ITEM_0044",
+        "LOC_0001",
+        "LOC_0021",
+        "SEQ_0001",
+        "SEQ_0017",
+        "THREAD_0001",
+        "THREAD_0017"
+      ],
+      "bytes": 546
+    },
+    {
+      "path": "00_system/current_phase.md",
+      "ids": [],
+      "bytes": 1139
+    },
+    {
+      "path": "00_system/project_rules.md",
+      "ids": [],
+      "bytes": 718
+    },
+    {
+      "path": "00_system/workflow.md",
+      "ids": [],
+      "bytes": 541
+    },
+    {
+      "path": "00_sources/README.md",
+      "ids": [],
+      "bytes": 404
+    },
+    {
+      "path": "04_story/master_outline.md",
+      "ids": [],
+      "bytes": 117
+    },
+    {
+      "path": "01_canon/README.md",
+      "ids": [],
+      "bytes": 133
+    },
+    {
+      "path": "01_canon/world_rules.md",
+      "ids": [],
+      "bytes": 70
+    },
+    {
+      "path": "01_canon/timeline_canon.md",
+      "ids": [],
+      "bytes": 156
+    },
+    {
+      "path": "01_canon/terminology.md",
+      "ids": [],
+      "bytes": 122
+    },
+    {
+      "path": ".codex/config.toml",
+      "ids": [],
+      "bytes": 48
+    },
+    {
+      "path": ".codex/agents/genesis_extractor.toml",
+      "ids": [],
+      "bytes": 754
+    },
+    {
+      "path": ".codex/agents/world_continuity.toml",
+      "ids": [],
+      "bytes": 567
+    },
+    {
+      "path": ".codex/agents/foreshadow_continuity.toml",
+      "ids": [],
+      "bytes": 592
+    },
+    {
+      "path": ".codex/agents/prose_reviewer.toml",
+      "ids": [],
+      "bytes": 613
+    },
+    {
+      "path": ".codex/agents/plot_continuity.toml",
+      "ids": [],
+      "bytes": 639
+    },
+    {
+      "path": ".codex/agents/secret_guard.toml",
+      "ids": [],
+      "bytes": 584
+    },
+    {
+      "path": ".codex/agents/retcon_analyst.toml",
+      "ids": [],
+      "bytes": 786
+    },
+    {
+      "path": ".codex/agents/context_retriever.toml",
+      "ids": [],
+      "bytes": 573
+    },
+    {
+      "path": ".codex/agents/truth_layer_classifier.toml",
+      "ids": [],
+      "bytes": 778
+    },
+    {
+      "path": ".codex/agents/timeline_continuity.toml",
+      "ids": [],
+      "bytes": 536
+    },
+    {
+      "path": ".codex/agents/character_continuity.toml",
+      "ids": [],
+      "bytes": 709
+    },
+    {
+      "path": ".agents/skills/genesis-migrate/SKILL.md",
+      "ids": [],
+      "bytes": 1543
+    },
+    {
+      "path": ".agents/skills/review-chapter/SKILL.md",
+      "ids": [],
+      "bytes": 835
+    },
+    {
+      "path": ".agents/skills/prepare-chapter/SKILL.md",
+      "ids": [
+        "CH_0123"
+      ],
+      "bytes": 1514
+    },
+    {
+      "path": ".agents/skills/finalize-chapter/SKILL.md",
+      "ids": [],
+      "bytes": 1377
+    },
+    {
+      "path": ".agents/skills/expand-chapter/SKILL.md",
+      "ids": [],
+      "bytes": 1079
+    },
+    {
+      "path": "01_canon/secret/ontology.md",
+      "ids": [],
+      "bytes": 8448
+    },
+    {
+      "path": "04_story/foreshadowing/_template.md",
+      "ids": [],
+      "bytes": 249
+    },
+    {
+      "path": "02_characters/_templates/relationships.md",
+      "ids": [
+        "CH_0000"
+      ],
+      "bytes": 196
+    },
+    {
+      "path": "02_characters/_templates/knowledge.md",
+      "ids": [
+        "CH_0000"
+      ],
+      "bytes": 171
+    },
+    {
+      "path": "02_characters/_templates/state.md",
+      "ids": [
+        "CH_0000"
+      ],
+      "bytes": 221
+    },
+    {
+      "path": "02_characters/_templates/arc.md",
+      "ids": [],
+      "bytes": 155
+    },
+    {
+      "path": "02_characters/_templates/profile.md",
+      "ids": [],
+      "bytes": 217
+    },
+    {
+      "path": "02_characters/_templates/voice.md",
+      "ids": [],
+      "bytes": 178
+    },
+    {
+      "path": "07_workbench/CH_0001/07_memory_delta.agent.yaml",
+      "ids": [
+        "CH_0001"
+      ],
+      "bytes": 217
+    },
+    {
+      "path": "07_workbench/CH_0001/08_approval.yaml",
+      "ids": [
+        "CH_0001"
+      ],
+      "bytes": 142
+    },
+    {
+      "path": "07_workbench/CH_0001/05_draft.md",
+      "ids": [],
+      "bytes": 0
+    },
+    {
+      "path": "07_workbench/CH_0001/01_context.auto.md",
+      "ids": [],
+      "bytes": 0
+    },
+    {
+      "path": "07_workbench/CH_0001/06_final_review.agent.md",
+      "ids": [],
+      "bytes": 0
+    },
+    {
+      "path": "07_workbench/CH_0001/00_author_brief.md",
+      "ids": [
+        "CH_0001"
+      ],
+      "bytes": 454
+    },
+    {
+      "path": "07_workbench/CH_0001/03_conflict_report.agent.md",
+      "ids": [],
+      "bytes": 0
+    },
+    {
+      "path": "07_workbench/CH_0001/02_expansion.agent.md",
+      "ids": [],
+      "bytes": 0
+    },
+    {
+      "path": "07_workbench/CH_0001/04_author_decision.md",
+      "ids": [
+        "CH_0001"
+      ],
+      "bytes": 196
+    },
+    {
+      "path": "07_workbench/_templates/07_memory_delta.agent.yaml",
+      "ids": [],
+      "bytes": 217
+    },
+    {
+      "path": "07_workbench/_templates/08_approval.yaml",
+      "ids": [],
+      "bytes": 142
+    },
+    {
+      "path": "07_workbench/_templates/00_author_brief.md",
+      "ids": [],
+      "bytes": 457
+    },
+    {
+      "path": "07_workbench/_templates/04_author_decision.md",
+      "ids": [],
+      "bytes": 196
+    },
+    {
+      "path": "08_review/genesis_audit/03_retcon_candidates.md",
+      "ids": [],
+      "bytes": 5228
+    },
+    {
+      "path": "08_review/genesis_audit/01_world_extract_pass1.md",
+      "ids": [],
+      "bytes": 7655
+    },
+    {
+      "path": "08_review/genesis_audit/06_source_structure_audit.md",
+      "ids": [],
+      "bytes": 2903
+    },
+    {
+      "path": "08_review/genesis_audit/02_entities_pass1.md",
+      "ids": [],
+      "bytes": 6406
+    },
+    {
+      "path": "08_review/genesis_audit/05_author_decisions_queue.md",
+      "ids": [],
+      "bytes": 1917
+    },
+    {
+      "path": "08_review/genesis_audit/00_README.md",
+      "ids": [],
+      "bytes": 1132
+    },
+    {
+      "path": "08_review/genesis_audit/04_reveal_matrix_pass1.md",
+      "ids": [],
+      "bytes": 2059
+    }
+  ]
+}
