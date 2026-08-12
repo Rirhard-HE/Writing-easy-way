@@ -1,0 +1,41 @@
+chapter: CH_0002
+revision_id: CH_0002_REV_0001
+status: applied
+transaction_status: APPLIED
+canonical: true
+
+chapter_changes:
+  ending_location:
+    before_prose: CHR_0001 walks out of the briefing room
+    after_prose: CHR_0001 remains seated in the briefing room
+    change_type: RETCON
+    author_source: current_author_instruction_2026-08-12
+
+state_effects:
+  CHR_0001:
+    location: LOC_0001_CORPORATE_BRIEFING_ROOM
+    delta_against_existing_memory: NONE_FACTUAL
+    note: existing approved state already records the corrected location
+
+controlled_writeback:
+  manuscript_replace_required: true
+  memory_fact_update_required: false
+  setting_change_record_required:
+    - CHANGE_0011
+  provenance_update_required:
+    - 06_memory/chapters/CH_0002.md
+    - 06_memory/events/EVT_000003.md
+
+setting_change:
+  change_id: CHANGE_0011
+  type: RETCON
+  status: AUTHOR_APPROVED
+  affected_ids:
+    - CH_0002
+    - CHR_0001
+    - EVT_000003
+  previous_fact: CHR_0001 walks out of the briefing room at the end of CH_0002
+  new_fact: CHR_0001 remains seated in the LOC_0001 corporate briefing room at the end of CH_0002
+  scope_boundary:
+    - no change to the already approved factual end-state in character, chapter, or event memory
+    - no change to contract, employment, debt, or relationship state

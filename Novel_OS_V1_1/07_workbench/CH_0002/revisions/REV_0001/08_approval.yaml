@@ -1,0 +1,12 @@
+chapter: CH_0002
+revision_id: CH_0002_REV_0001
+approved: true
+approved_by: human_author
+approved_at: 2026-08-12
+approve_final_prose: true
+approve_memory_delta: true
+approve_controlled_writeback: true
+stage_requested: true
+commit_requested: true
+push_requested: false
+notes: "Author approved the revised ending, narrow Delta, CHANGE_0011, controlled writeback, exact staging, and commit of this transaction on 2026-08-12. Push was not requested."
