@@ -1,6 +1,6 @@
 ---
 character_id: CHR_0001
-as_of_chapter: CH_0003
+as_of_chapter: CH_0004
 provenance:
   - 07_workbench/CH_0001/07_memory_delta.agent.yaml
   - 07_workbench/CH_0001/08_approval.yaml
@@ -10,6 +10,8 @@ provenance:
   - 07_workbench/CH_0002/08_approval.yaml
   - 07_workbench/CH_0003/07_memory_delta.agent.yaml
   - 07_workbench/CH_0003/08_approval.yaml
+  - 07_workbench/CH_0004/07_memory_delta.agent.yaml
+  - 07_workbench/CH_0004/08_approval.yaml
 ---
 
 # Relationships
@@ -21,5 +23,5 @@ provenance:
 - 亲近：未建立。
 - 戒备：未形成长期状态。
 - 核心矛盾：林赛既代表公司流程，又拒绝把公司记录包装成客观身份或事故答案；何筠持续追问其公司理由与个人理由。
-- 最近变化：林赛展示远航舰队、候选资格、教培仪与二级认知分析；何筠被正式入口吸引但继续追问公司代价与自身工具属性。
+- 最近变化：林赛进一步披露受限个人档案、异常风险与文明断层；何筠更清楚公司的压榨逻辑，也意识到任务可能具有文明级价值。信任、同盟与亲近均未确认变化。
 - 未解决：长期立场、合作或对立关系均未确定。

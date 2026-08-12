@@ -1,0 +1,28 @@
+chapter: CH_0004
+approved: true
+approved_by: human_author
+approved_at: 2026-08-13
+approve_final_prose: true
+approve_title: true
+approve_memory_delta: true
+approve_setting_changes: true
+approved_change_ids:
+  - CHANGE_0015
+  - CHANGE_0016
+  - CHANGE_0017
+  - CHANGE_0018
+approved_stable_ids:
+  - SYS_0009
+  - SYS_0010
+  - FAC_0005
+  - FAC_0006
+  - LOC_0003
+  - LOC_0004
+  - ITEM_0002
+  - EVT_000005
+  - QUESTION_0007
+approve_controlled_writeback: true
+stage_requested: true
+commit_requested: true
+push_requested: true
+notes: "Author approved CH_0004 final prose and title 《真相？》, the complete Delta, all listed stable IDs, CHANGE_0015–0018, controlled writeback, exact staging, commit, and push of this transaction on 2026-08-13."

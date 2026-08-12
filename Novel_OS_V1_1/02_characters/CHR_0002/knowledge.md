@@ -1,10 +1,10 @@
 ---
 character_id: CHR_0002
-as_of_chapter: CH_0003
+as_of_chapter: CH_0004
 truth_layers:
   - L3_ORGANIZATION_MODEL
   - L4_CHARACTER_KNOWLEDGE
-last_updated: 2026-08-12
+last_updated: 2026-08-13
 provenance:
   - 07_workbench/CH_0001/07_memory_delta.agent.yaml
   - 07_workbench/CH_0001/08_approval.yaml
@@ -14,6 +14,8 @@ provenance:
   - 07_workbench/CH_0002/08_approval.yaml
   - 07_workbench/CH_0003/07_memory_delta.agent.yaml
   - 07_workbench/CH_0003/08_approval.yaml
+  - 07_workbench/CH_0004/07_memory_delta.agent.yaml
+  - 07_workbench/CH_0004/08_approval.yaml
 ---
 
 # Knowledge State
@@ -29,6 +31,10 @@ provenance:
 - 把主角舰船推定毁灭坐标的证据缺失归入 `SYS_0006` 项目工作标签，但不认证真实机制。
 - 熟悉 `FAC_0001` 的残留航道模型、`FAC_0004` 准备状态、条件要约、`SYS_0007` 员工使用安排与 `SYS_0008` 公开监管语境。
 - 知道 `ITEM_0001` 的分析输出，以及公司测得 `CHR_0001` 的回传结构完整率为 `92.7%`。
+- 熟悉 `FAC_0001` 的遗迹探索记录及其无法覆盖无回传远征的档案边界。
+- 熟悉 `ITEM_0001` 对活动但不可读取回传区域的分析，不知道其中内容、来源或作用。
+- 熟悉公司归于 `CHR_0001` 旧身份的军旅、`LOC_0004`、`ITEM_0002` 与重复幸存档案，但不认证当前主体的客观身份连续性。
+- 知道 `SYS_0009`、`SYS_0005`、`SYS_0010`、`FAC_0005`、`FAC_0006` 与 `LOC_0003` 的广义历史及公司口径。
 
 ## 怀疑 / 推测
 
@@ -42,6 +48,7 @@ provenance:
 - 不知道 `SYS_0006` 的真实机制、遗迹位置、主角舰船去向、`FAC_0003` 舰队毁损原因或两组异常的客观因果。
 - 不认证当前何筠、日志发送者或录像签署者之间的客观身份连续性。
 - 不知道 `ITEM_0001` 模型是否客观成立，也不认证目标身份、动机、留手或 `92.7%` 对身份连续性的含义。
+- 不知道不可读取活动区域的内容和来源，也不把 `LOC_0003` 与当前未知遗迹视为同一地点。
 
 ## 错误认知 / 机构灌输
 

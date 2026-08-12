@@ -9,6 +9,8 @@ provenance:
   - 07_workbench/CH_0002/08_approval.yaml
   - 07_workbench/CH_0003/07_memory_delta.agent.yaml
   - 07_workbench/CH_0003/08_approval.yaml
+  - 07_workbench/CH_0004/07_memory_delta.agent.yaml
+  - 07_workbench/CH_0004/08_approval.yaml
 ---
 
 # Open Canon Question
@@ -28,10 +30,11 @@ provenance:
 - `FAC_0001` 使用 `SYS_0006` 工作标签，但林赛明确不知道真实机制。
 - 两组证据属于不同对象；当前没有证据确认它们具有同一原因。
 - `ITEM_0001` 提出遭遇相关信息可能被删除的机构模型，并认为 `92.7%` 回传结构完整率与现有事故模型不相容；该模型没有建立客观机制。
+- 公司将已知遗迹的可验证物理防御与本次异常作比较：前者最高记录为战列级无人舰队，而本次仍无法归类；这只强化异常性，不建立机制或客观能力上限。
 
 ## Affected IDs / chapters
 
-- `CHR_0001`、`FAC_0001`、`FAC_0003`、`ITEM_0001`、`SYS_0001`、`SYS_0006`、`QUESTION_0002`、`QUESTION_0006`、`EVT_000003`、`EVT_000004`、`CH_0002`、`CH_0003`。
+- `CHR_0001`、`FAC_0001`、`FAC_0003`、`ITEM_0001`、`SYS_0001`、`SYS_0006`、`QUESTION_0002`、`QUESTION_0006`、`EVT_000003`、`EVT_000004`、`EVT_000005`、`CH_0002`、`CH_0003`、`CH_0004`。
 
 ## Decisions that must wait
 

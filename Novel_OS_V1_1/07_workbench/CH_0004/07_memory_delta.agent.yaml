@@ -1,0 +1,375 @@
+chapter: CH_0004
+status: applied
+transaction_status: APPLIED
+canonical: true
+source_draft: 05_draft.md
+source_draft_sha256: 712a75a821ef8bcf80ffc37841f4a513d99aaef770fdebd70c8250364c6f9e19
+source_final_review: 06_final_review.agent.md
+
+proposed_stable_ids:
+  - id: SYS_0009
+    type: historical_transport_and_communication_network
+    display_name: 旧联邦跨河系航道网络
+    truth_boundary: author-confirmed broad Old Federation capability; topology and engineering mechanism unresolved
+  - id: SYS_0010
+    type: civilizational_collapse_and_recovery_model
+    display_name: 仙女座文明断层与遗迹复兴体系
+    truth_boundary: broad author-confirmed chronology and dependency; individual archive cases remain source-bound
+  - id: FAC_0005
+    type: political_federation
+    display_name: 现代联邦
+    truth_boundary: formal institutions coexist with major-corporation practical power; complete constitutional structure unresolved
+  - id: FAC_0006
+    type: old_federation_corporation
+    display_name: ORPHEUS EDUCATION
+    truth_boundary: Old Federation human education company and important source of restored teaching technology
+  - id: LOC_0003
+    type: historical_relic_site
+    display_name: ORPHEUS EDUCATION 墓灯历史遗址
+    truth_boundary: historical site in broad LOC_0002 region; explicitly not identified with current unknown relic
+  - id: LOC_0004
+    type: colony_habitat
+    display_name: 赫拉-3殖民穹顶
+    truth_boundary: location and civilian-presence claim established through archived military record; wider conflict unresolved
+  - id: ITEM_0002
+    type: named_ship
+    display_name: 灰烬号
+    truth_boundary: company archive links the name and ownership history to CHR_0001 old identity and SYS_0001 log; objective identity continuity unresolved
+  - id: EVT_000005
+    type: event
+    display_name: 何筠背景调查与文明断层简报
+  - id: QUESTION_0007
+    type: open_question
+    display_name: 何筠无法读取的活动回传区域中保留了什么
+
+chapter_changes:
+  title:
+    proposed: 真相？
+    status: AUTHOR_APPROVED
+  summary:
+    - CHR_0002 explains that FAC_0001 has faced physical relic defenses up to battle-line unmanned fleets, while CHR_0001's anomaly remains exceptional in its verifiable records
+    - CHR_0001 recognizes that FAC_0001 is sending him back because its model gives him a higher survival probability, not safety
+    - ITEM_0001 analysis highlights one active sample among several inaccessible return-structure regions without identifying its content or origin
+    - FAC_0001 archives attribute a five-year border-fleet career, the LOC_0004 refusal incident, ITEM_0002 ownership, and repeated survival record to CHR_0001's old identity
+    - FAC_0001 models the archived identity as broadly ordinary but unusually repeatedly survivable
+    - CHR_0002 presents the collapse of SYS_0009 at T-527, roughly three centuries of fragmentation, and a present stable exploration scope of thirty macro-regions
+    - CHR_0002 presents FAC_0005 as a formal shell whose institutions coexist with major-corporation practical power
+    - CHR_0002 explains modern dependence on recovered human relic technology and reveals FAC_0006 / LOC_0003 as an important teaching-technology source opened at T-214
+
+character_changes:
+  CHR_0001:
+    location: LOC_0001_CORPORATE_BRIEFING_ROOM
+    physical_state:
+      change: NONE_MATERIAL
+      retained:
+        - residual right-leg weakness
+        - temporary metered medical support rod
+    offer_state:
+      before: has received but not accepted a conditional expedition and candidate-member offer
+      after: unchanged; still considering after receiving additional risk, personal-archive, and civilization-history context
+    archive_attributions_learned:
+      - company records attribute five years as a tactical pilot in the Seventh Patrol Group of the Federation Border Fleet to his old identity
+      - records attribute discharge for refusing an orbital-strike order against LOC_0004 due to reported civilian presence
+      - records attribute liquidation of service assets, transport craft, outer-ring property, pension, and parental savings to purchase and refit ITEM_0002
+      - records attribute cargo, escort, deep-space recovery, border contraband-clearing work, thirteen major hull-damage incidents, seven oxygen-loss incidents, two jump failures, and one cockpit penetration
+      - company model classifies the archived identity as stable, standard intelligence, medium-high risk, typical border pilot, broadly ordinary, with an informal note of extreme repeated survivability
+    knowledge_gained:
+      - FAC_0001 verifiable relic records include automated physical defenses up to battle-line unmanned fleet scale
+      - people and ships encountering similar anomalies may simply have failed to return; this is an inference, not a complete archive
+      - FAC_0001 considers him statistically more likely than an unrelated explorer to return useful information, without guaranteeing survival
+      - one sample among existing inaccessible return-structure regions shows repeated activity but no stable read path
+      - SYS_0009 once linked the Milky Way, Andromeda, and the Small Magellanic Cloud
+      - SYS_0005 occurred 527 years ago and was followed by roughly three centuries of fragmentation and technological loss
+      - thirty macro exploration regions in Andromeda's outer arm are currently maintained within a stable exploration system
+      - FAC_0005 formal institutions persist while corporations control much practical transport, supply, fleet, and legal influence
+      - modern civilization depends heavily on recovered and reverse-engineered human relic technology
+      - FAC_0006 was an Old Federation education company and LOC_0003 was opened by a FAC_0001 predecessor 214 years ago
+    psychological_state:
+      - experiences immediate fear at the possibility of an observing anomaly making a choice
+      - feels involuntary moral and emotional reactions to LOC_0004, parental savings, and ITEM_0002 without recovering a complete memory
+      - understands the expedition as both a likely death mission and a possible civilizational recovery opportunity
+    explicitly_not_resolved:
+      - whether the archived military and ship history objectively belongs to the current subject
+      - content, origin, or cause of inaccessible return-structure regions
+      - objective exceptional ability or survival mechanism
+      - whether any target observed, selected, or spared him
+      - whether he will accept the offer
+  CHR_0002:
+    demonstrated_knowledge:
+      - FAC_0001 relic-exploration archive and its record limits
+      - ITEM_0001 inaccessible-region analysis
+      - CHR_0001 old-identity archive and company personality model
+      - broad history of SYS_0009, SYS_0005, SYS_0010, FAC_0005, FAC_0006, and LOC_0003
+    address_change:
+      - speaks CHR_0001's name with a less archival tone; not the first use of the name and not a confirmed intimacy change
+    knowledge_ceiling:
+      - does not certify current identity continuity
+      - does not know inaccessible-region content or origin
+      - keeps observation, erasure, selection, and restraint as ITEM_0001/FAC_0001 models
+      - distinguishes LOC_0003 from the current unknown relic
+
+relationship_changes:
+  CHR_0001__CHR_0002:
+    latest_interaction:
+      - CHR_0002 discloses additional restricted personal archive and civilization-history context
+      - CHR_0001 becomes more aware of both corporate exploitation and the expedition's possible civilizational value
+    trust_change: NONE_CONFIRMED
+    alliance_change: NONE_CONFIRMED
+    intimacy_change: NONE_CONFIRMED
+
+world_changes:
+  SYS_0005:
+    age_years: 527
+    chronology:
+      - occurs at approximately T-527
+      - intergalactic main routes fail and Andromeda loses contact with the Milky Way and other external Old Federation regions
+      - cause remains unknown
+    does_not_mean:
+      - every internal Andromeda gate ceased functioning
+      - relics or anomalies caused the collapse
+  SYS_0009:
+    stable_author_facts:
+      - Old Federation humans had a stable intergalactic gate-route network
+      - the network connected at least the Milky Way, Andromeda, and the Small Magellanic Cloud
+      - superluminal communication supported cross-galaxy data synchronization
+    unresolved:
+      - engineering mechanism
+      - full network extent
+      - exact node count and topology
+  SYS_0010:
+    stable_author_facts:
+      - gate-network convenience encouraged extreme colonial specialization
+      - after network fragmentation, some colonies lacked food, industrial, ecological, or life-support self-sufficiency
+      - broad fragmentation, war, famine, warlordism, and technology loss lasted roughly the first three centuries after SYS_0005
+      - current civilization maintains stable exploration across thirty macro-regions in Andromeda's outer arm
+      - recovered human relic archives, devices, and reverse engineering are major contributors to modern technological recovery
+    archive_examples:
+      - an unnamed cold research colony used planetary climate for computation cooling and relied on gates for external supplies
+      - after supply failure, surviving groups fought over limited resources
+    boundaries:
+      - not every specialized colony collapsed or fought to extinction
+      - the thirty regions are macro exploration units, not individual systems or colonies
+      - specialization failure is one major source of abandoned facilities, not the origin of every relic
+  FAC_0005:
+    stable_author_facts:
+      - retains formal fleets, military tribunals, taxation, laws, and interregional agreements
+      - major-corporation consortiums control much practical fleet capacity, colonial supply, route access, and rule-drafting influence
+    political_model:
+      - CHR_0002 describes the federation as a shell that coordinates arms, taxation, and minimum shared order
+    unresolved:
+      - complete constitution
+      - membership and voting system
+      - universal ownership status of fleets, colonies, or people
+  FAC_0006:
+    identity:
+      - Old Federation human education company
+      - producer of teaching devices, course payloads, and supporting neural interfaces
+    slogan: 让知识不再受时间限制
+    relationship_to_modern_technology:
+      - materials recovered from LOC_0003 became one important source for restoration of modern neural teaching technology
+    boundaries:
+      - not the sole origin of modern recovery
+      - not established as creator of SYS_0003 or all modern AI
+  LOC_0003:
+    stable_author_facts:
+      - historical FAC_0006 site in the broad LOC_0002 region
+      - opened by a predecessor of FAC_0001 at approximately T-214
+      - contained human-standard language, interfaces, logic, documents, and working technology
+    distinction:
+      - not identified with the currently unknown relic sought through CHR_0001's residual route
+      - not established as the physical body or sole source of SYS_0003
+  LOC_0004:
+    stable_archive_facts:
+      - colonial habitat named Hera-3
+      - archived military record says civilians remained inside when an orbital-strike order was issued
+      - archived old identity attributed to CHR_0001 refused the order and lost military status
+    unresolved:
+      - conflict parties
+      - legality and motivation of the strike order
+      - actual civilian outcome
+      - broader campaign result
+  ITEM_0002:
+    observable_archive_description:
+      - old narrow patched ship with early-model propulsion structures and worn white name lettering
+      - acquired and refitted through total asset liquidation, family funds, illegal-refit loans, high-interest deep-space insurance, and tactical-module installments
+      - FAC_0001 archive links ITEM_0002 to the existing SYS_0001 accident/log record
+    ownership_truth_boundary:
+      - archived old identity ownership is text-confirmed through FAC_0001 records
+      - current-subject objective ownership and identity continuity remain unresolved
+  FAC_0001:
+    relic_archive:
+      - verifiable records include automated unmanned physical defenses up to battle-line fleet scale
+      - the archive cannot represent expeditions that returned no information
+    civilization_role:
+      - predecessor opened LOC_0003 at T-214
+      - uses recovered and reverse-engineered relic technology while retaining black-box limits
+  SYS_0003:
+    chapter_clarification:
+      - black cube shown in CH_0004 is FAC_0001's internal project icon, not proof of a single physical machine
+      - cited as an example of a key technology chain partly callable and maintainable but not fully understood or reproducible
+    unchanged_objective_boundary:
+      - origin, ontology, complete mechanism, and single physical referent remain unresolved
+  SYS_0007:
+    origin_clarification:
+      - LOC_0003/FAC_0006 material became an important source for modern restoration
+      - FAC_0006 is not established as the only source of all teaching-device implementations
+  SYS_0008:
+    origin_clarification:
+      - modern AI frameworks broadly incorporate relic reverse-engineering results from multiple sources
+      - ITEM_0001 core design and all AI origins are not disclosed
+  ITEM_0001:
+    current_model_update:
+      - selects one active sample from multiple inaccessible return-structure regions
+      - sample repeatedly produces activity but stable read paths fail
+    objective_validity: UNRESOLVED
+
+open_questions:
+  QUESTION_0001:
+    status: OPEN
+    update: company archive adds a detailed old-identity history but does not resolve current-subject continuity
+  QUESTION_0004:
+    status: OPEN
+    update: LOC_0003 is a known historical site in broad LOC_0002 but is explicitly not identified with the current unknown relic
+  QUESTION_0005:
+    status: OPEN
+    update: comparison with ordinary physical relic defenses sharpens the anomaly but does not establish a mechanism
+  QUESTION_0006:
+    status: OPEN
+    update: repeated-survival archive adds a competing statistical explanation but does not prove selection or restraint
+  QUESTION_0007:
+    status: NEW_OPEN
+    reveal_gate: HIDDEN
+    question: What content, if any, remains in the active but inaccessible return-structure regions, and why can it not be read?
+
+setting_changes:
+  - change_id: CHANGE_0015
+    type: CLARIFY_AND_ADD
+    status: AUTHOR_APPROVED
+    affected_ids:
+      - SYS_0005
+      - SYS_0009
+      - SYS_0010
+    previous_fact: SYS_0005 was known to sever Andromeda from Old Federation gate connections, but no exact age, old intergalactic network scope, collapse duration, or present exploration scale was established
+    new_fact:
+      - SYS_0005 occurred 527 years ago
+      - SYS_0009 linked at least the Milky Way, Andromeda, and the Small Magellanic Cloud through stable gates and long-range synchronized communication
+      - roughly the first three centuries after collapse involved fragmentation, war, famine, warlordism, and technology loss
+      - current stable exploration covers thirty macro-regions of Andromeda's outer arm
+    scope_boundary:
+      - collapse cause, full route topology, and every internal Andromeda gate remain unresolved
+      - thirty regions do not mean thirty star systems or colonies
+  - change_id: CHANGE_0016
+    type: ADD
+    status: AUTHOR_APPROVED
+    affected_ids:
+      - FAC_0005
+      - FAC_0001
+      - SYS_0010
+    previous_fact: no production-state political model reconciled Federation institutions with major-corporation practical control
+    new_fact:
+      - FAC_0005 retains formal military, tribunal, tax, legal, and coordination institutions
+      - major corporations control much practical fleet capacity, colonial supply, route access, and legal drafting influence
+      - CHR_0002 characterizes the federation as a shell for coordination and minimum shared order
+    scope_boundary:
+      - no complete constitution, universal corporate ownership, or exhaustive corporation list is established
+  - change_id: CHANGE_0017
+    type: ADD_AND_CLARIFY
+    status: AUTHOR_APPROVED
+    affected_ids:
+      - FAC_0006
+      - LOC_0003
+      - LOC_0002
+      - FAC_0001
+      - SYS_0003
+      - SYS_0007
+      - SYS_0008
+      - SYS_0010
+      - QUESTION_0004
+    previous_fact: modern relic-technology dependency and a historical education-company site were not established; SYS_0003 origin and physical referent were unresolved
+    new_fact:
+      - FAC_0001 predecessor opened LOC_0003 in the broad LOC_0002 region 214 years ago
+      - FAC_0006 was an Old Federation human education company whose recovered materials became an important source for restoration of modern teaching technology
+      - modern technology recovery broadly depends on relic documents, working devices, and reverse engineering; some key systems remain black boxes
+      - modern AI frameworks broadly incorporate multi-source relic reverse-engineering results
+      - SYS_0003 black cube remains only a project icon in this chapter and its ontology remains unresolved
+    scope_boundary:
+      - LOC_0003 is not the current unknown relic
+      - FAC_0006 is not established as the creator of SYS_0003 or all AI
+      - not all modern technology is unmanufacturable
+  - change_id: CHANGE_0018
+    type: ADD
+    status: AUTHOR_APPROVED
+    affected_ids:
+      - CHR_0001
+      - LOC_0004
+      - ITEM_0002
+      - SYS_0001
+      - QUESTION_0001
+      - QUESTION_0006
+      - QUESTION_0007
+    previous_fact: production state had not established the detailed old-identity military, discharge, asset, named-ship, and repeated-survival archive
+    new_fact:
+      - FAC_0001 archives attribute the listed military service, LOC_0004 refusal incident, asset liquidation, ITEM_0002 acquisition, and repeated survival record to CHR_0001's old identity
+      - company model describes that identity as broadly ordinary with an informal repeated-survival note
+      - ITEM_0001 identifies active but inaccessible return-structure regions without determining their content or origin
+    scope_boundary:
+      - current-subject objective identity continuity remains unresolved
+      - no memory recovery, survival ability, target selection, or inaccessible-region content is established
+
+events_created:
+  - EVT_000005
+
+canon_changes: []
+
+manuscript_impacts:
+  - create 05_manuscript/CH_0004.md only after separate prose/title approval and controlled-writeback approval
+
+controlled_writeback_targets:
+  modify:
+    - 02_characters/CHR_0001/profile.md
+    - 02_characters/CHR_0001/state.md
+    - 02_characters/CHR_0001/knowledge.md
+    - 02_characters/CHR_0001/relationships.md
+    - 02_characters/CHR_0002/state.md
+    - 02_characters/CHR_0002/knowledge.md
+    - 02_characters/CHR_0002/relationships.md
+    - 03_world/factions/FAC_0001.md
+    - 03_world/locations/LOC_0002.md
+    - 03_world/systems/SYS_0003.md
+    - 03_world/systems/SYS_0005.md
+    - 03_world/systems/SYS_0007.md
+    - 03_world/systems/SYS_0008.md
+    - 03_world/items/ITEM_0001.md
+    - 04_story/open_questions/QUESTION_0001.md
+    - 04_story/open_questions/QUESTION_0004.md
+    - 04_story/open_questions/QUESTION_0005.md
+    - 04_story/open_questions/QUESTION_0006.md
+  create:
+    - 03_world/systems/SYS_0009.md
+    - 03_world/systems/SYS_0010.md
+    - 03_world/factions/FAC_0005.md
+    - 03_world/factions/FAC_0006.md
+    - 03_world/locations/LOC_0003.md
+    - 03_world/locations/LOC_0004.md
+    - 03_world/items/ITEM_0002.md
+    - 04_story/open_questions/QUESTION_0007.md
+    - 05_manuscript/CH_0004.md
+    - 06_memory/chapters/CH_0004.md
+    - 06_memory/events/EVT_000005.md
+    - 06_memory/setting_changes/CHANGE_0015.md
+    - 06_memory/setting_changes/CHANGE_0016.md
+    - 06_memory/setting_changes/CHANGE_0017.md
+    - 06_memory/setting_changes/CHANGE_0018.md
+  derived:
+    - 09_index/file_index.json
+    - 09_index/secret_guard_index.json
+  explicitly_unchanged:
+    - 01_canon/**
+    - 03_world/factions/FAC_0002.md
+    - 03_world/factions/FAC_0003.md
+    - 03_world/factions/FAC_0004.md
+    - 04_story/open_questions/QUESTION_0002.md
+    - 04_story/open_questions/QUESTION_0003.md
+
+notes:
+  - Author approved final prose/title, the complete Delta, all stable IDs, CHANGE_0015-0018, controlled writeback, exact staging, commit, and push on 2026-08-13.

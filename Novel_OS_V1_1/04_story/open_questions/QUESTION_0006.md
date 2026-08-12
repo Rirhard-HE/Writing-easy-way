@@ -7,6 +7,8 @@ answer_reveal_status: HIDDEN
 provenance:
   - 07_workbench/CH_0003/07_memory_delta.agent.yaml
   - 07_workbench/CH_0003/08_approval.yaml
+  - 07_workbench/CH_0004/07_memory_delta.agent.yaml
+  - 07_workbench/CH_0004/08_approval.yaml
 ---
 
 # Open Canon Question
@@ -26,10 +28,11 @@ provenance:
 - 现有事故模型与回传结果不能同时成立。
 - `FAC_0001` 猜测目标可能在删除前看见何筠，并且有意留手。
 - 上述模型不能证明客观擦除机制、目标存在与身份、目标动机、记忆归属或何筠的身份连续性。
+- 公司旧身份档案显示何筠曾从十三次舰体重创、七次缺氧、两次跃迁失控和一次驾驶舱贯穿中生还，并非正式评价其“极其难死”；重复幸存可以作为统计性竞争解释，但不证明能力、选择或留手。
 
 ## Affected IDs / chapters
 
-- `CHR_0001`、`CHR_0002`、`FAC_0001`、`ITEM_0001`、`SYS_0006`、`QUESTION_0001`、`QUESTION_0005`、`EVT_000004`、`CH_0003`。
+- `CHR_0001`、`CHR_0002`、`FAC_0001`、`ITEM_0001`、`ITEM_0002`、`SYS_0006`、`QUESTION_0001`、`QUESTION_0005`、`QUESTION_0007`、`EVT_000004`、`EVT_000005`、`CH_0003`、`CH_0004`。
 
 ## Decisions that must wait
 
