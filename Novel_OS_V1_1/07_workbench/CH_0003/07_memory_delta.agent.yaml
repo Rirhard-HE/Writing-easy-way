@@ -1,0 +1,304 @@
+chapter: CH_0003
+status: applied
+transaction_status: APPLIED
+canonical: true
+source_draft: 05_draft.md
+source_draft_sha256: e6178f157b32d3b76cf998b163703cbefc8504553ad7aed99671a8f01d6374bd
+source_final_review: 06_final_review.agent.md
+
+proposed_stable_ids:
+  - id: LOC_0002
+    type: location
+    display_name: 墓灯星域
+    truth_boundary: author-confirmed broad environment; detailed projection remains FAC_0001 survey model
+  - id: FAC_0004
+    type: expedition_fleet
+    display_name: 科隆诺墓灯远航编队
+    naming_status: WORKING_DESCRIPTOR_NOT_IN_WORLD_PROPER_NAME
+  - id: SYS_0007
+    type: technology
+    display_name: 教学培训仪
+  - id: SYS_0008
+    type: governance_and_capability_scale
+    display_name: 仙女座 AI 核心分级与监管体系
+  - id: ITEM_0001
+    type: physical_ai_core
+    display_name: EIDOLON-2
+  - id: EVT_000004
+    type: event
+    display_name: 墓灯远航邀约与二级认知分析
+  - id: QUESTION_0006
+    type: open_question
+    display_name: 何筠为何以 92.7% 回传结构完整率幸存，以及目标是否有意留手
+
+chapter_changes:
+  title:
+    proposed: 墓灯
+    status: AUTHOR_APPROVED
+  summary:
+    - CHR_0002 shows CHR_0001 a reconstructed residual route from the accident region toward LOC_0002
+    - FAC_0001 asks CHR_0001 to lead FAC_0004 back to the accident region and onward into unknown space
+    - FAC_0004 is an old but carefully maintained and fully armed expedition fleet with two cruiser-class hulls
+    - FAC_0001 offers debt and clone-fee cancellation, FAC_0002 candidate status, and SYS_0007 access if sufficient information is returned
+    - ITEM_0001 presents an L3 model that CHR_0001's return should not have survived the suspected erasure effect
+    - FAC_0001 records CHR_0001's return structure integrity as 92.7 percent and suspects the target saw and deliberately spared him
+
+character_changes:
+  CHR_0001:
+    location: LOC_0001_CORPORATE_BRIEFING_ROOM
+    physical_state:
+      change: NONE_MATERIAL
+      retained:
+        - right-leg delay and weakness
+        - temporary metered medical support rod
+    offer_state:
+      before: temporary access to project materials and preliminary investigation only
+      after: has received but not accepted a conditional deep-space expedition and candidate-member offer
+    psychological_state:
+      - experiences a strong but guarded desire for formal entry into FAC_0002
+      - feels his physical reality become fragile after learning the ITEM_0001 model
+    knowledge_gained:
+      - FAC_0001 has reconstructed part of a residual route leading from the accident region toward LOC_0002
+      - FAC_0001 wants him to lead FAC_0004 after training if he accepts
+      - the fleet composition, visible armament, maintenance state, and unfinished scientific modifications
+      - conditional debt and clone-fee cancellation and FAC_0002 candidate status
+      - SYS_0007 capabilities, employee-benefit status, and listed risks
+      - public AI-core classification and regulatory context in SYS_0008
+      - ITEM_0001 is a regulated level-two core used for relic anomaly modeling
+      - FAC_0001 measures his return structure integrity at 92.7 percent
+      - ITEM_0001 models his successful return as incompatible with the suspected erasure effect
+      - FAC_0001 suspects the target saw and deliberately spared him
+    explicitly_not_resolved:
+      - objective identity continuity
+      - ownership or origin of inaccessible memories
+      - objective erasure mechanism
+      - target identity, motive, or reason for restraint
+      - whether CHR_0001 will accept the offer
+  CHR_0002:
+    demonstrated_knowledge:
+      - FAC_0001 mission route model and FAC_0004 preparation
+      - conditional offer and SYS_0007 employee access
+      - SYS_0008 public governance context
+      - ITEM_0001 analysis output
+    knowledge_ceiling:
+      - does not certify identity continuity
+      - presents erasure and restraint only as models or guesses
+
+relationship_changes:
+  CHR_0001__CHR_0002:
+    latest_interaction:
+      - CHR_0002 presents a life-changing but dangerous formal offer
+      - CHR_0001 continues to test corporate wording and motives
+    trust_change: NONE_CONFIRMED
+    alliance_change: NONE_CONFIRMED
+
+world_changes:
+  LOC_0002:
+    stable_author_facts:
+      - dangerous dust-filled region
+      - organized around or prominently contains a late-life star
+      - heavy dust obscures visible-light observation
+    organization_model:
+      - the star is undergoing continuing mass loss
+      - infrared and thermal mapping reveal a bright core, shells, and arcs within the dust
+      - local dust and hot regions interfere with navigation and observation
+    exact_coordinates: UNRESOLVED
+    exact_stellar_class: UNRESOLVED
+    objective_internal_structure: UNRESOLVED
+  FAC_0004:
+    composition:
+      - one old combat cruiser
+      - several escort frigates
+      - engineering ships
+      - one cruiser-class supply carrier
+    state:
+      - old and repeatedly rebuilt
+      - carefully maintained
+      - fully armed and combat-tested
+      - exploration and research refit still in progress
+    visible_capabilities:
+      - axial kinetic weapon
+      - medium kinetic turrets
+      - point-defense beam arrays
+      - interceptor and anti-ship missiles
+      - engineering repair and sampling systems
+      - modular labs, probe racks, isolation modules, distributed data storage, radiation and dust protection
+    excluded_facts:
+      - in-world proper fleet name
+      - exact vessel count
+      - ship names
+      - crew roster
+      - departure date
+  SYS_0007:
+    origin: old_federation_technology
+    organization_role: major-corporation_employee_benefit
+    observable_function:
+      - rapidly writes reviewed knowledge, related memories, and trained instincts through neural instruction
+    listed_risks:
+      - memory blending
+      - temporal disorientation
+      - self-recognition drift
+      - short-term personality overlay
+      - dream contamination
+      - memories experienced as not one's own
+    unresolved:
+      - engineering mechanism
+      - long-term success rate
+      - source identity of course memories
+  SYS_0008:
+    stable_author_facts:
+      - current Andromeda AI normally exists as a physically bounded core
+      - cores are classified from level five to level one
+      - a level-five core can reduce a colony's bureaucratic staffing need by about 60 percent
+      - each step from level five toward level one increases capability by roughly one order of magnitude
+      - corporations deploy specialist oversight to monitor intelligence, data breadth, and data depth
+      - strict oversight responds to an Old Federation AI rebellion that nearly spread across the federation and to Andromeda's sparse, dispersed geography
+    reveal_constraints:
+      - rebellion cause, actors, detailed chronology, and resolution remain undefined
+      - no current rogue core is established
+  ITEM_0001:
+    physical_form: regulated_level_two_ai_core
+    operator: FAC_0001
+    function: relic-related anomaly modeling
+    output_truth_layer: L3_ORGANIZATION_MODEL
+    restrictions:
+      - registered
+      - isolated
+      - monitored by designated specialists
+      - FAC_0001 employees are told not to discuss philosophy with it
+    current_model:
+      - suspected anomaly may erase information associated with an encounter rather than merely destroy a ship
+      - CHR_0001's return should have fallen within that effect if the model is correct
+      - the 92.7 percent return-structure integrity result is incompatible with the current accident model
+    objective_validity: UNRESOLVED
+
+knowledge_measurement_clarification:
+  subject: CHR_0001
+  metric: return_structure_integrity
+  value_percent: 92.7
+  means: structural agreement between returned result and retained corporate baseline
+  does_not_mean:
+    - percentage of autobiographical life that can be actively recalled
+    - proof that inaccessible content remains intact
+    - proof that memories originally belonged to the current subject
+    - proof of objective identity continuity
+
+open_questions:
+  QUESTION_0001:
+    status: OPEN
+    update: 92.7 percent measurement adds evidence but does not resolve continuity
+  QUESTION_0004:
+    status: OPEN
+    update: a partial route toward LOC_0002 exists; relic location remains unknown
+  QUESTION_0005:
+    status: OPEN
+    update: ITEM_0001 strengthens the organization model but does not establish an objective mechanism
+  QUESTION_0006:
+    status: NEW_OPEN
+    reveal_gate: HIDDEN
+
+setting_changes:
+  - change_id: CHANGE_0011
+    type: RETCON
+    status: AUTHOR_APPROVED
+    source_transaction: CH_0002_REV_0001
+    affected_ids:
+      - CH_0002
+      - CHR_0001
+      - EVT_000003
+    previous_fact: CHR_0001 walks out of the briefing room at the end of CH_0002
+    new_fact: CHR_0001 remains seated in the LOC_0001 corporate briefing room at the end of CH_0002
+    scope_boundary:
+      - no factual state change is required because approved memory already records the briefing room
+      - contract, employment, debt, and relationship states remain unchanged
+  - change_id: CHANGE_0012
+    type: ADD
+    status: AUTHOR_APPROVED
+    affected_ids:
+      - LOC_0002
+      - FAC_0004
+      - FAC_0001
+      - QUESTION_0004
+    previous_fact: no production-canon destination region or dedicated expedition fleet was established
+    new_fact:
+      - LOC_0002 is a dangerous dust-filled region containing a late-life mass-losing star; detailed structure remains an organization survey model
+      - FAC_0001 is preparing FAC_0004, an old, fully armed, carefully maintained expedition formation with two cruiser-class hulls and unfinished research and exploration refits
+    scope_boundary:
+      - no proper fleet name, exact vessel count, ship name, crew roster, departure date, exact coordinate, or exact stellar class is established
+  - change_id: CHANGE_0013
+    type: ADD
+    status: AUTHOR_APPROVED
+    affected_ids:
+      - SYS_0007
+      - FAC_0001
+      - FAC_0002
+      - CHR_0001
+    previous_fact: no production-canon neural teaching benefit was established
+    new_fact: SYS_0007 is Old Federation technology used as a major-corporation employee benefit to rapidly write reviewed knowledge, related memories, and trained instincts, with the listed cognitive risks
+    scope_boundary:
+      - engineering mechanism, long-term success rate, and source identity of course memories remain unresolved
+  - change_id: CHANGE_0014
+    type: ADD
+    status: AUTHOR_APPROVED
+    affected_ids:
+      - SYS_0008
+      - ITEM_0001
+      - SYS_0006
+      - FAC_0001
+      - QUESTION_0005
+      - QUESTION_0006
+    previous_fact: no production-canon AI core scale, oversight regime, or EIDOLON-2 entity was established
+    new_fact:
+      - current Andromeda AI normally exists in physically bounded cores classified from level five to level one, with roughly one order of magnitude capability growth per level toward level one
+      - a level-five core can reduce a colony's bureaucratic staffing need by about 60 percent
+      - specialist corporate oversight responds to sparse geography and an Old Federation AI rebellion that nearly spread across the federation
+      - ITEM_0001 is a regulated level-two core used by FAC_0001 for relic anomaly modeling
+    scope_boundary:
+      - rebellion details and any present rogue core remain undefined
+      - ITEM_0001 output remains L3_ORGANIZATION_MODEL and does not prove objective erasure, identity continuity, or deliberate restraint
+
+controlled_writeback_targets:
+  modify:
+    - 02_characters/CHR_0001/state.md
+    - 02_characters/CHR_0001/knowledge.md
+    - 02_characters/CHR_0001/relationships.md
+    - 02_characters/CHR_0002/state.md
+    - 02_characters/CHR_0002/knowledge.md
+    - 02_characters/CHR_0002/relationships.md
+    - 03_world/factions/FAC_0001.md
+    - 03_world/factions/FAC_0002.md
+    - 03_world/systems/SYS_0006.md
+    - 04_story/open_questions/QUESTION_0001.md
+    - 04_story/open_questions/QUESTION_0004.md
+    - 04_story/open_questions/QUESTION_0005.md
+    - 05_manuscript/CH_0002.md
+    - 06_memory/chapters/CH_0002.md
+    - 06_memory/events/EVT_000003.md
+  create:
+    - 03_world/locations/LOC_0002.md
+    - 03_world/factions/FAC_0004.md
+    - 03_world/systems/SYS_0007.md
+    - 03_world/systems/SYS_0008.md
+    - 03_world/items/ITEM_0001.md
+    - 04_story/open_questions/QUESTION_0006.md
+    - 05_manuscript/CH_0003.md
+    - 06_memory/chapters/CH_0003.md
+    - 06_memory/events/EVT_000004.md
+    - 06_memory/setting_changes/CHANGE_0011.md
+    - 06_memory/setting_changes/CHANGE_0012.md
+    - 06_memory/setting_changes/CHANGE_0013.md
+    - 06_memory/setting_changes/CHANGE_0014.md
+  derived:
+    - 09_index/file_index.json
+    - 09_index/secret_guard_index.json
+  explicitly_unchanged:
+    - 01_canon/**
+    - 02_characters/CHR_0001/profile.md
+    - 02_characters/CHR_0002/profile.md
+    - 03_world/systems/SYS_0001.md
+    - 03_world/systems/SYS_0002.md
+    - 03_world/systems/SYS_0003.md
+    - 03_world/systems/SYS_0004.md
+    - 03_world/systems/SYS_0005.md
+    - 04_story/open_questions/QUESTION_0002.md
+    - 04_story/open_questions/QUESTION_0003.md

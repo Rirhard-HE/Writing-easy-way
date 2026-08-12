@@ -11,6 +11,8 @@ provenance:
   - 07_workbench/CH_0001/revisions/REV_0001/08_approval.yaml
   - 07_workbench/CH_0002/07_memory_delta.agent.yaml
   - 07_workbench/CH_0002/08_approval.yaml
+  - 07_workbench/CH_0003/07_memory_delta.agent.yaml
+  - 07_workbench/CH_0003/08_approval.yaml
 ---
 
 # Open Canon Question
@@ -34,10 +36,11 @@ provenance:
 - 上述均为线索，不认证复制、连续性或复活机制。
 - 林赛依据公司档案先行告知姓名为何筠，`CHR_0001` 对名字产生熟悉感；姓名获作者确认，但该熟悉感不认证客观连续性。
 - 损坏日志的身份密钥与旧档案一致；林赛仍拒绝认证当前何筠与日志发送者的客观连续性。
+- 公司测得何筠回传结构完整率为 `92.7%`；它仅描述回传结果与保留基线的结构一致率，不等于人生记忆恢复率，也不证明记忆归属或身份连续性。
 
 ## Affected IDs / chapters
 
-- `CHR_0001`、`CHR_0002`、`EVT_000001`、`EVT_000002`、`EVT_000003`、`CH_0001`、`CH_0002`。
+- `CHR_0001`、`CHR_0002`、`ITEM_0001`、`EVT_000001`、`EVT_000002`、`EVT_000003`、`EVT_000004`、`CH_0001`、`CH_0002`、`CH_0003`。
 
 ## Decisions that must wait
 

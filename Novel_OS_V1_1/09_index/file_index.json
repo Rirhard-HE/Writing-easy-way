@@ -387,18 +387,24 @@
         "CHR_0002",
         "CH_0001",
         "CH_0002",
+        "CH_0003",
         "EVT_000002",
         "FAC_0001",
         "FAC_0002",
         "FAC_0003",
+        "FAC_0004",
+        "ITEM_0001",
         "LOC_0001",
+        "LOC_0002",
         "SYS_0001",
         "SYS_0002",
         "SYS_0003",
         "SYS_0005",
-        "SYS_0006"
+        "SYS_0006",
+        "SYS_0007",
+        "SYS_0008"
       ],
-      "bytes": 4067,
+      "bytes": 5694,
       "audience": "PROJECT",
       "context_policy": "STANDARD",
       "reader_state_effect": "UNSPECIFIED",
@@ -427,9 +433,10 @@
         "CHR_0001",
         "CHR_0002",
         "CH_0001",
-        "CH_0002"
+        "CH_0002",
+        "CH_0003"
       ],
-      "bytes": 1100,
+      "bytes": 1254,
       "audience": "PROJECT",
       "context_policy": "STANDARD",
       "reader_state_effect": "UNSPECIFIED",
@@ -442,12 +449,15 @@
         "CHR_0001",
         "CH_0001",
         "CH_0002",
+        "CH_0003",
         "FAC_0001",
         "FAC_0002",
-        "FAC_0003",
-        "LOC_0001"
+        "FAC_0004",
+        "ITEM_0001",
+        "LOC_0001",
+        "LOC_0002"
       ],
-      "bytes": 1595,
+      "bytes": 1846,
       "audience": "PROJECT",
       "context_policy": "STANDARD",
       "reader_state_effect": "UNSPECIFIED",
@@ -461,13 +471,18 @@
         "CHR_0002",
         "CH_0001",
         "CH_0002",
+        "CH_0003",
         "FAC_0001",
         "FAC_0002",
         "FAC_0003",
+        "FAC_0004",
+        "ITEM_0001",
         "SYS_0003",
-        "SYS_0006"
+        "SYS_0006",
+        "SYS_0007",
+        "SYS_0008"
       ],
-      "bytes": 2137,
+      "bytes": 2759,
       "audience": "PROJECT",
       "context_policy": "STANDARD",
       "reader_state_effect": "UNSPECIFIED",
@@ -496,9 +511,10 @@
         "CHR_0001",
         "CHR_0002",
         "CH_0001",
-        "CH_0002"
+        "CH_0002",
+        "CH_0003"
       ],
-      "bytes": 1046,
+      "bytes": 1182,
       "audience": "PROJECT",
       "context_policy": "STANDARD",
       "reader_state_effect": "UNSPECIFIED",
@@ -511,13 +527,14 @@
         "CHR_0002",
         "CH_0001",
         "CH_0002",
+        "CH_0003",
         "FAC_0001",
-        "FAC_0002",
-        "FAC_0003",
+        "FAC_0004",
+        "ITEM_0001",
         "LOC_0001",
-        "SYS_0005"
+        "SYS_0007"
       ],
-      "bytes": 1138,
+      "bytes": 1271,
       "audience": "PROJECT",
       "context_policy": "STANDARD",
       "reader_state_effect": "UNSPECIFIED",
@@ -648,15 +665,19 @@
         "CHR_0002",
         "CH_0001",
         "CH_0002",
+        "CH_0003",
         "FAC_0001",
         "FAC_0002",
+        "FAC_0004",
+        "ITEM_0001",
         "SYS_0002",
         "SYS_0003",
         "SYS_0004",
         "SYS_0005",
-        "SYS_0006"
+        "SYS_0006",
+        "SYS_0007"
       ],
-      "bytes": 3779,
+      "bytes": 4496,
       "audience": "PROJECT",
       "context_policy": "STANDARD",
       "reader_state_effect": "UNSPECIFIED",
@@ -668,12 +689,14 @@
       "ids": [
         "CHR_0001",
         "CH_0002",
+        "CH_0003",
         "FAC_0001",
         "FAC_0002",
         "LOC_0001",
-        "SYS_0005"
+        "SYS_0005",
+        "SYS_0007"
       ],
-      "bytes": 1256,
+      "bytes": 1619,
       "audience": "PROJECT",
       "context_policy": "STANDARD",
       "reader_state_effect": "UNSPECIFIED",
@@ -696,6 +719,38 @@
       "retrieval_scope": "STANDARD"
     },
     {
+      "path": "03_world/factions/FAC_0004.md",
+      "ids": [
+        "CHR_0001",
+        "CH_0003",
+        "FAC_0001",
+        "FAC_0004",
+        "LOC_0002"
+      ],
+      "bytes": 1583,
+      "audience": "PROJECT",
+      "context_policy": "STANDARD",
+      "reader_state_effect": "UNSPECIFIED",
+      "reveal_status": null,
+      "retrieval_scope": "STANDARD"
+    },
+    {
+      "path": "03_world/items/ITEM_0001.md",
+      "ids": [
+        "CHR_0001",
+        "CH_0003",
+        "EVT_000004",
+        "FAC_0001",
+        "ITEM_0001"
+      ],
+      "bytes": 1555,
+      "audience": "PROJECT",
+      "context_policy": "STANDARD",
+      "reader_state_effect": "UNSPECIFIED",
+      "reveal_status": null,
+      "retrieval_scope": "STANDARD"
+    },
+    {
       "path": "03_world/locations/LOC_0001.md",
       "ids": [
         "CHR_0001",
@@ -709,6 +764,23 @@
         "LOC_0001"
       ],
       "bytes": 1233,
+      "audience": "PROJECT",
+      "context_policy": "STANDARD",
+      "reader_state_effect": "UNSPECIFIED",
+      "reveal_status": null,
+      "retrieval_scope": "STANDARD"
+    },
+    {
+      "path": "03_world/locations/LOC_0002.md",
+      "ids": [
+        "CH_0003",
+        "EVT_000004",
+        "FAC_0001",
+        "FAC_0004",
+        "LOC_0002",
+        "QUESTION_0004"
+      ],
+      "bytes": 1401,
       "audience": "PROJECT",
       "context_policy": "STANDARD",
       "reader_state_effect": "UNSPECIFIED",
@@ -794,12 +866,42 @@
       "path": "03_world/systems/SYS_0006.md",
       "ids": [
         "CH_0002",
+        "CH_0003",
         "FAC_0001",
         "FAC_0003",
+        "ITEM_0001",
         "SYS_0003",
         "SYS_0006"
       ],
-      "bytes": 1116,
+      "bytes": 1511,
+      "audience": "PROJECT",
+      "context_policy": "STANDARD",
+      "reader_state_effect": "UNSPECIFIED",
+      "reveal_status": null,
+      "retrieval_scope": "STANDARD"
+    },
+    {
+      "path": "03_world/systems/SYS_0007.md",
+      "ids": [
+        "CHR_0001",
+        "CH_0003",
+        "FAC_0001",
+        "SYS_0007"
+      ],
+      "bytes": 1467,
+      "audience": "PROJECT",
+      "context_policy": "STANDARD",
+      "reader_state_effect": "UNSPECIFIED",
+      "reveal_status": null,
+      "retrieval_scope": "STANDARD"
+    },
+    {
+      "path": "03_world/systems/SYS_0008.md",
+      "ids": [
+        "CH_0003",
+        "SYS_0008"
+      ],
+      "bytes": 1568,
       "audience": "PROJECT",
       "context_policy": "STANDARD",
       "reader_state_effect": "UNSPECIFIED",
@@ -863,12 +965,15 @@
         "CHR_0002",
         "CH_0001",
         "CH_0002",
+        "CH_0003",
         "EVT_000001",
         "EVT_000002",
         "EVT_000003",
+        "EVT_000004",
+        "ITEM_0001",
         "QUESTION_0001"
       ],
-      "bytes": 2007,
+      "bytes": 2336,
       "audience": "PROJECT",
       "context_policy": "STANDARD",
       "reader_state_effect": "UNSPECIFIED",
@@ -920,13 +1025,17 @@
         "CHR_0001",
         "CHR_0002",
         "CH_0002",
+        "CH_0003",
         "EVT_000003",
+        "EVT_000004",
         "FAC_0001",
         "FAC_0002",
+        "FAC_0004",
+        "LOC_0002",
         "QUESTION_0004",
         "SYS_0005"
       ],
-      "bytes": 1072,
+      "bytes": 1398,
       "audience": "PROJECT",
       "context_policy": "STANDARD",
       "reader_state_effect": "UNSPECIFIED",
@@ -938,15 +1047,40 @@
       "ids": [
         "CHR_0001",
         "CH_0002",
+        "CH_0003",
         "EVT_000003",
+        "EVT_000004",
         "FAC_0001",
         "FAC_0003",
+        "ITEM_0001",
         "QUESTION_0002",
         "QUESTION_0005",
+        "QUESTION_0006",
         "SYS_0001",
         "SYS_0006"
       ],
-      "bytes": 1306,
+      "bytes": 1639,
+      "audience": "PROJECT",
+      "context_policy": "STANDARD",
+      "reader_state_effect": "UNSPECIFIED",
+      "reveal_status": null,
+      "retrieval_scope": "STANDARD"
+    },
+    {
+      "path": "04_story/open_questions/QUESTION_0006.md",
+      "ids": [
+        "CHR_0001",
+        "CHR_0002",
+        "CH_0003",
+        "EVT_000004",
+        "FAC_0001",
+        "ITEM_0001",
+        "QUESTION_0001",
+        "QUESTION_0005",
+        "QUESTION_0006",
+        "SYS_0006"
+      ],
+      "bytes": 1449,
       "audience": "PROJECT",
       "context_policy": "STANDARD",
       "reader_state_effect": "UNSPECIFIED",
@@ -970,7 +1104,19 @@
       "ids": [
         "CH_0002"
       ],
-      "bytes": 16664,
+      "bytes": 17246,
+      "audience": "PROJECT",
+      "context_policy": "STANDARD",
+      "reader_state_effect": "UNSPECIFIED",
+      "reveal_status": null,
+      "retrieval_scope": "STANDARD"
+    },
+    {
+      "path": "05_manuscript/CH_0003.md",
+      "ids": [
+        "CH_0003"
+      ],
+      "bytes": 21159,
       "audience": "PROJECT",
       "context_policy": "STANDARD",
       "reader_state_effect": "UNSPECIFIED",
@@ -1072,7 +1218,35 @@
         "SYS_0005",
         "SYS_0006"
       ],
-      "bytes": 4423,
+      "bytes": 4854,
+      "audience": "PROJECT",
+      "context_policy": "STANDARD",
+      "reader_state_effect": "UNSPECIFIED",
+      "reveal_status": null,
+      "retrieval_scope": "STANDARD"
+    },
+    {
+      "path": "06_memory/chapters/CH_0003.md",
+      "ids": [
+        "CHANGE_0011",
+        "CHANGE_0012",
+        "CHANGE_0013",
+        "CHANGE_0014",
+        "CH_0003",
+        "FAC_0001",
+        "FAC_0002",
+        "FAC_0004",
+        "ITEM_0001",
+        "LOC_0001",
+        "LOC_0002",
+        "QUESTION_0001",
+        "QUESTION_0004",
+        "QUESTION_0005",
+        "QUESTION_0006",
+        "SYS_0007",
+        "SYS_0008"
+      ],
+      "bytes": 3935,
       "audience": "PROJECT",
       "context_policy": "STANDARD",
       "reader_state_effect": "UNSPECIFIED",
@@ -1120,6 +1294,7 @@
     {
       "path": "06_memory/events/EVT_000003.md",
       "ids": [
+        "CHANGE_0011",
         "CHR_0001",
         "CHR_0002",
         "CH_0002",
@@ -1133,7 +1308,31 @@
         "SYS_0005",
         "SYS_0006"
       ],
-      "bytes": 1518,
+      "bytes": 1893,
+      "audience": "PROJECT",
+      "context_policy": "STANDARD",
+      "reader_state_effect": "UNSPECIFIED",
+      "reveal_status": null,
+      "retrieval_scope": "STANDARD"
+    },
+    {
+      "path": "06_memory/events/EVT_000004.md",
+      "ids": [
+        "CHR_0001",
+        "CHR_0002",
+        "CH_0003",
+        "EVT_000004",
+        "FAC_0001",
+        "FAC_0004",
+        "ITEM_0001",
+        "LOC_0001",
+        "LOC_0002",
+        "QUESTION_0001",
+        "QUESTION_0006",
+        "SYS_0007",
+        "SYS_0008"
+      ],
+      "bytes": 1589,
       "audience": "PROJECT",
       "context_policy": "STANDARD",
       "reader_state_effect": "UNSPECIFIED",
@@ -1285,6 +1484,76 @@
         "SYS_0005"
       ],
       "bytes": 989,
+      "audience": "PROJECT",
+      "context_policy": "STANDARD",
+      "reader_state_effect": "UNSPECIFIED",
+      "reveal_status": null,
+      "retrieval_scope": "STANDARD"
+    },
+    {
+      "path": "06_memory/setting_changes/CHANGE_0011.md",
+      "ids": [
+        "CHANGE_0011",
+        "CHR_0001",
+        "CH_0002",
+        "EVT_000003",
+        "LOC_0001"
+      ],
+      "bytes": 1106,
+      "audience": "PROJECT",
+      "context_policy": "STANDARD",
+      "reader_state_effect": "UNSPECIFIED",
+      "reveal_status": null,
+      "retrieval_scope": "STANDARD"
+    },
+    {
+      "path": "06_memory/setting_changes/CHANGE_0012.md",
+      "ids": [
+        "CHANGE_0012",
+        "CH_0003",
+        "FAC_0001",
+        "FAC_0004",
+        "LOC_0002",
+        "QUESTION_0004"
+      ],
+      "bytes": 1117,
+      "audience": "PROJECT",
+      "context_policy": "STANDARD",
+      "reader_state_effect": "UNSPECIFIED",
+      "reveal_status": null,
+      "retrieval_scope": "STANDARD"
+    },
+    {
+      "path": "06_memory/setting_changes/CHANGE_0013.md",
+      "ids": [
+        "CHANGE_0013",
+        "CHR_0001",
+        "CH_0003",
+        "FAC_0001",
+        "FAC_0002",
+        "SYS_0007"
+      ],
+      "bytes": 1081,
+      "audience": "PROJECT",
+      "context_policy": "STANDARD",
+      "reader_state_effect": "UNSPECIFIED",
+      "reveal_status": null,
+      "retrieval_scope": "STANDARD"
+    },
+    {
+      "path": "06_memory/setting_changes/CHANGE_0014.md",
+      "ids": [
+        "CHANGE_0014",
+        "CH_0003",
+        "FAC_0001",
+        "ITEM_0001",
+        "QUESTION_0001",
+        "QUESTION_0005",
+        "QUESTION_0006",
+        "SYS_0006",
+        "SYS_0008"
+      ],
+      "bytes": 1411,
       "audience": "PROJECT",
       "context_policy": "STANDARD",
       "reader_state_effect": "UNSPECIFIED",
@@ -1707,6 +1976,249 @@
         "SYS_0006"
       ],
       "bytes": 800,
+      "audience": "PROJECT",
+      "context_policy": "STANDARD",
+      "reader_state_effect": "UNSPECIFIED",
+      "reveal_status": null,
+      "retrieval_scope": "STANDARD"
+    },
+    {
+      "path": "07_workbench/CH_0002/revisions/REV_0001/04_author_decision.md",
+      "ids": [
+        "CHR_0001",
+        "CH_0002",
+        "CH_0003",
+        "EVT_000003"
+      ],
+      "bytes": 1348,
+      "audience": "PROJECT",
+      "context_policy": "STANDARD",
+      "reader_state_effect": "UNSPECIFIED",
+      "reveal_status": null,
+      "retrieval_scope": "STANDARD"
+    },
+    {
+      "path": "07_workbench/CH_0002/revisions/REV_0001/05_draft.md",
+      "ids": [
+        "CH_0002"
+      ],
+      "bytes": 1238,
+      "audience": "PROJECT",
+      "context_policy": "STANDARD",
+      "reader_state_effect": "UNSPECIFIED",
+      "reveal_status": null,
+      "retrieval_scope": "STANDARD"
+    },
+    {
+      "path": "07_workbench/CH_0002/revisions/REV_0001/06_final_review.agent.md",
+      "ids": [
+        "CH_0002",
+        "CH_0003",
+        "EVT_000003",
+        "LOC_0001"
+      ],
+      "bytes": 1133,
+      "audience": "PROJECT",
+      "context_policy": "STANDARD",
+      "reader_state_effect": "UNSPECIFIED",
+      "reveal_status": null,
+      "retrieval_scope": "STANDARD"
+    },
+    {
+      "path": "07_workbench/CH_0002/revisions/REV_0001/07_memory_delta.agent.yaml",
+      "ids": [
+        "CHANGE_0011",
+        "CHR_0001",
+        "CH_0002",
+        "EVT_000003",
+        "LOC_0001"
+      ],
+      "bytes": 1298,
+      "audience": "PROJECT",
+      "context_policy": "STANDARD",
+      "reader_state_effect": "UNSPECIFIED",
+      "reveal_status": null,
+      "retrieval_scope": "STANDARD"
+    },
+    {
+      "path": "07_workbench/CH_0002/revisions/REV_0001/08_approval.yaml",
+      "ids": [
+        "CHANGE_0011",
+        "CH_0002"
+      ],
+      "bytes": 427,
+      "audience": "PROJECT",
+      "context_policy": "STANDARD",
+      "reader_state_effect": "UNSPECIFIED",
+      "reveal_status": null,
+      "retrieval_scope": "STANDARD"
+    },
+    {
+      "path": "07_workbench/CH_0003/00_author_brief.md",
+      "ids": [
+        "CHR_0001",
+        "CHR_0002",
+        "CH_0002",
+        "CH_0003",
+        "QUESTION_0001",
+        "QUESTION_0004",
+        "QUESTION_0005"
+      ],
+      "bytes": 7249,
+      "audience": "PROJECT",
+      "context_policy": "STANDARD",
+      "reader_state_effect": "UNSPECIFIED",
+      "reveal_status": null,
+      "retrieval_scope": "STANDARD"
+    },
+    {
+      "path": "07_workbench/CH_0003/01_context.auto.md",
+      "ids": [
+        "CHR_0001",
+        "CHR_0002",
+        "CH_0002",
+        "CH_0003",
+        "EVT_000003",
+        "FAC_0001",
+        "FAC_0002",
+        "LOC_0001",
+        "QUESTION_0001",
+        "SYS_0005",
+        "SYS_0006"
+      ],
+      "bytes": 3562,
+      "audience": "PROJECT",
+      "context_policy": "STANDARD",
+      "reader_state_effect": "UNSPECIFIED",
+      "reveal_status": null,
+      "retrieval_scope": "STANDARD"
+    },
+    {
+      "path": "07_workbench/CH_0003/02_expansion.agent.md",
+      "ids": [
+        "CH_0003"
+      ],
+      "bytes": 2599,
+      "audience": "PROJECT",
+      "context_policy": "STANDARD",
+      "reader_state_effect": "UNSPECIFIED",
+      "reveal_status": null,
+      "retrieval_scope": "STANDARD"
+    },
+    {
+      "path": "07_workbench/CH_0003/03_conflict_report.agent.md",
+      "ids": [
+        "CHANGE_0004",
+        "CHR_0001",
+        "CHR_0002",
+        "CH_0001",
+        "CH_0002",
+        "CH_0003",
+        "EVT_000003"
+      ],
+      "bytes": 2270,
+      "audience": "PROJECT",
+      "context_policy": "STANDARD",
+      "reader_state_effect": "UNSPECIFIED",
+      "reveal_status": null,
+      "retrieval_scope": "STANDARD"
+    },
+    {
+      "path": "07_workbench/CH_0003/04_author_decision.md",
+      "ids": [
+        "CH_0002",
+        "CH_0003"
+      ],
+      "bytes": 1181,
+      "audience": "PROJECT",
+      "context_policy": "STANDARD",
+      "reader_state_effect": "UNSPECIFIED",
+      "reveal_status": null,
+      "retrieval_scope": "STANDARD"
+    },
+    {
+      "path": "07_workbench/CH_0003/05_draft.md",
+      "ids": [
+        "CH_0003"
+      ],
+      "bytes": 21058,
+      "audience": "PROJECT",
+      "context_policy": "STANDARD",
+      "reader_state_effect": "UNSPECIFIED",
+      "reveal_status": null,
+      "retrieval_scope": "STANDARD"
+    },
+    {
+      "path": "07_workbench/CH_0003/06_final_review.agent.md",
+      "ids": [
+        "CH_0002",
+        "CH_0003"
+      ],
+      "bytes": 3519,
+      "audience": "PROJECT",
+      "context_policy": "STANDARD",
+      "reader_state_effect": "UNSPECIFIED",
+      "reveal_status": null,
+      "retrieval_scope": "STANDARD"
+    },
+    {
+      "path": "07_workbench/CH_0003/07_memory_delta.agent.yaml",
+      "ids": [
+        "CHANGE_0011",
+        "CHANGE_0012",
+        "CHANGE_0013",
+        "CHANGE_0014",
+        "CHR_0001",
+        "CHR_0002",
+        "CH_0002",
+        "CH_0003",
+        "EVT_000003",
+        "EVT_000004",
+        "FAC_0001",
+        "FAC_0002",
+        "FAC_0004",
+        "ITEM_0001",
+        "LOC_0001",
+        "LOC_0002",
+        "QUESTION_0001",
+        "QUESTION_0002",
+        "QUESTION_0003",
+        "QUESTION_0004",
+        "QUESTION_0005",
+        "QUESTION_0006",
+        "SYS_0001",
+        "SYS_0002",
+        "SYS_0003",
+        "SYS_0004",
+        "SYS_0005",
+        "SYS_0006",
+        "SYS_0007",
+        "SYS_0008"
+      ],
+      "bytes": 13249,
+      "audience": "PROJECT",
+      "context_policy": "STANDARD",
+      "reader_state_effect": "UNSPECIFIED",
+      "reveal_status": null,
+      "retrieval_scope": "STANDARD"
+    },
+    {
+      "path": "07_workbench/CH_0003/08_approval.yaml",
+      "ids": [
+        "CHANGE_0011",
+        "CHANGE_0012",
+        "CHANGE_0013",
+        "CHANGE_0014",
+        "CH_0003",
+        "EVT_000004",
+        "FAC_0004",
+        "ITEM_0001",
+        "LOC_0002",
+        "QUESTION_0006",
+        "SYS_0007",
+        "SYS_0008"
+      ],
+      "bytes": 712,
       "audience": "PROJECT",
       "context_policy": "STANDARD",
       "reader_state_effect": "UNSPECIFIED",

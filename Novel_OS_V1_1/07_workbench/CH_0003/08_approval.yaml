@@ -1,0 +1,26 @@
+chapter: CH_0003
+approved: true
+approved_by: human_author
+approved_at: 2026-08-12
+approve_final_prose: true
+approve_title: true
+approve_memory_delta: true
+approve_setting_changes: true
+approved_change_ids:
+  - CHANGE_0011
+  - CHANGE_0012
+  - CHANGE_0013
+  - CHANGE_0014
+approved_stable_ids:
+  - LOC_0002
+  - FAC_0004
+  - SYS_0007
+  - SYS_0008
+  - ITEM_0001
+  - EVT_000004
+  - QUESTION_0006
+approve_controlled_writeback: true
+stage_requested: true
+commit_requested: true
+push_requested: false
+notes: "Author approved CH_0003 final prose and title 《墓灯》, the complete Delta, all listed stable IDs, CHANGE_0011–0014, controlled writeback, exact staging, and commit of this transaction on 2026-08-12. Push was not requested."

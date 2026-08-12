@@ -1,6 +1,6 @@
 ---
 character_id: CHR_0001
-as_of_chapter: CH_0002
+as_of_chapter: CH_0003
 provenance:
   - 07_workbench/CH_0001/07_memory_delta.agent.yaml
   - 07_workbench/CH_0001/08_approval.yaml
@@ -8,6 +8,8 @@ provenance:
   - 07_workbench/CH_0001/revisions/REV_0001/08_approval.yaml
   - 07_workbench/CH_0002/07_memory_delta.agent.yaml
   - 07_workbench/CH_0002/08_approval.yaml
+  - 07_workbench/CH_0003/07_memory_delta.agent.yaml
+  - 07_workbench/CH_0003/08_approval.yaml
 last_updated: 2026-08-12
 ---
 
@@ -19,6 +21,6 @@ last_updated: 2026-08-12
 - 当前能力状态：能依据影像和程序性知识理解舰船控制处置、辨认海盗舰可见构造；不等于恢复追击经历。
 - 当前持有关键物品：临时借用医疗支撑杆；需归还，不建立长期所有权。
 - 记忆状态：不记得日志发送、遗迹发现或追击经过；姓名具有熟悉感，但完整身份记忆未恢复。
-- 方案状态：暂时接受继续调阅材料和参与初步事故调查；未签正式合同、未重组债务、未成为 `FAC_0002` 员工。
-- 短期目标：调查异常日志、潜在遗迹线索、主角舰船证据缺失与 `FAC_0003` 舰队残骸。
-- 当前心理状态：以自嘲抵消身份与债务压力，对林赛和公司动机保持试探；长期态度未建立。
+- 方案状态：已收到但尚未接受由其带领 `FAC_0004` 远航、返回事故区域并继续进入 `LOC_0002` 的条件要约；未签正式合同、未重组债务、未成为 `FAC_0002` 员工。
+- 短期目标：评估远航要约、舰队条件与公司对自身回传异常的分析；是否接受任务尚未决定。
+- 当前心理状态：对正式进入 `FAC_0002` 产生强烈但克制的冲动；获知 `ITEM_0001` 的模型后，对自身现实感与连续性产生新的动摇，同时继续试探公司措辞与动机。

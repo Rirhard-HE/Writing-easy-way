@@ -1,6 +1,6 @@
 ---
 character_id: CHR_0002
-as_of_chapter: CH_0002
+as_of_chapter: CH_0003
 truth_layers:
   - L3_ORGANIZATION_MODEL
   - L4_CHARACTER_KNOWLEDGE
@@ -12,6 +12,8 @@ provenance:
   - 07_workbench/CH_0001/revisions/REV_0001/08_approval.yaml
   - 07_workbench/CH_0002/07_memory_delta.agent.yaml
   - 07_workbench/CH_0002/08_approval.yaml
+  - 07_workbench/CH_0003/07_memory_delta.agent.yaml
+  - 07_workbench/CH_0003/08_approval.yaml
 ---
 
 # Knowledge State
@@ -25,10 +27,13 @@ provenance:
 - 熟悉 `FAC_0002` 的组织职能、日志校验、搜索记录、`FAC_0003` 残骸记录和临时调查授权；这些均为 `L3_ORGANIZATION_MODEL`。
 - 知道公司档案将 `CHR_0001` 的姓名记为何筠，并首先向其告知。
 - 把主角舰船推定毁灭坐标的证据缺失归入 `SYS_0006` 项目工作标签，但不认证真实机制。
+- 熟悉 `FAC_0001` 的残留航道模型、`FAC_0004` 准备状态、条件要约、`SYS_0007` 员工使用安排与 `SYS_0008` 公开监管语境。
+- 知道 `ITEM_0001` 的分析输出，以及公司测得 `CHR_0001` 的回传结构完整率为 `92.7%`。
 
 ## 怀疑 / 推测
 
 - 以 `L4_CHARACTER_KNOWLEDGE` 认为该事件不是正常死亡，并把 `CHR_0001` 视为未闭合异常事故与潜在遗迹线索。
+- 转述 `ITEM_0001` 的模型，认为目标可能在删除前看见并有意放过何筠；只保持为 `L3_ORGANIZATION_MODEL`。
 
 ## 明确不知道（作者需要防止泄漏）
 
@@ -36,6 +41,7 @@ provenance:
 - 明确不声称知道 `SYS_0003` 为什么工作、失败时究竟丢失什么，或记忆断层的唯一原因。
 - 不知道 `SYS_0006` 的真实机制、遗迹位置、主角舰船去向、`FAC_0003` 舰队毁损原因或两组异常的客观因果。
 - 不认证当前何筠、日志发送者或录像签署者之间的客观身份连续性。
+- 不知道 `ITEM_0001` 模型是否客观成立，也不认证目标身份、动机、留手或 `92.7%` 对身份连续性的含义。
 
 ## 错误认知 / 机构灌输
 

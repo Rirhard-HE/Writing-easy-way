@@ -7,6 +7,8 @@ answer_reveal_status: HIDDEN
 provenance:
   - 07_workbench/CH_0002/07_memory_delta.agent.yaml
   - 07_workbench/CH_0002/08_approval.yaml
+  - 07_workbench/CH_0003/07_memory_delta.agent.yaml
+  - 07_workbench/CH_0003/08_approval.yaml
 ---
 
 # Open Canon Question
@@ -24,10 +26,11 @@ provenance:
 - 损坏日志声称发现一处大崩裂前设施，定位附件无法上行，发送者称能再次找到。
 - 发送身份、协议密钥与何筠旧档案一致；客观身份连续性仍未认证。
 - 何筠不记得日志发送、遗迹发现或再次定位方法。
+- `FAC_0001` 已从缓存、航行修正和探针同步误差中重建出一段由事故区域通往 `LOC_0002` 的残留航道，但不足以确定遗迹位置或完整路线。
 
 ## Affected IDs / chapters
 
-- `CHR_0001`、`CHR_0002`、`FAC_0001`、`FAC_0002`、`SYS_0005`、`EVT_000003`、`CH_0002`。
+- `CHR_0001`、`CHR_0002`、`FAC_0001`、`FAC_0002`、`FAC_0004`、`LOC_0002`、`SYS_0005`、`EVT_000003`、`EVT_000004`、`CH_0002`、`CH_0003`。
 
 ## Decisions that must wait
 
