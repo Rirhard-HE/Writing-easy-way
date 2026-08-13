@@ -1,6 +1,6 @@
 ---
 character_id: CHR_0001
-as_of_chapter: CH_0006
+as_of_chapter: CH_0007
 provenance:
   - 07_workbench/CH_0001/07_memory_delta.agent.yaml
   - 07_workbench/CH_0001/08_approval.yaml
@@ -16,6 +16,8 @@ provenance:
   - 07_workbench/CH_0005/08_approval.yaml
   - 07_workbench/CH_0006/07_memory_delta.agent.yaml
   - 07_workbench/CH_0006/08_approval.yaml
+  - 07_workbench/CH_0007/07_memory_delta.agent.yaml
+  - 07_workbench/CH_0007/08_approval.yaml
 ---
 
 # Relationships
@@ -34,10 +36,12 @@ provenance:
 
 - 关系定义：母子；`CH_0006` 在 `LOC_0007` 于失联七个月后重逢。
 - 最近变化：毛晓先确认身份称呼，随后拥抱并以“回来就好”安抚何筠。
+- 家庭延续：回家后的做饭、添汤、寻找腌菜与日常命令恢复熟悉母子节奏；毛晓看穿何筠以舰队配置淡化危险。
 - 边界：真实亲情与相认不认证当前何筠的客观身份连续性。
 
 ## CHR_0004 — 何松
 
 - 关系定义：父子；`CH_0006` 在 `LOC_0007` 于失联七个月后重逢。
 - 最近变化：何松以克制言语迎接何筠，手部轻微发颤。
+- 家庭延续：何松以旧拖鞋、酒桌玩笑和童年远行记忆恢复父子互动，并请何筠替父母看看未见的宇宙。
 - 边界：真实亲情与相认不认证当前何筠的客观身份连续性。

@@ -1,0 +1,162 @@
+chapter: CH_0007
+status: applied
+transaction_status: APPLIED
+canonical: true
+source_draft: 05_draft.md
+source_draft_sha256: f6f30e42e7e96612165b6c2faccf13fd5667de6598e7b3d48bc7f215555d13df
+source_final_review: 06_final_review.agent.md
+
+proposed_stable_ids:
+  - id: LOC_0008
+    type: family_residence
+    display_name: 何筠父母的格林港外围住宅
+    truth_boundary: old terraced residence in the unnamed hometown; exact address and ownership history unresolved
+  - id: EVT_000008
+    type: event
+    display_name: 何筠返家晚宴与远航预告
+
+chapter_changes:
+  title:
+    proposed: 替我们看看
+    status: AUTHOR_APPROVED
+  summary:
+    - CHR_0001 returns with CHR_0003 and CHR_0004 to LOC_0008 and re-enters familiar household routines
+    - locally sourced dishes demonstrate uncommon family cooking methods whose origin remains hidden
+    - preserved slippers, pickled foods, and faded memories deepen emotional continuity without resolving objective identity
+    - CHR_0001 tells his parents about debt and a relic-expedition work option while minimizing danger through fleet and benefit details
+    - CHR_0001 acknowledges that he expects to leave again but has not formally accepted or signed the offer
+    - CHR_0004 reframes the departure as a chance to see the universe on behalf of both parents
+
+character_changes:
+  CHR_0001:
+    location:
+      before: LOC_0007
+      after: LOC_0008
+    offer_state:
+      before: considering an unaccepted conditional expedition and candidate-member offer
+      after: personally inclined to accept and has warned his parents that he expects to leave; formal acceptance, signature, employment, training, and departure remain pending
+    family_habits_reconfirmed:
+      - recognizes the household layout and preserved slippers through bodily familiarity and fragmented memory
+      - habitually asks for family-pickled fire-seed peppers and curved-pod vegetables when returning home
+      - remembers fragments of childhood meals, spaceport visits, outages, and family sky-watching
+    knowledge_and_intent:
+      - recognizes that emphasizing fleet scale, engineering support, benefits, and training does not answer the danger question
+      - admits he does not currently know where he truly wants to go
+    explicitly_not_resolved:
+      - objective identity continuity or provenance of household memories
+      - formal offer acceptance or exact departure date
+      - origin of the family's uncommon cooking methods
+  CHR_0003:
+    location: LOC_0008
+    chapter_actions:
+      - restores household routine through cooking, instructions, and serving CHR_0001 familiar foods
+      - recognizes his request for preserved foods as a repeated pre-disappearance habit
+      - understands that the relic job means he expects to leave again
+    knowledge_ceiling:
+      - knows debt and a corporate relic-expedition work option
+      - does not know resurrection details, anomaly models, relic location, or full risk
+  CHR_0004:
+    location: LOC_0008
+    chapter_actions:
+      - provides CHR_0001's preserved slippers and mediates the meal through practical humor
+      - asks what corporate training involves and recognizes CHR_0001's old desire to travel
+      - asks him to see the unseen universe on behalf of both parents
+    knowledge_ceiling:
+      - knows debt and a corporate relic-expedition work option
+      - does not know resurrection details, anomaly models, relic location, or full risk
+
+relationship_changes:
+  CHR_0001__CHR_0003:
+    latest_interaction:
+      - household food and preserved habits restore a familiar mother-child routine
+      - CHR_0003 sees through CHR_0001's attempt to minimize expedition danger
+    emotional_change: homecoming shifts from airport recognition to lived household continuity
+  CHR_0001__CHR_0004:
+    latest_interaction:
+      - CHR_0004 reconnects CHR_0001's current departure with his childhood wish to see other stars
+      - CHR_0004 offers a restrained family blessing without claiming the work is safe
+    emotional_change: departure becomes a shared family burden and limited commission
+
+world_changes:
+  LOC_0008:
+    stable_author_facts:
+      - old two-story terraced residence in the unnamed hometown outside Greenport
+      - damp gray exterior and locally modified climbing vines that require regular trimming to protect air-circulation ducts
+      - wood flooring, handmade furniture, old but functional environmental and domestic devices
+      - long-term home of CHR_0003 and CHR_0004; contains belongings retained from CHR_0001's earlier life
+    unresolved:
+      - exact address, build date, ownership record, and complete interior plan
+  frontier_food_context:
+    stable_author_facts:
+      - many Andromeda frontier settlements prioritize preservation, calories, transport, and labor efficiency in everyday food
+      - corporate pressure and limited resources encourage workers to develop simple practical local dishes and customs
+      - regional, corporate, household, and class differences remain substantial
+    boundaries:
+      - not a universal description of all Andromeda cuisine
+      - does not establish complete food history or cultural lineage
+  he_family_cooking:
+    observable_methods:
+      - slow-braises long-leaf algae with native rib meat
+      - blooms ground yellow-root spice and fire-seed pepper in hot oil
+      - pickles whole fire-seed peppers
+      - dries and ferments curved-pod vegetables with aromatic seeds
+    social_evidence:
+      - CHR_0001 reports that frontier crews, including Novar locals, generally did not recognize these preparations
+    hidden_boundary:
+      - origin, lineage, transmission route, and relationship to any lost culture remain unrevealed
+  FAC_0001:
+    family_disclosure_boundary:
+      - CHR_0001 tells his parents only about debt, relic exploration, fleet support, employee-level benefits, rest, and future training
+      - no formal offer acceptance occurs in this chapter
+
+open_questions:
+  QUESTION_0001:
+    status: OPEN
+    update: preserved slippers, food preferences, and family memories deepen emotional continuity but do not certify objective identity or memory provenance
+  QUESTION_0007:
+    status: OPEN
+    update: no new activity or readable content occurs in this chapter
+
+setting_changes:
+  - change_id: CHANGE_0023
+    type: ADD_AND_CLARIFY
+    status: AUTHOR_APPROVED
+    affected_ids:
+      - LOC_0008
+      - LOC_0005
+      - LOC_0006
+      - CHR_0001
+      - CHR_0003
+      - CHR_0004
+    previous_fact: production state did not establish the family residence, frontier food trend, or the He family's uncommon cooking practices
+    new_fact:
+      - LOC_0008 is the family's old terraced residence in the unnamed hometown outside Greenport
+      - many frontier diets prioritize preservation, calories, logistics, and work efficiency under corporate and material pressure
+      - the He family uses locally sourced ingredients through several preparations uncommon among current local and frontier crews
+    scope_boundary:
+      - the trend is not universal across Andromeda
+      - the cooking methods' origin and lineage remain hidden
+  - change_id: CHANGE_0024
+    type: CLARIFY
+    status: AUTHOR_APPROVED
+    affected_ids:
+      - CHR_0001
+      - CHR_0003
+      - CHR_0004
+      - FAC_0001
+      - QUESTION_0001
+    previous_fact: CHR_0001 was still considering the unaccepted expedition offer and his parents knew only that he had returned
+    new_fact:
+      - CHR_0001 is personally inclined to take the relic-expedition work and tells his parents he expects to leave again
+      - his parents learn only the debt, work category, fleet support, benefits, rest, and training outline
+      - formal acceptance, signature, employment, training, and departure remain pending
+    scope_boundary:
+      - no full risk disclosure, resurrection disclosure, identity resolution, or binding contract is established
+
+events_created:
+  - EVT_000008
+canon_changes: []
+manuscript_impacts:
+  - create CH_0007 manuscript entry only after explicit approval
+notes:
+  - The cooking-method origin must remain excluded from ordinary retrieval context until a later explicit reveal decision.

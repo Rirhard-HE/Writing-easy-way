@@ -9,6 +9,8 @@ provenance:
   - 07_workbench/CH_0004/08_approval.yaml
   - 07_workbench/CH_0006/07_memory_delta.agent.yaml
   - 07_workbench/CH_0006/08_approval.yaml
+  - 07_workbench/CH_0007/07_memory_delta.agent.yaml
+  - 07_workbench/CH_0007/08_approval.yaml
 ---
 
 # Open Canon Question
@@ -29,10 +31,11 @@ provenance:
 - 该证据不证明目标植入、记忆残留、人格备份、客观封印或任何秘密本体机制。
 - `CH_0006` 结尾，何筠主观感觉该空白区域轻微震动一次；没有图像、声音、可读取内容、仪器记录或外部确认。
 - 该体感既可能对应未知内部活动，也可能只是当前主体的主观感受；正文没有在两者之间作出判断。
+- `CH_0007` 未出现新的震动、活动或可读取内容；问题状态不变。
 
 ## Affected IDs / chapters
 
-- `CHR_0001`、`CHR_0002`、`CHR_0003`、`CHR_0004`、`FAC_0001`、`ITEM_0001`、`QUESTION_0001`、`QUESTION_0005`、`QUESTION_0006`、`EVT_000005`、`EVT_000007`、`CH_0004`、`CH_0006`。
+- `CHR_0001`、`CHR_0002`、`CHR_0003`、`CHR_0004`、`FAC_0001`、`ITEM_0001`、`QUESTION_0001`、`QUESTION_0005`、`QUESTION_0006`、`EVT_000005`、`EVT_000007`、`EVT_000008`、`CH_0004`、`CH_0006`、`CH_0007`。
 
 ## Decisions that must wait
 
