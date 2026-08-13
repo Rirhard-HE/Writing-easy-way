@@ -1,0 +1,146 @@
+chapter: CH_0005
+status: applied
+transaction_status: APPLIED
+canonical: true
+source_draft: 05_draft.md
+source_draft_sha256: 161854fb26afeb7ccf640d0c9dabda230f88855e62403b6c53feb200d4427ddb
+source_final_review: 06_final_review.agent.md
+
+proposed_stable_ids:
+  - id: LOC_0005
+    type: colony_world
+    display_name: 诺瓦尔 / K-12殖民世界
+    truth_boundary: old-federation terraforming remains incomplete; exact orbital and environmental parameters unresolved
+  - id: SYS_0011
+    type: orbital_climate_and_illumination_system
+    display_name: 诺瓦尔轨道射灯与气候辅助体系
+    truth_boundary: assists illumination and climate in the distant orbital band; quantity, power, and control topology unresolved
+  - id: EVT_000006
+    type: event
+    display_name: 何筠离站并返回诺瓦尔
+
+chapter_changes:
+  title:
+    proposed: 欢迎返回文明世界
+    status: AUTHOR_APPROVED
+  summary:
+    - CHR_0001 confirms the practical consequences of refusing FAC_0001's offer but does not accept it
+    - CHR_0002 advises CHR_0001 to contact his parents and warns him not to trust his memory too readily
+    - CHR_0001 leaves LOC_0001 and enters LOC_0005 aboard a shuttle
+    - LOC_0005's incomplete terraforming, orbital lighting support, large native life, and persistent winds are established
+
+character_changes:
+  CHR_0001:
+    location:
+      before: LOC_0001_CORPORATE_BRIEFING_ROOM
+      after: LOC_0005_LOW_ATMOSPHERE
+    offer_state: unchanged; conditional expedition and candidate-member offer remains unaccepted
+    physical_state:
+      - returns the temporary medical support rod
+      - retains mild right-leg discomfort
+    knowledge_gained:
+      - FAC_0001 says he may leave while debt remains and future long-range permits may be limited
+      - public status records describe seven months of deep-space loss followed by recovery
+      - resurrection-related medical records remain temporarily restricted by FAC_0001
+      - provisional housing, teaching assessment, and limited fleet materials have been prepared but are cancellable
+    subjective_memory_fragments:
+      - his father contributing the last funds toward ITEM_0002
+      - his mother's fear that he would die in the outer ring
+    explicitly_not_resolved:
+      - objective identity continuity or memory origin
+      - ITEM_0002's fate or accident location
+      - legal validity or full scope of debt, permit, and record restrictions
+  CHR_0002:
+    demonstrated_knowledge:
+      - FAC_0001's public missing-person status and provisional arrangements for CHR_0001
+    demonstrated_state:
+      - shows brief fatigue while recommending delay and family contact
+    knowledge_ceiling:
+      - does not certify identity continuity, memory reliability, or resurrection mechanism
+
+relationship_changes:
+  CHR_0001__CHR_0002:
+    latest_interaction:
+      - CHR_0002 allows departure, outlines company consequences, and advises family contact before a decision
+    trust_change: NONE_CONFIRMED
+    alliance_change: NONE_CONFIRMED
+
+world_changes:
+  LOC_0005:
+    stable_author_facts:
+      - designated K-12 and known as Novar
+      - old-federation terraformed colony whose planetary transformation remains incomplete
+      - lies in a comparatively distant orbital band and uses orbital beam lights to assist climate and illumination
+      - has human-breathable modified atmosphere and a broadly Earth-compatible biosphere
+      - native high-oxygen evolutionary background contributed to unusually large native organisms
+      - aggressive native ecosystems remain outside secure settlement zones
+      - inhabited belts experience persistent atmospheric disturbance, most visibly wind
+    unresolved:
+      - exact orbit, oxygen ratio, day length, beam-light count and power, and complete ecological taxonomy
+  SYS_0011:
+    stable_author_facts:
+      - orbital beam lights supplement natural illumination and climate management on LOC_0005
+    unresolved:
+      - engineering origin, operator, topology, count, and operating schedule
+  FAC_0001:
+    current_positions:
+      - says CHR_0001 may leave and remains personally free
+      - says existing debt remains valid and some long-range permits may face restrictions
+      - publicly reports CHR_0001 as recovered after seven months of deep-space loss
+      - temporarily restricts resurrection-related medical records
+      - opens provisional housing, a cancellable teaching assessment, and limited fleet-material access
+    boundary:
+      - these are company or institutional positions, not a complete legal model
+
+open_questions:
+  QUESTION_0001:
+    status: OPEN
+    update: subjective family and purchase fragments return, but current-subject continuity and memory provenance remain unresolved
+  QUESTION_0004:
+    status: OPEN
+    update: no new identification of the unknown relic or accident site
+  QUESTION_0006:
+    status: OPEN
+    update: CHR_0002's warning increases doubt about memory without proving manipulation or selection
+  QUESTION_0007:
+    status: OPEN
+    update: no readable content is recovered in this chapter
+
+setting_changes:
+  - change_id: CHANGE_0019
+    type: ADD
+    status: AUTHOR_APPROVED
+    affected_ids:
+      - LOC_0005
+      - SYS_0011
+    previous_fact: Novar's production-state planetary and environmental model was not established
+    new_fact:
+      - Novar is the K-12 incomplete old-federation terraformed colony
+      - orbital beam lights assist its illumination and climate
+      - it supports breathable air, large native life, aggressive ecosystems, and persistent wind in inhabited belts
+    scope_boundary:
+      - no exact orbital, atmospheric, lighting, or ecological parameters are established
+  - change_id: CHANGE_0020
+    type: ADD_AND_CLARIFY
+    status: AUTHOR_APPROVED
+    affected_ids:
+      - CHR_0001
+      - CHR_0002
+      - FAC_0001
+      - QUESTION_0001
+    previous_fact: the duration and public handling of CHR_0001's disappearance and the status of post-briefing arrangements were not established
+    new_fact:
+      - public records describe seven months of deep-space loss followed by recovery
+      - FAC_0001 temporarily restricts resurrection-related medical records
+      - housing, teaching assessment, and limited data access are provisional and do not constitute offer acceptance
+      - FAC_0001 states that debt remains and future long-range permissions may be restricted
+    scope_boundary:
+      - no complete legal regime, objective identity certification, or accepted expedition agreement is established
+
+events_created:
+  - EVT_000006
+canon_changes: []
+manuscript_impacts:
+  - create CH_0005 manuscript entry only after explicit approval
+notes:
+  - This Delta excludes all hometown, parent-reunion, family-pressure, and subjective blank-region tremor material assigned to CH_0006.

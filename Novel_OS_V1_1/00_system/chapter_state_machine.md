@@ -16,7 +16,8 @@ created: 2026-08-11
 | Conflict review | `03_conflict_report.agent.md` | `agent_review` | 边界合同/扩写提案已生成 |
 | Author decision | `04_author_decision.md` | `author_decided` | `boundary_approved: true`；未解决 `BLOCKER/HIGH` 均为 0 |
 | Expanded draft | `05_draft.md` | `expanded_draft` | `expand_author_material: true`；`expansion_scope_approved: true` |
-| Final review | `06_final_review.agent.md` | `agent_review` 或 `ready_for_approval` | 正文已经生成；进入后者时未解决 `BLOCKER/HIGH` 均为 0 |
+| Length / repetition gate | `05_length_decision.md` | `pass` 或 `author_retained` | 正文已生成；正文不超过 `9000` 可见字符；超过 `6000` 时已取得作者决定；重复标的物、同构停顿句与缺席概念清单检查均通过 |
+| Final review | `06_final_review.agent.md` | `agent_review` 或 `ready_for_approval` | 正文已经生成且长度/去重门通过；进入后者时未解决 `BLOCKER/HIGH` 均为 0 |
 | Delta | `07_memory_delta.agent.yaml` | `proposed` → `applied` | 正文和最终审查存在时先提取提案；正文、Delta、设定变更与受控写回获批并实际写回后标为 `applied` |
 | Final approval | `08_approval.yaml` | `approved: true` | 正文、Delta、设定变更分别获得作者明确批准 |
 
@@ -28,3 +29,6 @@ created: 2026-08-11
 - 作者可以要求退回任一阶段；退回后必须把受影响的下游产物标为 `not_started` 或 `stale`，不得继续冒充当前结果。
 - Delta 的 `applied` 只表示已按 `08_approval.yaml` 写入受控状态，不表示已暂存、提交或推送。
 - `approved: true` 仍不自动授权 Git 提交或推送；版本控制动作需要独立指令。
+- 自 `CH_0005` 起，`05_length_decision.md` 是强制门禁。`6001–9000` 字符必须使用 `awaiting_author` 暂停；作者明确保留后才可改为 `author_retained`。超过 `9000` 必须使用 `revision_required`，不得以作者保留直接越过硬上限。
+- 长度门的字符数按正文去除 front matter、一级标题和空白后的 Unicode 字符计数；任何正文修改都会使该门的来源指纹失效。
+- `repetition_review` 与 `negative_catalog_review` 必须为 `PASS`；边界说明应留在审查文件，不得通过正文中的否定清单表达。

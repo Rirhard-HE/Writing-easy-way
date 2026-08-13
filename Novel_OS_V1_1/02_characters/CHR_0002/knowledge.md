@@ -1,6 +1,6 @@
 ---
 character_id: CHR_0002
-as_of_chapter: CH_0004
+as_of_chapter: CH_0005
 truth_layers:
   - L3_ORGANIZATION_MODEL
   - L4_CHARACTER_KNOWLEDGE
@@ -16,6 +16,8 @@ provenance:
   - 07_workbench/CH_0003/08_approval.yaml
   - 07_workbench/CH_0004/07_memory_delta.agent.yaml
   - 07_workbench/CH_0004/08_approval.yaml
+  - 07_workbench/CH_0005/07_memory_delta.agent.yaml
+  - 07_workbench/CH_0005/08_approval.yaml
 ---
 
 # Knowledge State
@@ -35,6 +37,8 @@ provenance:
 - 熟悉 `ITEM_0001` 对活动但不可读取回传区域的分析，不知道其中内容、来源或作用。
 - 熟悉公司归于 `CHR_0001` 旧身份的军旅、`LOC_0004`、`ITEM_0002` 与重复幸存档案，但不认证当前主体的客观身份连续性。
 - 知道 `SYS_0009`、`SYS_0005`、`SYS_0010`、`FAC_0005`、`FAC_0006` 与 `LOC_0003` 的广义历史及公司口径。
+- 知道公司对何筠的失联七个月后寻回口径、复苏相关医疗记录限制及临时居住、教学评估和资料预备安排。
+- 知道公司允许何筠离开，并以公司口径说明债务继续有效及远航许可可能受限。
 
 ## 怀疑 / 推测
 
@@ -49,6 +53,7 @@ provenance:
 - 不认证当前何筠、日志发送者或录像签署者之间的客观身份连续性。
 - 不知道 `ITEM_0001` 模型是否客观成立，也不认证目标身份、动机、留手或 `92.7%` 对身份连续性的含义。
 - 不知道不可读取活动区域的内容和来源，也不把 `LOC_0003` 与当前未知遗迹视为同一地点。
+- 不认证何筠返回家庭后的客观身份连续性，也不知道其返乡后的主观空白震动。
 
 ## 错误认知 / 机构灌输
 

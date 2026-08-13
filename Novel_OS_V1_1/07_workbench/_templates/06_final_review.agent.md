@@ -3,6 +3,8 @@ chapter: CH_XXXX
 status: not_started
 source_draft: 05_draft.md
 source_draft_sha256: null
+source_length_decision: 05_length_decision.md
+source_length_decision_sha256: null
 ready_for_author_approval: false
 unresolved_blocker_count: 0
 unresolved_high_count: 0

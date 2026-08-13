@@ -13,6 +13,8 @@ AUTHOR DECISION
           ↓
 CONSTRAINED EXPANDED DRAFT
           ↓
+LENGTH / REPETITION / NEGATIVE-CATALOG GATE
+          ↓
 FINAL PROSE REVIEW
           ↓
 MEMORY + SETTING DELTA
@@ -75,6 +77,13 @@ Agent 在 `02_expansion.agent.md` 开头生成本章边界合同：
 - 具体变更流程见 `00_system/change_control.md`。
 
 ## 5. 审批与写回
+
+在最终正文审阅前，必须完成独立的草稿门检：
+
+- 以 `05_length_decision.md` 记录正文可见字符数；常规目标为 `4000–6000`，硬上限为 `9000`。
+- `6001–9000` 必须暂停并由作者决定保留或压缩；超过 `9000` 必须压缩后重新检测。
+- 同时检查无功能标的物复述、同构停顿句和“没有 A/B/C，只有 D”式缺席概念清单。
+- 长度或去重门未通过时，`06_final_review.agent.md` 和 `07_memory_delta.agent.yaml` 必须保持 `not_started` 或 `stale`。
 
 - “生成/扩写正文”与“写回长期状态”是两个独立动作。
 - 一章结束后只提取 Delta，不重写整套设定。
