@@ -19,6 +19,8 @@ provenance:
   - 07_workbench/CH_0005/08_approval.yaml
   - 07_workbench/CH_0006/07_memory_delta.agent.yaml
   - 07_workbench/CH_0006/08_approval.yaml
+  - 07_workbench/CH_0007/07_memory_delta.agent.yaml
+  - 07_workbench/CH_0007/08_approval.yaml
 ---
 
 # Open Canon Question
@@ -47,10 +49,11 @@ provenance:
 - 返回 `LOC_0005` 途中，何筠出现父母、童年与购船相关主观记忆片段；这些片段不认证来源或连续性。
 - `CHR_0003` 与 `CHR_0004` 在 `LOC_0007` 认出、拥抱并接纳何筠，现场情感与家庭痛苦均真实发生，但亲属相认仍不能单独回答当前主体的客观连续性。
 - 何筠产生“旧身份也许已死、当前主体也许是重构产物”的主观恐惧；叙事没有把它提升为客观事实。
+- `LOC_0008` 保存的旧拖鞋、家庭物件、回家先寻找腌辣椒与酸豆角的习惯，以及父母对该习惯的确认，增加生活层面的连续性证据；这些仍不认证当前主体的客观身份或记忆来源。
 
 ## Affected IDs / chapters
 
-- `CHR_0001`、`CHR_0002`、`CHR_0003`、`CHR_0004`、`ITEM_0001`、`ITEM_0002`、`LOC_0004`、`LOC_0005`、`LOC_0007`、`EVT_000001`、`EVT_000002`、`EVT_000003`、`EVT_000004`、`EVT_000005`、`EVT_000006`、`EVT_000007`、`CH_0001`、`CH_0002`、`CH_0003`、`CH_0004`、`CH_0005`、`CH_0006`。
+- `CHR_0001`、`CHR_0002`、`CHR_0003`、`CHR_0004`、`ITEM_0001`、`ITEM_0002`、`LOC_0004`、`LOC_0005`、`LOC_0007`、`LOC_0008`、`EVT_000001`、`EVT_000002`、`EVT_000003`、`EVT_000004`、`EVT_000005`、`EVT_000006`、`EVT_000007`、`EVT_000008`、`CH_0001`、`CH_0002`、`CH_0003`、`CH_0004`、`CH_0005`、`CH_0006`、`CH_0007`。
 
 ## Decisions that must wait
 

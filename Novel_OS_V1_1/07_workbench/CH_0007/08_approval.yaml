@@ -1,0 +1,19 @@
+chapter: CH_0007
+approved: true
+approved_by: human_author
+approved_at: 2026-08-13
+approve_final_prose: true
+approve_title: true
+approve_memory_delta: true
+approve_setting_changes: true
+approved_change_ids:
+  - CHANGE_0023
+  - CHANGE_0024
+approved_stable_ids:
+  - LOC_0008
+  - EVT_000008
+approve_controlled_writeback: true
+stage_requested: true
+commit_requested: true
+push_requested: true
+notes: "Author approved CH_0007 final prose and title 《替我们看看》, complete Delta, LOC_0008, EVT_000008, CHANGE_0023–0024, controlled writeback, exact staging, commit, and push on 2026-08-13."
