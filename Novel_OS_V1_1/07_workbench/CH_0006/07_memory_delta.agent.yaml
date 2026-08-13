@@ -1,0 +1,188 @@
+chapter: CH_0006
+status: applied
+transaction_status: APPLIED
+canonical: true
+source_draft: 05_draft.md
+source_draft_sha256: f374a84f7f0de57bb451f799a0b29e6a7cd41b66e6a31a9ebf4d13cffef7e168
+source_final_review: 06_final_review.agent.md
+
+proposed_stable_ids:
+  - id: CHR_0003
+    type: character
+    display_name: 毛晓
+    truth_boundary: CHR_0001's mother; only chapter-stated family and employment history established
+  - id: CHR_0004
+    type: character
+    display_name: 何松
+    truth_boundary: CHR_0001's father; only chapter-stated family and local civil-service history established
+  - id: LOC_0006
+    type: administrative_region
+    display_name: 诺瓦尔·西陆第四行政区
+    truth_boundary: broad regional designation and Greenport relationship established; complete boundaries unresolved
+  - id: LOC_0007
+    type: local_spaceport
+    display_name: 格林港西部地方空港
+    truth_boundary: local arrival site serving CHR_0001's unnamed hometown; official administrative name unresolved
+  - id: FAC_0007
+    type: light_industry_company
+    display_name: 恒辉轻工联合
+    truth_boundary: Novar light-industry employer and supplier; ownership and present corporate structure unresolved
+  - id: EVT_000007
+    type: event
+    display_name: 何筠七个月后返乡与父母重逢
+
+chapter_changes:
+  title:
+    proposed: 家
+    status: AUTHOR_APPROVED
+  summary:
+    - CHR_0001 recognizes his home region and recalls limited fragments of his parents and childhood
+    - CHR_0001 arrives at LOC_0007 and reunites with CHR_0003 and CHR_0004 after seven months missing
+    - family records describe debt collection, investigation, insurance, and missing-person or inheritance procedures during the absence
+    - the parents' real grief deepens CHR_0001's subjective identity fear without resolving objective continuity
+    - an inaccessible blank region appears to tremble once in CHR_0001's subjective perception
+
+character_changes:
+  CHR_0001:
+    location:
+      before: LOC_0005_LOW_ATMOSPHERE
+      after: LOC_0007
+    offer_state: unchanged; conditional expedition and candidate-member offer remains unaccepted
+    family_relationships:
+      mother: CHR_0003
+      father: CHR_0004
+    subjective_memory_fragments:
+      - childhood power outages and stories told by CHR_0003
+      - CHR_0003's reaction to his flight-academy application
+      - his parents' relationship, his birth, expansion, and war in broad sequence
+      - CHR_0004 helping fund ITEM_0002
+    psychological_state:
+      - experiences the home landscape as a familiar emotional anchor
+      - feels grief and responsibility after confronting his parents' seven months of suffering
+      - fears that the former identity died and the current subject may be reconstructed, without accepting this as fact
+    subjective_anomaly_evidence:
+      - perceives a single slight tremor in an inaccessible blank region after closing his eyes
+    explicitly_not_resolved:
+      - objective identity continuity, memory provenance, or resurrection mechanism
+      - ITEM_0002's destruction or accident location
+      - content, cause, or external reality of the perceived tremor
+  CHR_0003:
+    relationships:
+      child: CHR_0001
+      spouse: CHR_0004
+    known_history:
+      - former employee of FAC_0007
+      - came to the unnamed hometown as a local corporate inspector and met CHR_0004
+    chapter_state:
+      - has waited through seven months of uncertainty and initially resisted death confirmation
+      - recognizes, embraces, and repeatedly reassures CHR_0001 at LOC_0007
+    knowledge_ceiling:
+      - knows only that CHR_0001 disappeared and returned; does not know resurrection details
+  CHR_0004:
+    relationships:
+      child: CHR_0001
+      spouse: CHR_0003
+    known_history:
+      - worked in a local administrative office when he met CHR_0003
+      - contributed funds toward ITEM_0002 according to CHR_0001's subjective recollection
+    chapter_state:
+      - prepared practical missing-person support steps while CHR_0003 resisted death confirmation
+      - greets CHR_0001 with controlled speech while his hand trembles
+    knowledge_ceiling:
+      - knows only that CHR_0001 disappeared and returned; does not know resurrection details
+
+relationship_changes:
+  CHR_0001__CHR_0003:
+    relation: parent_and_child
+    latest_interaction:
+      - reunite at LOC_0007 after seven months missing
+    identity_effect: emotional recognition does not certify objective continuity
+  CHR_0001__CHR_0004:
+    relation: parent_and_child
+    latest_interaction:
+      - reunite at LOC_0007 after seven months missing
+    identity_effect: emotional recognition does not certify objective continuity
+  CHR_0003__CHR_0004:
+    relation: spouses
+    latest_known_pressure:
+      - disagreed once over preparing formal long-term-missing or inheritance procedures while continuing to survive financially
+
+world_changes:
+  LOC_0006:
+    stable_author_facts:
+      - western fourth administrative region of LOC_0005
+      - contains the regional capital Greenport and CHR_0001's unnamed hometown on its outskirts
+      - local settlements rely substantially on light industry and agriculture
+    unresolved:
+      - exact borders, population, government structure, and the hometown's name
+  LOC_0007:
+    stable_author_facts:
+      - small, old local spaceport serving the Greenport-area hometown
+      - has a repaired gray-white canopy and supports short-haul aircraft and freight machinery
+    environmental_context:
+      - humid air carries soil, rain, and metal odors
+      - local weather notices include possible split-jaw migration near western rainforest edges
+  FAC_0007:
+    stable_author_facts:
+      - one of Novar's major light-industry companies
+      - supplies civilian machinery, circulation-system components, and basic colonial consumer goods
+      - formerly employed CHR_0003
+    unresolved:
+      - current ownership, exact scale, labor structure, and relationship to FAC_0001
+  ITEM_0002:
+    family_record_update:
+      - loan-guarantee records include clauses described as partial shared family liability
+      - collectors visited the family three times during CHR_0001's disappearance
+    objective_validity: UNRESOLVED
+
+open_questions:
+  QUESTION_0001:
+    status: OPEN
+    update: CHR_0003 and CHR_0004 recognize CHR_0001 and share authentic family emotion, while CHR_0001's continuity fear intensifies without objective resolution
+  QUESTION_0007:
+    status: OPEN
+    update: CHR_0001 subjectively perceives one slight tremor in an inaccessible blank region; no content, cause, or external confirmation is available
+
+setting_changes:
+  - change_id: CHANGE_0021
+    type: ADD
+    status: AUTHOR_APPROVED
+    affected_ids:
+      - CHR_0003
+      - CHR_0004
+      - LOC_0006
+      - LOC_0007
+      - FAC_0007
+    previous_fact: production state did not establish CHR_0001's named parents, home-region localities, or FAC_0007
+    new_fact:
+      - CHR_0003 and CHR_0004 are CHR_0001's parents and reunite with him at LOC_0007
+      - LOC_0006 contains Greenport and the unnamed hometown where the family is based
+      - FAC_0007 is a major Novar light-industry company and former employer of CHR_0003
+    scope_boundary:
+      - no complete biographies, administrative map, hometown name, or corporate structure is established
+  - change_id: CHANGE_0022
+    type: ADD_AND_CLARIFY
+    status: AUTHOR_APPROVED
+    affected_ids:
+      - CHR_0001
+      - CHR_0003
+      - CHR_0004
+      - ITEM_0002
+      - QUESTION_0001
+      - QUESTION_0007
+    previous_fact: the family's seven-month experience and CHR_0001's post-return family-memory and blank-region evidence were not recorded
+    new_fact:
+      - the family faced collection, investigation, insurance, and missing-person or inheritance procedure pressure during the seven-month absence
+      - ITEM_0002 loan records are described as containing partial shared family-liability clauses, with three collection visits
+      - CHR_0001 experiences family memories and reconstruction fear as subjective evidence only
+      - CHR_0001 perceives a single slight tremor in an inaccessible blank region
+    scope_boundary:
+      - no complete legal validity, objective identity answer, memory-source answer, or anomaly mechanism is established
+
+events_created:
+  - EVT_000007
+canon_changes: []
+manuscript_impacts:
+  - create CH_0006 manuscript entry only after explicit approval
+notes:
+  - This Delta excludes CH_0005's company-departure and Novar macro-environment changes except where needed as continuity context.

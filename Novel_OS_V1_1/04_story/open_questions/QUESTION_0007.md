@@ -7,6 +7,8 @@ answer_reveal_status: HIDDEN
 provenance:
   - 07_workbench/CH_0004/07_memory_delta.agent.yaml
   - 07_workbench/CH_0004/08_approval.yaml
+  - 07_workbench/CH_0006/07_memory_delta.agent.yaml
+  - 07_workbench/CH_0006/08_approval.yaml
 ---
 
 # Open Canon Question
@@ -25,10 +27,12 @@ provenance:
 - 样本持续产生信号，但公司无法建立稳定读取路径。
 - 林赛和公司不知道其内容、来源、形成原因或作用。
 - 该证据不证明目标植入、记忆残留、人格备份、客观封印或任何秘密本体机制。
+- `CH_0006` 结尾，何筠主观感觉该空白区域轻微震动一次；没有图像、声音、可读取内容、仪器记录或外部确认。
+- 该体感既可能对应未知内部活动，也可能只是当前主体的主观感受；正文没有在两者之间作出判断。
 
 ## Affected IDs / chapters
 
-- `CHR_0001`、`CHR_0002`、`FAC_0001`、`ITEM_0001`、`QUESTION_0001`、`QUESTION_0005`、`QUESTION_0006`、`EVT_000005`、`CH_0004`。
+- `CHR_0001`、`CHR_0002`、`CHR_0003`、`CHR_0004`、`FAC_0001`、`ITEM_0001`、`QUESTION_0001`、`QUESTION_0005`、`QUESTION_0006`、`EVT_000005`、`EVT_000007`、`CH_0004`、`CH_0006`。
 
 ## Decisions that must wait
 

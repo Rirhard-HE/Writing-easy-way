@@ -12,6 +12,10 @@ provenance:
   - 07_workbench/CH_0002/08_approval.yaml
   - 07_workbench/CH_0004/07_memory_delta.agent.yaml
   - 07_workbench/CH_0004/08_approval.yaml
+  - 07_workbench/CH_0005/07_memory_delta.agent.yaml
+  - 07_workbench/CH_0005/08_approval.yaml
+  - 07_workbench/CH_0006/07_memory_delta.agent.yaml
+  - 07_workbench/CH_0006/08_approval.yaml
 last_updated: 2026-08-13
 ---
 
@@ -23,6 +27,7 @@ last_updated: 2026-08-13
 - 姓名熟悉感不等于恢复完整自传性记忆，也不解决客观身份连续性。
 - `FAC_0001` 旧身份档案将其记为联邦边境舰队第七巡航群前战术飞行员、服役五年，并记录其因拒绝对有大量平民的 `LOC_0004` 执行轨道轰炸而被吊销军籍；这是公司档案归属，不认证当前主体的客观连续性。
 - 同一档案将 `ITEM_0002` 的购买、改装及长期高风险边境履历归于其旧身份；“极其难死”只是机构对重复幸存记录的非正式评价，不构成能力。
+- 家庭关系：`CHR_0003` 毛晓为母亲，`CHR_0004` 何松为父亲；两人在 `CH_0006` 与其重逢。家庭相认与情感反应不认证当前主体的客观身份连续性。
 - 本章身份连续性：`UNRESOLVED`；不得从“复活”“克隆飞行员”或公司资产口径推导客观答案。
 
 ## 硬约束

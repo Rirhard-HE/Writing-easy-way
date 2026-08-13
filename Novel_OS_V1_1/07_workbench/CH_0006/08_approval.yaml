@@ -1,0 +1,23 @@
+chapter: CH_0006
+approved: true
+approved_by: human_author
+approved_at: 2026-08-13
+approve_final_prose: true
+approve_title: true
+approve_memory_delta: true
+approve_setting_changes: true
+approved_change_ids:
+  - CHANGE_0021
+  - CHANGE_0022
+approved_stable_ids:
+  - CHR_0003
+  - CHR_0004
+  - LOC_0006
+  - LOC_0007
+  - FAC_0007
+  - EVT_000007
+approve_controlled_writeback: true
+stage_requested: true
+commit_requested: true
+push_requested: true
+notes: "Author approved CH_0006 final prose and title 《家》, complete Delta, CHR_0003–0004, LOC_0006–0007, FAC_0007, EVT_000007, CHANGE_0021–0022, controlled writeback, exact staging, commit, and push on 2026-08-13."

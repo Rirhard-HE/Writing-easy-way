@@ -30,6 +30,12 @@ WORKBENCH_FILES = [
     "03_conflict_report.agent.md", "04_author_decision.md", "05_draft.md",
     "06_final_review.agent.md", "07_memory_delta.agent.yaml", "08_approval.yaml"
 ]
+LENGTH_GATE_FILE = "05_length_decision.md"
+LENGTH_GATE_ENFORCED_FROM = 5
+LENGTH_GATE_STATUSES = {
+    "not_started", "awaiting_author", "pass", "author_retained",
+    "revision_required", "stale"
+}
 AUTHOR_BRIEF_SECTIONS = [
     "# 作者写作材料（必填）", "# 本章核心剧情（必填）", "# must_happen",
     "# must_not_happen", "# flexible", "# 本章新增或修改设定"
@@ -92,6 +98,21 @@ def file_sha256(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def markdown_body_character_count(path):
+    """Count visible body characters, excluding front matter, first H1, and whitespace."""
+    lines = path.read_text(encoding="utf-8").splitlines()
+    if lines and lines[0].strip() == "---":
+        for index in range(1, len(lines)):
+            if lines[index].strip() == "---":
+                lines = lines[index + 1:]
+                break
+    while lines and not lines[0].strip():
+        lines.pop(0)
+    if lines and lines[0].startswith("# "):
+        lines = lines[1:]
+    return len(re.sub(r"\s+", "", "\n".join(lines)))
+
+
 def markdown_section(text, heading):
     lines = text.splitlines()
     try:
@@ -142,6 +163,11 @@ for name in WORKBENCH_FILES:
         errors.append(f"Missing workbench template: {name}")
     elif not template.read_text(encoding="utf-8").strip():
         errors.append(f"Empty workbench template: {name}")
+length_gate_template = ROOT / "07_workbench" / "_templates" / LENGTH_GATE_FILE
+if not length_gate_template.is_file():
+    errors.append(f"Missing workbench template: {LENGTH_GATE_FILE}")
+elif not length_gate_template.read_text(encoding="utf-8").strip():
+    errors.append(f"Empty workbench template: {LENGTH_GATE_FILE}")
 
 phase_file = ROOT / "00_system" / "current_phase.md"
 if phase_file.is_file():
@@ -227,8 +253,11 @@ wb = ROOT / "07_workbench"
 if wb.exists():
     for p in wb.iterdir():
         if p.is_dir() and p.name != "_templates":
+            chapter_number = None
             if not CHAPTER_RE.match(p.name):
                 warnings.append(f"Non-standard workbench chapter directory: {p.name}")
+            else:
+                chapter_number = int(p.name.split("_")[1])
             for name in WORKBENCH_FILES:
                 if not (p / name).exists():
                     errors.append(f"{p.name}: missing {name}")
@@ -294,6 +323,29 @@ if wb.exists():
             draft_ready = stage.get("05_draft.md", {}).get("status") == "expanded_draft"
             final_status = stage.get("06_final_review.agent.md", {}).get("status")
             delta_ready = stage.get("07_memory_delta.agent.yaml", {}).get("status") in {"proposed", "applied"}
+            length_gate_required = (
+                chapter_number is not None
+                and chapter_number >= LENGTH_GATE_ENFORCED_FROM
+            )
+            length_gate_path = p / LENGTH_GATE_FILE
+            length_gate_data = {}
+            length_gate_ready = not length_gate_required
+            if length_gate_required:
+                if not length_gate_path.is_file():
+                    errors.append(f"{p.name}: missing {LENGTH_GATE_FILE}")
+                elif not length_gate_path.read_text(encoding="utf-8").strip():
+                    errors.append(f"{p.name}: empty {LENGTH_GATE_FILE}")
+                else:
+                    length_gate_data = parse_frontmatter(length_gate_path)
+                    gate_status = length_gate_data.get("status")
+                    if gate_status not in LENGTH_GATE_STATUSES:
+                        errors.append(
+                            f"{p.name}/{LENGTH_GATE_FILE}: unsupported status {gate_status!r}"
+                        )
+                    if length_gate_data.get("chapter") != p.name:
+                        errors.append(
+                            f"{p.name}/{LENGTH_GATE_FILE}: chapter field does not match directory"
+                        )
 
             if proposal_ready and not context_ready:
                 errors.append(f"{p.name}: expansion proposal requires generated context")
@@ -349,8 +401,67 @@ if wb.exists():
                     p.name, "05_draft.md", draft_data,
                     "source_author_decision_sha256", p / "04_author_decision.md"
                 )
+                if length_gate_required:
+                    actual_count = markdown_body_character_count(p / "05_draft.md")
+                    if draft_data.get("body_character_count") != actual_count:
+                        errors.append(
+                            f"{p.name}/05_draft.md: body_character_count is missing or stale "
+                            f"(expected {actual_count})"
+                        )
+                    for key, expected in (
+                        ("length_target_min", 4000),
+                        ("length_target_max", 6000),
+                        ("length_hard_ceiling", 9000),
+                    ):
+                        if draft_data.get(key) != expected:
+                            errors.append(
+                                f"{p.name}/05_draft.md: {key} must be {expected}"
+                            )
+                    if length_gate_data:
+                        check_fingerprint(
+                            p.name, LENGTH_GATE_FILE, length_gate_data,
+                            "source_draft_sha256", p / "05_draft.md"
+                        )
+                        if length_gate_data.get("body_character_count") != actual_count:
+                            errors.append(
+                                f"{p.name}/{LENGTH_GATE_FILE}: body_character_count is missing or stale "
+                                f"(expected {actual_count})"
+                            )
+                        gate_status = length_gate_data.get("status")
+                        if actual_count > 9000 and gate_status != "revision_required":
+                            errors.append(
+                                f"{p.name}: draft exceeds 9000-character hard ceiling and requires revision"
+                            )
+                        elif 6000 < actual_count <= 9000 and gate_status not in {
+                            "awaiting_author", "author_retained", "revision_required"
+                        }:
+                            errors.append(
+                                f"{p.name}: draft above 6000 characters requires author length decision"
+                            )
+                        elif actual_count <= 6000 and gate_status not in {"pass", "revision_required"}:
+                            errors.append(
+                                f"{p.name}: in-range draft must pass length gate or be marked for revision"
+                            )
+                        length_gate_ready = (
+                            gate_status in {"pass", "author_retained"}
+                            and actual_count <= 9000
+                            and length_gate_data.get("repetition_review") == "PASS"
+                            and length_gate_data.get("negative_catalog_review") == "PASS"
+                        )
+
+                    draft_text = (p / "05_draft.md").read_text(encoding="utf-8")
+                    prohibited_patterns = {
+                        "fixed-second silence beat": r"(?:林赛|何筠|他|她)沉默了(?:一|两|二|三|\d+)秒",
+                        "stock quiet-room beat": r"(?:房间|简报室|空气)[^。\n]{0,12}(?:重新)?安静(?:下来|了)?(?:几|一|两|二|三|\d+)?秒?",
+                        "negative catalog narration": r"(?:上面|页面|投影|档案(?:里|中)?)[^。\n]{0,8}没有[^。\n]{0,100}[，,]\s*只有",
+                    }
+                    for label, pattern in prohibited_patterns.items():
+                        if re.search(pattern, draft_text):
+                            errors.append(f"{p.name}/05_draft.md: prohibited {label}")
             if final_status in {"agent_review", "ready_for_approval"} and not draft_ready:
                 errors.append(f"{p.name}: final review requires expanded draft")
+            if final_status in {"agent_review", "ready_for_approval"} and not length_gate_ready:
+                errors.append(f"{p.name}: final review bypasses length/repetition gate")
             if delta_ready and not (draft_ready and final_status in {"agent_review", "ready_for_approval"}):
                 errors.append(f"{p.name}: proposed delta requires draft and final review")
 
@@ -366,6 +477,11 @@ if wb.exists():
                     p.name, "06_final_review.agent.md", final_data,
                     "source_draft_sha256", p / "05_draft.md"
                 )
+                if length_gate_required:
+                    check_fingerprint(
+                        p.name, "06_final_review.agent.md", final_data,
+                        "source_length_decision_sha256", length_gate_path
+                    )
             if delta_ready:
                 check_fingerprint(
                     p.name, "07_memory_delta.agent.yaml", stage["07_memory_delta.agent.yaml"],

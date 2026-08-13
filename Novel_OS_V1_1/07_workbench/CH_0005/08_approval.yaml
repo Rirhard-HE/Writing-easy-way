@@ -1,0 +1,20 @@
+chapter: CH_0005
+approved: true
+approved_by: human_author
+approved_at: 2026-08-13
+approve_final_prose: true
+approve_title: true
+approve_memory_delta: true
+approve_setting_changes: true
+approved_change_ids:
+  - CHANGE_0019
+  - CHANGE_0020
+approved_stable_ids:
+  - LOC_0005
+  - SYS_0011
+  - EVT_000006
+approve_controlled_writeback: true
+stage_requested: true
+commit_requested: true
+push_requested: true
+notes: "Author approved CH_0005 final prose and title 《欢迎返回文明世界》, complete Delta, LOC_0005, SYS_0011, EVT_000006, CHANGE_0019–0020, controlled writeback, exact staging, commit, and push on 2026-08-13."
