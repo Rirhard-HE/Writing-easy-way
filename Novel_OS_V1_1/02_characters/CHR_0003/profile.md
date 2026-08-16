@@ -8,7 +8,9 @@ canonical_name_status: AUTHOR_CONFIRMED
 provenance:
   - 07_workbench/CH_0006/07_memory_delta.agent.yaml
   - 07_workbench/CH_0006/08_approval.yaml
-last_updated: 2026-08-13
+  - 07_workbench/CH_0008/07_memory_delta.agent.yaml
+  - 07_workbench/CH_0008/08_approval.yaml
+last_updated: 2026-08-16
 ---
 
 # Profile
@@ -17,6 +19,7 @@ last_updated: 2026-08-13
 
 - `CHR_0001` 的母亲，`CHR_0004` 的配偶。
 - 曾是 `FAC_0007` 员工，以企业地方考察员身份来到格林港外围家乡小城，并在那里认识 `CHR_0004`。
+- 与 `CHR_0005` 克里斯及其父母长期熟悉，把克里斯当作家人看待。
 
 ## 硬约束
 

@@ -1,0 +1,194 @@
+chapter: CH_0008
+status: applied
+transaction_status: APPLIED
+canonical: true
+source_draft: 05_draft.md
+source_draft_sha256: 1bddd143aedb72bc898e2d74a90094cce0e7b9a28fc57fd394ab47bc11b9b9da
+source_final_review: 06_final_review.agent.md
+
+proposed_stable_ids:
+  - id: CHR_0005
+    type: character
+    display_name: 克里斯
+    truth_boundary: observable mechanical aptitude and strong relic curiosity; no relic-engineering credential or future role established
+  - id: FAC_0008
+    type: public_maintenance_organization
+    display_name: 西陆第四行政区轨道维护局
+    truth_boundary: maintains administrative-region orbital facilities; complete jurisdiction, hierarchy, and ownership unresolved
+  - id: EVT_000009
+    type: event
+    display_name: 克里斯雨夜探访与旧友重逢
+
+chapter_changes:
+  title:
+    proposed: 朋友
+    status: AUTHOR_APPROVED
+  summary:
+    - CHR_0003 and CHR_0004 clear the table after the homecoming dinner while CHR_0001 experiences ordinary household time
+    - CHR_0005 arrives after his father notices the residence lights and initially fears corporate investigators have returned
+    - CHR_0005 confirms CHR_0001's return through familiar insults, a light punch, and resumed old-friend banter
+    - one visible short stun baton and recalled assistance establish CHR_0005's concern for the family without proving violent intent
+    - a western orbital-lighting traction-frame repair demonstrates CHR_0005's mechanical diagnostic aptitude
+    - CHR_0005 describes education, project-experience, and sponsorship barriers that limit recognition and advancement
+    - CHR_0005 shows strong curiosity about relic systems; CHR_0001 discloses only that training has not begun and answers are limited
+    - both families arrange a meal for the next day while CHR_0001 remains scheduled for a preliminary assessment in forty-eight hours
+
+character_changes:
+  CHR_0001:
+    location:
+      before: LOC_0008
+      after: LOC_0008
+    relationship_reconnection:
+      - recognizes CHR_0005 as a childhood best friend despite years of sparse contact
+      - resumes arguments and jokes without a formal emotional explanation
+      - agrees to share what he is permitted and able to explain after future learning and return
+    offer_state:
+      before: personally inclined to accept; formal acceptance and training pending
+      after: unchanged
+    knowledge_boundary:
+      - knows CHR_0005 helped his parents repeatedly during the seven-month disappearance
+      - recognizes CHR_0005's mechanical aptitude, career frustration, and relic curiosity
+      - does not disclose resurrection, identity anomaly, memory gap, task destination, or full corporate risk
+  CHR_0003:
+    location: LOC_0008
+    chapter_actions:
+      - treats CHR_0005 as family by reheating food and directing him to fetch his own bowl
+      - recognizes his protective visit and visible defensive equipment without confronting him
+    relationship_context:
+      - has known CHR_0005 since childhood and is close to his parents
+      - received practical and procedural help from CHR_0005 and his family during CHR_0001's disappearance
+  CHR_0004:
+    location: LOC_0008
+    chapter_actions:
+      - lets CHR_0005 in, identifies that his route was not truly convenient, and includes him at the table
+      - recalls CHR_0005's technical examination history and childhood mechanical accidents
+    relationship_context:
+      - is a longstanding friend of CHR_0005's parents
+      - received transport and waiting support from CHR_0005 during disappearance-related proceedings
+  CHR_0005:
+    profile:
+      name: 克里斯
+      appearance:
+        - tall and lean
+        - handsome face
+        - light blond hair
+        - fatigue and oil traces consistent with orbital maintenance shifts
+      temperament:
+        - mechanically obsessive
+        - irreverent and somewhat unserious in speech
+        - expresses concern through practical action and jokes
+    current_state:
+      location: LOC_0008
+      employment: maintenance worker at FAC_0008
+      current_work_context: repairs aging orbital facilities associated with the administrative region, including parts of Novar's orbital-lighting infrastructure
+      ability_evidence:
+        - identifies an intermittent guidance-bus microfracture missed by routine diagnostics
+        - designs a reduced-speed, multi-port return-wave test to isolate the fault
+        - studies why old systems work rather than limiting himself to replacement procedures
+      career_limits_as_described:
+        - passed a technical component of an engineering examination but failed credential review
+        - lacks accepted academy tier, main-route project experience, or corporate sponsorship
+        - receives operational reliance but limited formal credit or advancement
+      relic_interest_evidence:
+        - asks about control substrates, energy interfaces, and material structure rather than only the practical use of relic devices
+        - reports seeing a salvaged old orbital component with inconsistent apparent mass and scan behavior; this remains his unverified in-world account
+      boundaries:
+        - not certified as a relic engineer
+        - no future fleet assignment, formal rank, or advanced relic ability established
+    knowledge:
+      - knows CHR_0001 was reported missing and has now returned
+      - knows CHR_0001 may enter FAC_0001 relic-affairs work and expects training
+      - does not know resurrection, identity anomaly, memory gaps, task destination, or complete risk
+    recent_actions:
+      - comes to LOC_0008 after his father reports the lights are on, fearing another investigator visit
+      - carries a short stun baton in his maintenance bag; intended use remains unconfirmed
+      - reunites with CHR_0001 and remains for food and conversation
+
+relationship_changes:
+  CHR_0001__CHR_0005:
+    definition: childhood best friends whose long communication gaps do not erase familiarity
+    shared_history:
+      - visited spaceport areas and experimented with flight models and discarded machinery
+      - maintained sparse terminal contact after CHR_0001 left Novar
+    latest_interaction:
+      - confirms reunion through a light shoulder punch, mutual insults, food, and technical argument
+      - establishes a limited future promise to discuss releasable relic knowledge after CHR_0001 learns and returns
+    explicitly_not_resolved:
+      - CHR_0001's objective identity continuity
+      - future expedition participation by CHR_0005
+  CHR_0003__CHR_0005:
+    definition: family-like bond formed through childhood familiarity and continued practical support
+    latest_interaction: CHR_0003 feeds him and accepts his protective concern without formal thanks
+  CHR_0004__CHR_0005:
+    definition: family-like bond connected to longstanding friendship between both sets of parents
+    latest_interaction: CHR_0004 receives him at night, teases his false claim of convenience, and includes him in family conversation
+
+world_changes:
+  FAC_0008:
+    stable_author_facts:
+      - administrative-region organization employing CHR_0005 for orbital-facility maintenance
+      - operates maintenance shifts involving aging orbital equipment
+      - one chapter example concerns a traction frame in the western orbital-lighting array
+    institution_evidence:
+      - routine diagnostics and component-replacement procedures may fail on intermittent old-equipment faults
+      - at least one report structure credits supervisory coordination while placing a worker's contribution in an attachment
+    boundaries:
+      - complete jurisdiction, ownership, staffing grades, and relation to federal or corporate authorities remain unresolved
+      - a single case does not establish universal promotion or reporting policy
+      - CHR_0005's account of an anomalous salvaged component does not establish its origin, age, nature, or relic classification
+  LOC_0008:
+    current_state:
+      - CHR_0001, CHR_0003, CHR_0004, and CHR_0005 share a late-night continuation of the homecoming meal
+    social_context:
+      - CHR_0005 knows household storage and dining routines well enough to serve himself
+  Novar_orbital_infrastructure:
+    limited_update:
+      - a western orbital-lighting array includes traction-frame and guidance-bus components requiring local maintenance
+    boundary:
+      - no system-wide failure, crisis, exact technical architecture, or full infrastructure map established
+
+open_questions:
+  QUESTION_0001:
+    status: OPEN
+    update: CHR_0005 recognizes and treats CHR_0001 as his returned friend, adding role-level social continuity without certifying objective identity
+
+setting_changes:
+  - change_id: CHANGE_0025
+    type: ADD
+    status: AUTHOR_APPROVED
+    affected_ids:
+      - CHR_0001
+      - CHR_0003
+      - CHR_0004
+      - CHR_0005
+      - LOC_0008
+    previous_fact: production state did not contain CHR_0005 or the longstanding relationship between the two families
+    new_fact:
+      - CHR_0005 is CHR_0001's mechanically obsessed childhood best friend, with whom long communication gaps do not erase familiarity
+      - both sets of parents are longstanding friends, and CHR_0003/CHR_0004 treat CHR_0005 as family
+      - CHR_0005 and his parents provided practical support during CHR_0001's seven-month disappearance
+    scope_boundary:
+      - role-level recognition does not resolve CHR_0001's objective identity continuity
+      - no irreversible relationship or future expedition commitment occurs
+  - change_id: CHANGE_0026
+    type: ADD_AND_CLARIFY
+    status: AUTHOR_APPROVED
+    affected_ids:
+      - CHR_0005
+      - FAC_0008
+      - LOC_0005
+    previous_fact: production state established Novar's orbital climate support but not CHR_0005's maintenance employment, demonstrated aptitude, career constraints, or relic curiosity
+    new_fact:
+      - CHR_0005 works for FAC_0008 on aging orbital facilities and demonstrates diagnostic skill on an intermittent guidance-bus fault
+      - his account establishes limited formal recognition and credential barriers despite operational reliance
+      - he studies old-system principles and is strongly curious about relic technology
+    scope_boundary:
+      - no relic-engineering certification, advanced relic ability, future fleet role, universal institution rule, or task-location knowledge is established
+
+events_created:
+  - EVT_000009
+canon_changes: []
+manuscript_impacts:
+  - CH_0008 manuscript entry created under explicit approval
+notes:
+  - Legacy source details concerning Grave-Lamp destination, relic-project death rates, old-stargate jurisdiction, and future shipboard roles remain excluded.

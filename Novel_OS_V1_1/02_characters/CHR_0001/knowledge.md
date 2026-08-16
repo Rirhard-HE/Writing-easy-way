@@ -1,10 +1,10 @@
 ---
 character_id: CHR_0001
-as_of_chapter: CH_0007
+as_of_chapter: CH_0008
 truth_layers:
   - L3_ORGANIZATION_MODEL
   - L4_CHARACTER_KNOWLEDGE
-last_updated: 2026-08-13
+last_updated: 2026-08-16
 provenance:
   - 07_workbench/CH_0001/07_memory_delta.agent.yaml
   - 07_workbench/CH_0001/08_approval.yaml
@@ -22,6 +22,8 @@ provenance:
   - 07_workbench/CH_0006/08_approval.yaml
   - 07_workbench/CH_0007/07_memory_delta.agent.yaml
   - 07_workbench/CH_0007/08_approval.yaml
+  - 07_workbench/CH_0008/07_memory_delta.agent.yaml
+  - 07_workbench/CH_0008/08_approval.yaml
 ---
 
 # Knowledge State
@@ -73,6 +75,10 @@ provenance:
 - 知道父母仍保留其旧拖鞋和家庭物品，并记得其过去回家先寻找腌辣椒与酸豆角的习惯；这些只增加主观与家庭证据。
 - 知道何家的长叶藻慢炖、香料爆香及本地原料腌渍方式在其接触过的边境船员中并不常见；方法来源未知。
 - 知道父母已经了解债务、遗迹探险、舰队保障、待遇和训练概况，并看穿他仍准备再次离开。
+- 知道 `CHR_0005` 克里斯在其失联期间与家人共同帮助父母应对接送、陪同和程序压力。
+- 知道克里斯在 `FAC_0008` 维护老旧轨道设施，能通过故障周期、负载变化和多点测量定位间歇性问题，但在资历审查、正式署名与晋升上受限。
+- 知道克里斯对旧设施与遗迹科技的运行原理有强烈兴趣，并答应未来只分享允许且真正了解的内容。
+- 听见克里斯声称见过扫描表现和重量异常的旧轨道构件；不知道该陈述是否准确，也不知道构件来源、性质或遗迹分类。
 
 ## 怀疑 / 推测
 
@@ -100,6 +106,7 @@ provenance:
 - 活动但不可读取的回传结构区域中是否保留内容、其来源与无法读取原因。
 - 自己是否会接受远航与候选成员要约。
 - 何家罕见烹饪方法的来源、传承路径及其是否具有更广泛历史意义。
+- 克里斯所述异常旧构件的客观来源、材料性质与是否属于遗迹技术。
 - 不可读取区域的主观震动是否真实对应结构变化、其中是否存在内容以及为何发生。
 
 ## 错误认知 / 机构灌输

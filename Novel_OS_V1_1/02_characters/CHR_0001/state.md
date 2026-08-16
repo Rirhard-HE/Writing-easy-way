@@ -1,6 +1,6 @@
 ---
 character_id: CHR_0001
-as_of_chapter: CH_0007
+as_of_chapter: CH_0008
 provenance:
   - 07_workbench/CH_0001/07_memory_delta.agent.yaml
   - 07_workbench/CH_0001/08_approval.yaml
@@ -18,7 +18,9 @@ provenance:
   - 07_workbench/CH_0006/08_approval.yaml
   - 07_workbench/CH_0007/07_memory_delta.agent.yaml
   - 07_workbench/CH_0007/08_approval.yaml
-last_updated: 2026-08-13
+  - 07_workbench/CH_0008/07_memory_delta.agent.yaml
+  - 07_workbench/CH_0008/08_approval.yaml
+last_updated: 2026-08-16
 ---
 
 # Current State
@@ -32,3 +34,4 @@ last_updated: 2026-08-13
 - 方案状态：主观上已倾向接受由其带领 `FAC_0004` 的远航工作，并向父母预告自己还会离开；仍未正式接受、签约、入职、开始训练或确定出发日期。
 - 短期目标：休整并参加四十八小时后的预备评估，在正式决定前理解舰队指挥与遗迹分析训练。
 - 当前心理状态：家庭空间、味觉习惯与父母托付进一步强化诺瓦尔的情感锚点；他承认自己仍不知道真正想去哪里，但愿意把远行理解为替父母观看未见的宇宙。身份连续性继续开放。
+- 当前社交状态：已与童年死党 `CHR_0005` 重逢并恢复熟悉相处方式；知道克里斯及其父母在失联期帮助何家。两家计划次日共同吃饭。
