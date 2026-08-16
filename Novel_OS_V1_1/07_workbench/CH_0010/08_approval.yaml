@@ -1,0 +1,19 @@
+chapter: CH_0010
+approved: true
+approved_by: human_author
+approved_at: 2026-08-16
+approve_final_prose: true
+approve_title: true
+approve_memory_delta: true
+approve_setting_changes: true
+approved_change_ids:
+  - CHANGE_0030
+  - CHANGE_0031
+  - CHANGE_0032
+approved_stable_ids:
+  - EVT_000011
+approve_controlled_writeback: true
+stage_requested: false
+commit_requested: false
+push_requested: false
+notes: "Human author approved CH_0010 final prose/title, complete Delta, EVT_000011, CHANGE_0030–0032, and controlled writeback on 2026-08-16. Staging, commit, and push remain unapproved."

@@ -1,0 +1,21 @@
+chapter: CH_0009
+approved: true
+approved_by: human_author
+approved_at: 2026-08-16
+approve_final_prose: true
+approve_title: true
+approve_memory_delta: true
+approve_setting_changes: true
+approved_change_ids:
+  - CHANGE_0027
+  - CHANGE_0028
+  - CHANGE_0029
+approved_stable_ids:
+  - SYS_0012
+  - EVT_000010
+  - QUESTION_0008
+approve_controlled_writeback: true
+stage_requested: true
+commit_requested: true
+push_requested: true
+notes: "Author approved CH_0009 final prose/title, complete Delta, SYS_0012, EVT_000010, QUESTION_0008, CHANGE_0027–0029, controlled writeback, exact staging, commit, and upload to codex/repair-novel-os-scaffold on 2026-08-16."

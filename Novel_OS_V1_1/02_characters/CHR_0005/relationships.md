@@ -1,9 +1,11 @@
 ---
 character_id: CHR_0005
-as_of_chapter: CH_0008
+as_of_chapter: CH_0009
 provenance:
   - 07_workbench/CH_0008/07_memory_delta.agent.yaml
   - 07_workbench/CH_0008/08_approval.yaml
+  - 07_workbench/CH_0009/07_memory_delta.agent.yaml
+  - 07_workbench/CH_0009/08_approval.yaml
 last_updated: 2026-08-16
 ---
 
@@ -15,6 +17,8 @@ last_updated: 2026-08-16
 - 相处模式：联系稀疏但不需要重新客套；以机械争论、损友玩笑和轻微肢体动作表达亲近。
 - 共同经历：小时候一起往空港跑，拆过飞行模型和报废机械，也制造过损坏窗户与工具棚的事故。
 - 最近变化：在 `LOC_0008` 确认何筠失联后归来；约定何筠日后只分享允许且真正了解的遗迹知识。
+- 补充旧事：小时候隔着空港外围护栏看短途穿梭机；何筠问过克里斯的梦想，克里斯没有正面回答。
+- 最新约定：邀请何筠在雨停、腿部状态允许后找一天去附近星港看穿梭机；未确定日期、地点或实际出行。
 - 边界：克里斯的辨认与友情不认证何筠的客观身份连续性；没有建立克里斯未来参加远航。
 
 ## CHR_0003 — 毛晓

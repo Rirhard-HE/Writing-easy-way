@@ -1,0 +1,315 @@
+chapter: CH_0009
+status: applied
+transaction_status: APPLIED
+canonical: true
+source_draft: 05_draft.md
+source_draft_sha256: 1ef0aff07af0415dd6243b1776a0f2fb9ace5c84dcdc0f8f8b212d8845b19aac
+source_final_review: 06_final_review.agent.md
+source_final_review_sha256: 5da6449a027cf3bb8e0ec5d44f8832be9486cf2bbf1234ad419c8ff7f4f562b5
+
+proposed_stable_ids:
+  - id: SYS_0012
+    type: regional_development_and_mobility_structure
+    display_name: 联邦核心—边缘殖民地发展结构
+    truth_boundary: broad author-confirmed regional pattern; not a complete economic system, legal caste, or universal rule for every colony
+  - id: EVT_000010
+    type: event
+    display_name: 雨夜续席、学院旧事与星港邀约
+  - id: QUESTION_0008
+    type: open_question
+    display_name: 近年遗迹项目扩张由什么推动
+    truth_boundary: public activity trend is confirmed; causes, supply routes, scale, and mortality remain unresolved
+
+chapter_changes:
+  title:
+    proposed: 前途无量
+    status: AUTHOR_APPROVED
+  prose:
+    status: AUTHOR_APPROVED
+    approved_at: 2026-08-16
+  summary:
+    - CHR_0003 adds a small hot dish while CHR_0005 jokes about FAC_0008 synthetic meals and automated farming
+    - CHR_0005's limited recognition leads into the broader contrast between core colonies near former main routes and edge worlds such as LOC_0005
+    - CHR_0004 reveals an academy incident in which CHR_0001's old identity disabled a training craft safety speed limit to prove a manual descent plan
+    - unmanned target craft performed emergency avoidance, one navigation-array group was damaged, training airspace closed temporarily, nobody was injured, and the old identity nearly lost academy enrollment
+    - family teasing, shared memories, food, and ordinary household tasks reduce CHR_0001's immediate sense of suspension without resolving objective identity continuity
+    - CHR_0005 asks about FAC_0002, hears that CHR_0001 remains only a conditional candidate, and separates an observable rise in corporate relic projects from unverified mortality hearsay
+    - a childhood memory of watching shuttles leads CHR_0005 to invite CHR_0001 to visit a nearby spaceport after the rain; no travel occurs
+
+character_changes:
+  CHR_0001:
+    location:
+      before: LOC_0008
+      after: LOC_0008
+    offer_state:
+      before: personally inclined to accept; formal acceptance, employment, training, and departure pending
+      after: unchanged; describes himself as an external or peripheral candidate without formal staffing status
+    old_identity_history:
+      - attended a flight academy before later fleet service
+      - during one training exercise, disabled a safety speed limit to demonstrate a faster manual descent plan
+      - forced several unmanned target craft into emergency avoidance, damaged one navigation-array group, and caused temporary training-airspace closure
+      - no one was injured; the old identity nearly lost academy enrollment
+    psychological_state:
+      - familiar argument, food, family teasing, and practical plans temporarily reduce the sense of being suspended between two lives
+      - identity uncertainty remains present and unresolved
+      - begins considering an ordinary household repair before the next-day family meal
+    knowledge_gained:
+      - recognizes the core-edge development and credential gap from personal travel and CHR_0005's experience
+      - hears that many companies are visibly increasing relic-project recruitment or announcements
+      - knows CHR_0005 has heard unverified claims of rising relic-project deaths but has no official statistics
+    relationship_update:
+      - remembers asking CHR_0005 about his dream while they watched shuttle operations as children
+      - accepts CHR_0005's invitation to visit a nearby spaceport after the rain, without setting a date or leaving LOC_0008
+    explicitly_not_resolved:
+      - objective ownership of the academy memory or continuity with the pre-awakening identity
+      - formal acceptance of FAC_0001's offer
+      - cause, scale, source network, or mortality of the relic-project expansion
+  CHR_0003:
+    location: LOC_0008
+    chapter_actions:
+      - adds a small hot dish and expresses concern about CHR_0005's work meals
+      - joins the academy-incident teasing while retaining knowledge of its disciplinary seriousness
+      - stops discussion of relic-project deaths at the table
+    knowledge_boundary:
+      - hears CHR_0005's unverified mortality claim and the public expansion trend
+      - receives no resurrection, identity-anomaly, destination, or full-risk disclosure
+  CHR_0004:
+    location: LOC_0008
+    chapter_actions:
+      - shifts attention from CHR_0005's career problem by teasing CHR_0001 as a formerly promising pilot and current prospective explorer
+      - recounts the approved flight-academy incident through family knowledge
+    knowledge_boundary:
+      - understands CHR_0001 still lacks formal relic-affairs staffing status
+      - receives no resurrection, identity-anomaly, destination, or full-risk disclosure
+  CHR_0005:
+    location:
+      before: LOC_0008
+      after: LOC_0008
+    current_state:
+      employment: unchanged at FAC_0008
+      career_context:
+        - reports that core-colony experience receives greater recognition than comparable edge-world maintenance experience
+        - remains frustrated by limited formal mobility and recognition; no promotion or new credential occurs
+      relic_interest:
+        - distinguishes public recruitment and project announcements from unverified mortality hearsay
+        - says he wants to understand why systems work rather than being told that continued operation is sufficient
+    knowledge_gained:
+      - knows FAC_0002 is a core FAC_0001 department
+      - knows CHR_0001 remains a conditional candidate without formal staffing status
+      - knows no additional task destination, classified mechanism, resurrection fact, or complete risk information
+    relationship_update:
+      - shared childhood shuttle-watching and an unanswered dream question are recalled
+      - invites CHR_0001 to watch shuttles at a nearby spaceport after the rain; no date or travel is established
+
+knowledge_changes:
+  reader_confirmed:
+    - SYS_0012 exists as a broad regional pattern within FAC_0005
+    - the approved flight-academy incident occurred in the history attributed to CHR_0001's old identity
+    - many companies have visibly increased relic-related recruitment, development, or project announcements in recent years
+  character_bound_only:
+    - CHR_0005 has heard that relic-project deaths are increasing
+  still_unknown:
+    - any objective relic-project mortality increase or rate
+    - why the industry-wide activity is increasing
+    - whether more relics are being found, more relic products are circulating, or another cause applies
+    - whether CHR_0005 will enter relic work or join a future expedition
+    - CHR_0001's objective identity continuity
+
+relationship_changes:
+  CHR_0001__CHR_0003:
+    latest_interaction:
+      - CHR_0003 feeds CHR_0005, joins the family teasing, and halts death talk because CHR_0001 may leave again
+    change_level: no durable relationship redefinition
+  CHR_0001__CHR_0004:
+    latest_interaction:
+      - CHR_0004 uses the academy disciplinary story to restore an ordinary father-son teasing rhythm
+    change_level: no durable relationship redefinition
+  CHR_0001__CHR_0005:
+    shared_history_added:
+      - watched short-range shuttles from outside spaceport boundaries as children
+      - CHR_0001 once asked about CHR_0005's dream; CHR_0005 redirected the question into technical observation
+    latest_interaction:
+      - move between jokes, structural career frustration, relic curiosity, and a quiet invitation without losing their established familiarity
+      - agree in principle to watch shuttles together after the rain
+    explicitly_not_resolved:
+      - CHR_0005's ultimate dream
+      - exact date, spaceport, route, or execution of the visit
+      - future expedition participation
+
+world_changes:
+  SYS_0012:
+    stable_author_facts:
+      - core colonies located near former main routes tend to have denser automated industry
+      - many major-corporation headquarters are concentrated in core colonies
+      - edge worlds such as LOC_0005 more often supply raw materials and recruited people, including soldiers, pilots, and debt-bound labor
+      - qualifications and experience from core regions may receive greater recognition than comparable edge-world experience, creating indirect discrimination
+    structural_effects:
+      - corporate headquarters, orders, qualifications, and professional networks reinforce opportunity concentration in core regions
+      - edge worlds buy back higher-priced equipment and contracts while exporting resources and labor
+    boundaries:
+      - describes a broad pattern, not every colony, company, hiring decision, or individual outcome
+      - does not establish a formal legal caste, complete trade system, exact prices, quotas, or universal discrimination policy
+      - proximity to former main routes does not mean the pre-collapse intergalactic network remains operational
+  FAC_0005:
+    regional_structure_update:
+      - contains economically differentiated core and edge colonies within its current political framework
+      - formal political structure remains unchanged; new Federation is not established as a separate official name
+  LOC_0005:
+    regional_position:
+      - functions as an edge world within SYS_0012
+      - exports raw materials and recruited people while local experience may receive less recognition in core-region mobility
+    boundary:
+      - does not mean every resident, employer, shipment, or career follows the same pattern
+  FAC_0008:
+    personnel_context:
+      - CHR_0005 reports that core-colony background can be favored for outside assignments over comparable edge-world maintenance experience
+    boundary:
+      - one employee account does not establish a universal FAC_0008 or federation-wide hiring rule
+  relic_project_activity:
+    confirmed_trend:
+      - many companies have visibly increased relic-project recruitment, announcements, development, or adaptation work in recent years
+      - projects may involve independently found relics or relic equipment and products obtained from elsewhere
+    unresolved:
+      - complete company list, project count, source routes, ownership, scale, causes, and commercial relationships
+      - whether objective deaths are increasing
+    rumor_layer:
+      holder: CHR_0005
+      claim: relic-project deaths have increased in recent years
+      evidence_status: unverified hearsay without official statistics
+
+foreshadow_changes:
+  QUESTION_0008:
+    status: NEW_OPEN
+    reveal_gate: HIDDEN
+    question: What is driving the visible increase in corporate relic projects, and are more sites being found or more relic products entering circulation?
+    current_evidence:
+      - recurring public recruitment and project announcements
+      - participation by companies outside established major relic departments
+      - multiple possible acquisition paths described without confirmation
+    excluded_conclusions:
+      - no link to LOC_0002, CHR_0001's anomaly, or any secret mechanism
+      - no objective mortality trend
+
+open_questions:
+  QUESTION_0001:
+    status: OPEN
+    update: shared academy recollection, family teasing, bodily familiarity, and ordinary future plans deepen subjective and social continuity without certifying objective identity
+  QUESTION_0008:
+    status: NEW_OPEN
+    reveal_gate: HIDDEN
+
+setting_changes:
+  - change_id: CHANGE_0027
+    type: ADD_AND_CLARIFY
+    status: AUTHOR_APPROVED
+    affected_ids:
+      - SYS_0012
+      - FAC_0005
+      - LOC_0005
+      - FAC_0008
+      - CHR_0001
+      - CHR_0005
+    previous_fact: production state established post-collapse specialization, major-corporation practical power, and CHR_0005's credential barriers, but not a general core-edge colonial development structure
+    new_fact:
+      - core colonies near former main routes tend to concentrate denser automated industry and many major-corporation headquarters
+      - edge worlds such as LOC_0005 more often export raw materials and recruited people, including soldiers, pilots, and debt-bound labor
+      - core-region credentials and experience can receive greater recognition, producing indirect discrimination against edge-world experience
+    scope_boundary:
+      - no complete economy, legal caste, exact data, universal colony rule, or single-cause model is established
+      - former-route proximity does not restore the collapsed intergalactic network
+  - change_id: CHANGE_0028
+    type: ADD
+    status: AUTHOR_APPROVED
+    affected_ids:
+      - CHR_0001
+      - CHR_0003
+      - CHR_0004
+      - CHR_0005
+      - QUESTION_0001
+    previous_fact: production state established that CHR_0001's old identity attended flight academy but contained no specific academy disciplinary incident
+    new_fact:
+      - during academy training, the old identity attributed to CHR_0001 disabled a training craft safety speed limit to prove a manual descent plan
+      - several unmanned target craft made emergency avoidance, one navigation-array group was damaged, and training airspace temporarily closed
+      - nobody was injured; the old identity nearly lost academy enrollment
+      - the incident remains shared family and old-friend history without resolving current-subject objective continuity
+    scope_boundary:
+      - academy name, year, craft model, financial loss, disciplinary terms, other identities, and hidden motive remain unset
+      - no special ability, heroic motive, or identity proof is inferred
+  - change_id: CHANGE_0029
+    type: ADD_AND_CLARIFY
+    status: AUTHOR_APPROVED
+    affected_ids:
+      - CHR_0001
+      - CHR_0003
+      - CHR_0004
+      - CHR_0005
+      - QUESTION_0008
+    previous_fact: production state established individual relic organizations and CHR_0005's curiosity but not the current multi-company expansion trend; CH_0008 intentionally excluded mortality claims
+    new_fact:
+      - many companies now visibly increase relic-related recruitment, announcements, development, or product-adaptation work
+      - companies may work from discoveries of their own or relic equipment and products obtained elsewhere; exact paths remain unknown
+      - CHR_0005 has heard that deaths are increasing, but this remains unverified hearsay without official statistics
+    scope_boundary:
+      - no objective mortality increase, death rate, project count, company list, cause, source network, or link to LOC_0002 is established
+      - CHR_0005 gains no relic qualification, inside source, or future expedition role
+
+events_created:
+  - EVT_000010
+
+canon_changes: []
+
+manuscript_impacts:
+  - create 05_manuscript/CH_0009.md only after Delta and controlled-writeback approval
+
+controlled_writeback_targets:
+  modify:
+    - 02_characters/CHR_0001/profile.md
+    - 02_characters/CHR_0001/state.md
+    - 02_characters/CHR_0001/knowledge.md
+    - 02_characters/CHR_0001/relationships.md
+    - 02_characters/CHR_0003/state.md
+    - 02_characters/CHR_0003/knowledge.md
+    - 02_characters/CHR_0004/state.md
+    - 02_characters/CHR_0004/knowledge.md
+    - 02_characters/CHR_0005/state.md
+    - 02_characters/CHR_0005/knowledge.md
+    - 02_characters/CHR_0005/relationships.md
+    - 03_world/factions/FAC_0005.md
+    - 03_world/factions/FAC_0008.md
+    - 03_world/locations/LOC_0005.md
+    - 03_world/locations/LOC_0008.md
+    - 04_story/open_questions/QUESTION_0001.md
+  create:
+    - 03_world/systems/SYS_0012.md
+    - 04_story/open_questions/QUESTION_0008.md
+    - 05_manuscript/CH_0009.md
+    - 06_memory/chapters/CH_0009.md
+    - 06_memory/events/EVT_000010.md
+    - 06_memory/setting_changes/CHANGE_0027.md
+    - 06_memory/setting_changes/CHANGE_0028.md
+    - 06_memory/setting_changes/CHANGE_0029.md
+  derived:
+    - 09_index/file_index.json
+    - 09_index/secret_guard_index.json
+  explicitly_unchanged:
+    - 01_canon/**
+    - 03_world/locations/LOC_0002.md
+    - 03_world/factions/FAC_0001.md
+    - 03_world/factions/FAC_0002.md
+    - 03_world/systems/SYS_0005.md
+    - 03_world/systems/SYS_0009.md
+    - 03_world/systems/SYS_0010.md
+    - 05_manuscript/CH_0001.md
+    - 05_manuscript/CH_0002.md
+    - 05_manuscript/CH_0003.md
+    - 05_manuscript/CH_0004.md
+    - 05_manuscript/CH_0005.md
+    - 05_manuscript/CH_0006.md
+    - 05_manuscript/CH_0007.md
+    - 05_manuscript/CH_0008.md
+
+notes:
+  - The Kong Yiji wording is an author-level prose intertext only and creates no stable world fact or cultural lineage.
+  - The spaceport remains unnamed and unvisited; no new location ID is created.
+  - CHR_0005's ultimate dream remains unset.
+  - Controlled writeback was authorized and applied on 2026-08-16; exact staging, commit, and upload were subsequently authorized for the same transaction.

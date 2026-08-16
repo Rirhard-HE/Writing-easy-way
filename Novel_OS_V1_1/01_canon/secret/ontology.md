@@ -8,10 +8,11 @@ truth_layer: L0_OBJECTIVE_TRUTH
 reveal_status: HIDDEN
 earliest_reveal: UNDECIDED
 source: author_statement
-last_updated: 2026-08-11
+last_updated: 2026-08-16
 decision_provenance:
   erasure_model: GENESIS_DECISION_001/AD-003-A
   identity_model: GENESIS_DECISION_001/AD-004-C
+  echo_well_and_clone_pilot_mechanism: CH_0010/CHANGE_0032
 allowed_manifestations:
   - preservation, verification, continuity, duplicate, missing, and conflict effects
   - erasure-like anomalies without a narrator-certified mechanism
@@ -171,6 +172,16 @@ forbidden_exposition:
 具体能力能够覆盖的范围、成本、传播方式、追溯深度、失败形态与实际极限仍为 `OPEN_CANON`。
 
 ## Echo Well compatibility
+
+### Author-confirmed mechanism
+
+- “回声井”在客观层指围绕信息凝结点建造的一系列设施与装置，并非单一机器。
+- 旧联邦先发现一个具有类似回溯效果的特殊区域，再围绕该区域发展相关工程阵列。
+- 阵列能够保存被记录实体在某一选定时间点的全部构成信息。
+- 克隆飞行员技术结合实时脑电波记忆记录、对基因克隆体大脑皮层的短期精准刺激，以及回声井保存的刻录时刻过往状态信息，以在克隆体中形成人格与记忆。
+- 刺激精准度与记录畸变会产生副作用；具体阈值、范围、设施几何、实现细节和个案因果仍未确定。
+
+以上内容仅属 `L0_OBJECTIVE_TRUTH / AUTHOR_ONLY / HIDDEN`。它不回答何筠当前主体的最终连续性，也不认证 `CH_0010` 梦境是真实记忆、通讯、预言或设施活动；不得进入普通上下文包、人物知识或读者确认状态。
 
 现有正文中的“回声井”与本体论高度兼容：
 
