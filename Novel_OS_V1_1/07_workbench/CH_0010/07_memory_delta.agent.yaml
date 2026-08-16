@@ -1,0 +1,302 @@
+chapter: CH_0010
+status: applied
+transaction_status: APPLIED
+canonical: true
+source_draft: 05_draft.md
+source_draft_sha256: ec88f062831ba43b4319419b4d298b7405e497b13f6516ee6961763c024aa301
+source_final_review: 06_final_review.agent.md
+source_final_review_sha256: c55302019f900d3f22b00ed3daf74d4e3bd8aba3a6f8ccf41e1bac62015098f5
+
+proposed_stable_ids:
+  - id: EVT_000011
+    type: event
+    display_name: 返家首夜与回声井认知梦
+
+chapter_changes:
+  title:
+    proposed: 梦
+    status: AUTHOR_APPROVED
+  prose:
+    status: AUTHOR_APPROVED
+    approved_at: 2026-08-16
+  summary:
+    - CHR_0005 leaves LOC_0008 after midnight because he must return to FAC_0008 for work the next day
+    - CHR_0001, CHR_0003, and CHR_0004 close the evening with household tasks, local news, and ordinary neighborhood updates
+    - an old towel and CHR_0001's former bedroom intensify familiar-but-not-fully-owned autobiographical experience without resolving identity continuity
+    - CHR_0001 falls asleep unusually quickly and experiences a subjective dream involving an old spaceport, distorted broadcast, a vast well-like structure, silver-white flows, and unclassifiable fragments
+    - CHR_0001 subjectively names the dream structure SYS_0003, but neither the name nor the dream certifies objective mechanism, communication, memory, prophecy, or facility activity
+    - the chapter ends inside the dream when CHR_0003's voice calls CHR_0001's name; no waking event occurs
+
+character_changes:
+  CHR_0001:
+    location:
+      before: LOC_0008
+      after: LOC_0008
+    offer_state:
+      before: personally inclined to accept; formal acceptance, employment, training, and departure pending
+      after: unchanged
+    physical_state:
+      - accumulated fatigue becomes strongly apparent after the household settles for the night
+      - falls asleep rapidly in his former bedroom; whether this speed has any external cause remains unresolved
+    psychological_state:
+      - choosing between a newly prepared towel and his old towel intensifies the separation between remembered familiarity and felt ownership
+      - recognizes household details and autobiographical associations while still experiencing them as partly belonging to another person
+      - experiences a disturbing but unverified cognition dream associated in his mind with SYS_0003
+    subjective_dream_experience:
+      - begins in a silent version of a childhood spaceport with missing reflection and distorted environmental rules
+      - hears a nonlinguistic low-frequency pattern that he can only describe as a call
+      - experiences a vast well-like structure, shifting scale, silver-white flows, and unclassifiable fragments resembling people, places, and ships
+      - subjectively identifies the structure as SYS_0003 without knowing why
+      - hears CHR_0003 call his name across the dream before the chapter ends
+    knowledge_boundary:
+      - does not know whether the dream had an external trigger
+      - cannot classify the fragments as memories, personalities, records, history, or imagination
+      - does not gain objective knowledge of SYS_0003's origin, mechanism, physical form, or relation to clone-pilot technology
+      - does not know whether CHR_0003's final call is external reality or part of the dream
+    explicitly_not_resolved:
+      - objective identity continuity
+      - cause of rapid sleep or the dream
+      - whether the dream contains authentic memory, communication, prediction, or facility activity
+      - formal acceptance of FAC_0001's offer
+  CHR_0003:
+    location: LOC_0008
+    chapter_actions:
+      - finishes kitchen cleanup and participates in fragmented family discussion of local life
+      - retrieves CHR_0001's old washing items and urges him to sleep
+      - calls CHR_0001's name at the dream's end, with the source layer left unconfirmed
+    knowledge_boundary:
+      - receives no information about the dream, identity anomaly, resurrection mechanism, destination, or classified technology
+  CHR_0004:
+    location: LOC_0008
+    chapter_actions:
+      - watches the local news terminal and discusses nearby work, maintenance, and neighborhood changes
+      - joins the ordinary parental exchange before the household goes to sleep
+    knowledge_boundary:
+      - receives no information about the dream, identity anomaly, resurrection mechanism, destination, or classified technology
+  CHR_0005:
+    location:
+      before: LOC_0008
+      after: outside LOC_0008 and returning home by the neighborhood street; destination not established
+    chapter_actions:
+      - leaves after midnight because of his next FAC_0008 shift
+      - extinguishes one cigarette before departure
+    durable_state_boundary:
+      - this single observed action does not establish a smoking habit, dependency, frequency, or inventory
+      - the future spaceport invitation remains active but unexecuted
+
+knowledge_changes:
+  reader_confirmed:
+    - CHR_0001 experiences the described dream and subjectively associates its well-like structure with SYS_0003
+    - familiar household objects can trigger a felt separation between autobiographical recognition and present ownership for CHR_0001
+    - the chapter ends before CHR_0001 is shown waking
+    - local characters report recent FAC_0008 personnel reduction and the suspension of two industrial production lines
+  character_bound_only:
+    - CHR_0001's perception of a call, the well-like structure, silver-white flows, and unclassifiable fragments
+    - CHR_0001's unexplained certainty that the dream structure is related to SYS_0003
+  author_only_hidden:
+    - the exact objective mechanism proposed in CHANGE_0032
+  still_unknown:
+    - whether the dream is internally generated or externally triggered
+    - whether any dream image corresponds to real memory, record, history, communication, prediction, or current facility state
+    - whether CHR_0003's final call comes from waking reality or remains inside the dream
+    - CHR_0001's objective identity continuity
+
+relationship_changes:
+  CHR_0001__CHR_0003:
+    latest_interaction:
+      - CHR_0003 restores old household items and asks about CHR_0001's pause in the bathroom; CHR_0001 answers only that nothing is wrong
+      - her voice becomes the final recognizable element in CHR_0001's dream
+    change_level: no durable relationship redefinition
+  CHR_0001__CHR_0004:
+    latest_interaction:
+      - ordinary local discussion and a brief argument about deep-space sleep continue the restored father-son domestic rhythm
+    change_level: no durable relationship redefinition
+  CHR_0001__CHR_0005:
+    latest_interaction:
+      - exchange a brief familiar insult at the door before CHR_0005 leaves for his next work shift
+    explicitly_unchanged:
+      - their future spaceport visit remains agreed in principle without date or execution
+
+world_changes:
+  LOC_0008:
+    current_state_update:
+      - CHR_0005 leaves after midnight; CHR_0001, CHR_0003, and CHR_0004 remain in the residence for the night
+      - CHR_0001 sleeps in his former bedroom, which still contains recognizable family and childhood traces
+    stable_detail_boundary:
+      - exact room layout, construction history, property ownership, and a complete inventory remain unset
+  LOC_0005_local_conditions:
+    current_reports:
+      - FAC_0008 is undergoing another personnel reduction according to the local night briefing and family discussion
+      - two production lines in the eastern industrial area have suspended operation for capacity reassessment
+      - a repair shop has opened in the old street in a former agricultural-parts storefront
+      - an elderly grilled-fish vendor near the old spaceport died in the previous year and the stall is now operated by his daughter as a hot-drink business
+    scope_boundary:
+      - these are limited local current facts and personal updates, not proof of a planet-wide or federation-wide economic crisis
+      - no exact headcount, company identity, production category, address, date, or causal model is established
+  SYS_0003:
+    reader_facing_update:
+      - CHR_0001 experiences a subjective cognition dream and labels its well-like structure as SYS_0003
+    strict_boundary:
+      - no objective mechanism, physical equivalence, external trigger, or causal link is revealed
+      - the FAC_0001 black-cube project icon remains an icon and is not equated with a single physical machine
+  secret_canon_target:
+    target: 01_canon/secret/ontology.md
+    truth_layer: L0_OBJECTIVE_TRUTH
+    reveal_status: HIDDEN
+    reader_state_effect: NONE
+    proposed_clarification:
+      - SYS_0003 ultimately refers to a family of facilities and devices engineered around an information-condensation point, not one machine
+      - the Old Federation discovered a region with a retroactive-like effect and developed arrays around it
+      - those arrays can preserve the complete constitutive information of a recorded entity at a selected time point
+      - clone-pilot technology combines continuous brainwave memory recording, short-term precise cortical stimulation of a genetic clone, and the recorded prior-state information associated with SYS_0003 to form personality and memory in the clone
+      - stimulation precision and recording distortion can produce side effects, while exact thresholds, ranges, and case-specific causality remain unset
+    exclusion_boundary:
+      - does not resolve CHR_0001's final identity continuity
+      - does not prove the CH_0010 dream is communication, authentic memory, prediction, or current SYS_0003 activity
+      - does not alter L3 organization knowledge, L4 character knowledge, or L5 reader knowledge
+
+foreshadow_changes:
+  QUESTION_0001:
+    status: OPEN
+    update: old household objects and bodily familiarity deepen subjective autobiographical continuity while the felt ownership gap strengthens the competing discontinuity model
+  QUESTION_0003:
+    status: OPEN
+    update: CHR_0001's subjective cognition dream creates a new reader-visible association with SYS_0003 but supplies no objective mechanism or causal proof
+    excluded_conclusions:
+      - no external trigger
+      - no authentic-memory classification
+      - no physical facility identification
+      - no clone-pilot mechanism reveal
+
+open_questions:
+  QUESTION_0001:
+    status: OPEN
+  QUESTION_0003:
+    status: OPEN
+    reveal_gate: HIDDEN
+
+setting_changes:
+  - change_id: CHANGE_0030
+    type: ADD_AND_CLARIFY
+    status: AUTHOR_APPROVED
+    affected_ids:
+      - CHR_0001
+      - CHR_0003
+      - CHR_0004
+      - CHR_0005
+      - LOC_0008
+      - QUESTION_0001
+      - QUESTION_0003
+      - SYS_0003
+    previous_fact: production state established CHR_0001's memory gaps, identity uncertainty, one subjective inaccessible-region vibration, and SYS_0003 as an unresolved company technology-chain model, but no cognition dream at LOC_0008
+    new_fact:
+      - after the family night settles, familiar household objects intensify CHR_0001's felt separation between remembered life and present ownership
+      - CHR_0001 rapidly falls asleep and experiences a subjective dream linking an altered childhood spaceport to a vast well-like structure that he calls SYS_0003
+      - unclassifiable human, location, and ship-like fragments appear in silver-white flows before CHR_0003's voice calls his name
+    scope_boundary:
+      - the dream does not certify objective communication, memory, prediction, facility activity, physical design, or mechanism
+      - rapid sleep has no confirmed external cause
+      - CHR_0001 does not wake within CH_0010
+      - identity continuity and SYS_0003's reader-facing objective nature remain unresolved
+  - change_id: CHANGE_0031
+    type: ADD_CURRENT_LOCAL_STATE
+    status: AUTHOR_APPROVED
+    affected_ids:
+      - LOC_0005
+      - LOC_0008
+      - FAC_0008
+    previous_fact: production state established LOC_0005 as an edge world with employment and mobility pressure, but did not contain these specific current neighborhood and industrial updates
+    new_fact:
+      - FAC_0008 is undergoing another local personnel reduction
+      - two eastern industrial-area production lines have suspended operation for capacity reassessment
+      - a general repair shop has opened in the old street
+      - the old-spaceport grilled-fish vendor died in the previous year and his daughter now operates the stall as a hot-drink business
+    scope_boundary:
+      - no exact counts, dates, employers, production types, addresses, or causes beyond the page statements
+      - does not establish a planet-wide or federation-wide economic crisis
+      - the vendor and repair-shop owner do not receive character IDs because they have no active narrative role
+  - change_id: CHANGE_0032
+    type: ADD_AND_CLARIFY_SECRET_CANON
+    status: AUTHOR_APPROVED
+    affected_ids:
+      - SYS_0003
+      - QUESTION_0001
+      - QUESTION_0003
+      - CANON_SECRET_ONTOLOGY_001
+    previous_fact: secret canon treated Echo Well preservation, verification, continuity, and possible discovery rather than construction as a compatible author-side framework, without fixing the author-confirmed facility family or clone-pilot implementation chain
+    new_fact:
+      - an information-condensation point and retroactive-like region were discovered by the Old Federation, which engineered a family of facilities and devices around them
+      - related arrays can preserve the complete constitutive information of a recorded entity at a selected time point
+      - clone-pilot technology combines continuous brainwave memory recording, precise short-term cortical stimulation of a genetic clone, and SYS_0003-associated preserved prior-state information to form personality and memory
+      - stimulation precision and recording distortion can produce side effects
+    scope_boundary:
+      - write only to author-only secret canon with reveal status HIDDEN and no reader-state effect
+      - exact thresholds, side-effect range, implementation detail, facility geometry, and individual-case causality remain unset
+      - does not resolve CHR_0001's objective continuity or prove any CH_0010 dream image corresponds to the mechanism
+      - must not be copied into ordinary SYS_0003, character knowledge, chapter prose, public memory summaries, or reader-facing context packs
+
+events_created:
+  - EVT_000011
+
+canon_changes:
+  - target: 01_canon/secret/ontology.md
+    change_id: CHANGE_0032
+    information_class: AUTHOR_ONLY
+    reveal_status: HIDDEN
+    reader_state_effect: NONE
+
+manuscript_impacts:
+  - create 05_manuscript/CH_0010.md only after Delta and controlled-writeback approval
+
+controlled_writeback_targets:
+  modify:
+    - 01_canon/secret/ontology.md
+    - 02_characters/CHR_0001/state.md
+    - 02_characters/CHR_0001/knowledge.md
+    - 02_characters/CHR_0003/state.md
+    - 02_characters/CHR_0004/state.md
+    - 02_characters/CHR_0005/state.md
+    - 03_world/factions/FAC_0008.md
+    - 03_world/locations/LOC_0005.md
+    - 03_world/locations/LOC_0008.md
+    - 03_world/systems/SYS_0003.md
+    - 04_story/open_questions/QUESTION_0001.md
+    - 04_story/open_questions/QUESTION_0003.md
+  create:
+    - 05_manuscript/CH_0010.md
+    - 06_memory/chapters/CH_0010.md
+    - 06_memory/events/EVT_000011.md
+    - 06_memory/setting_changes/CHANGE_0030.md
+    - 06_memory/setting_changes/CHANGE_0031.md
+    - 06_memory/setting_changes/CHANGE_0032.md
+  derived:
+    - 09_index/file_index.json
+    - 09_index/secret_guard_index.json
+  explicitly_unchanged:
+    - 01_canon/public/**
+    - 02_characters/CHR_0001/profile.md
+    - 02_characters/CHR_0001/relationships.md
+    - 02_characters/CHR_0003/knowledge.md
+    - 02_characters/CHR_0003/relationships.md
+    - 02_characters/CHR_0004/knowledge.md
+    - 02_characters/CHR_0004/relationships.md
+    - 02_characters/CHR_0005/knowledge.md
+    - 02_characters/CHR_0005/relationships.md
+    - 03_world/locations/LOC_0002.md
+    - 04_story/open_questions/QUESTION_0008.md
+    - 05_manuscript/CH_0001.md
+    - 05_manuscript/CH_0002.md
+    - 05_manuscript/CH_0003.md
+    - 05_manuscript/CH_0004.md
+    - 05_manuscript/CH_0005.md
+    - 05_manuscript/CH_0006.md
+    - 05_manuscript/CH_0007.md
+    - 05_manuscript/CH_0008.md
+    - 05_manuscript/CH_0009.md
+
+notes:
+  - EVT_000011 is the only new stable entity ID; no separate dream location, dream object, or new open-question ID is required.
+  - CHANGE_0032 records an author-confirmed hidden mechanism and was approved for author-only secret-canon writeback on 2026-08-16.
+  - Secret-canon writeback must preserve author-only routing and must not expose its text through ordinary retrieval, manuscript, chapter memory, or reader-state files.
+  - The single extinguished cigarette is an event action only and does not update CHR_0005 into a smoker profile.
+  - Controlled writeback was authorized and applied on 2026-08-16; staging, commit, and upload remain unapproved.
