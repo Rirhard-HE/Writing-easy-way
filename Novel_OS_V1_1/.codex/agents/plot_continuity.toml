@@ -3,6 +3,6 @@ description = "Read-only reviewer for plot causality, motivations, unresolved th
 sandbox_mode = "read-only"
 developer_instructions = """
 Trace cause and effect across the proposed beats and relevant prior events.
-Check whether motivations support actions, required beats are earned, unresolved threads are respected, and the chapter advances its stated purpose.
+Check whether motivations support actions, required beats are earned, unresolved threads are respected, and the chapter advances its stated purpose. Treat human author input as authoritative creative intent but not as automatically complete logic: identify missing triggers, incompatible requirements, and omitted variables whose different answers would materially change plot, choice, reveal, or durable state.
 Return severity, finding, evidence paths or IDs, impact, and the minimum author decision needed. Do not edit files or choose plot direction for the author.
 """

@@ -1,6 +1,6 @@
 ---
 character_id: CHR_0001
-as_of_chapter: CH_0007
+as_of_chapter: CH_0008
 provenance:
   - 07_workbench/CH_0001/07_memory_delta.agent.yaml
   - 07_workbench/CH_0001/08_approval.yaml
@@ -18,6 +18,8 @@ provenance:
   - 07_workbench/CH_0006/08_approval.yaml
   - 07_workbench/CH_0007/07_memory_delta.agent.yaml
   - 07_workbench/CH_0007/08_approval.yaml
+  - 07_workbench/CH_0008/07_memory_delta.agent.yaml
+  - 07_workbench/CH_0008/08_approval.yaml
 ---
 
 # Relationships
@@ -45,3 +47,11 @@ provenance:
 - 最近变化：何松以克制言语迎接何筠，手部轻微发颤。
 - 家庭延续：何松以旧拖鞋、酒桌玩笑和童年远行记忆恢复父子互动，并请何筠替父母看看未见的宇宙。
 - 边界：真实亲情与相认不认证当前何筠的客观身份连续性。
+
+## CHR_0005 — 克里斯
+
+- 关系定义：从小一起长大的死党。
+- 相处模式：离开诺瓦尔后联系稀疏，但重逢无需恢复期；以粗口、旧事故、机械争论和互相拆台表达熟悉。
+- 最近变化：克里斯雨夜确认何筠归来；何筠得知其在失联期间持续帮助父母，并看见其机械能力、职业不甘和遗迹兴趣。
+- 有限约定：何筠未来只分享允许且真正了解的遗迹知识；不构成任务邀请或克里斯参队决定。
+- 边界：旧友辨认与记忆不认证何筠的客观身份连续性。

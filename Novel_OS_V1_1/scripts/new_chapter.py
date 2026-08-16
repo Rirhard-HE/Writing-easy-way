@@ -13,6 +13,7 @@ FILES = [
     "03_conflict_report.agent.md",
     "04_author_decision.md",
     "05_draft.md",
+    "05_length_decision.md",
     "06_final_review.agent.md",
     "07_memory_delta.agent.yaml",
     "08_approval.yaml",

@@ -53,6 +53,26 @@ Every chapter is a transaction:
 
 The author supplies the chapter's creative payload. Agents may set continuity/reveal boundaries and expand transitions, scene mechanics, sensory detail, dialogue support, emotional subtext, and pacing. Agents may not originate a major plot turn, mystery answer, permanent setting rule, death/resurrection, identity resolution, or irreversible relationship change unless the brief marks it as author-owned material or the author later approves it.
 
+## Prose fidelity and author-input challenge
+
+All production prose from `CH_0009` onward must follow `00_system/prose_generation_policy.md` (`prose_fidelity_v1`). Naturalization must preserve core meaning, fact relations, logical structure, knowledge boundaries, event order, and useful information quantity while reducing mechanical sentence patterns, over-summary, repeated scaffolding, and voice flattening.
+
+Do not assume human input is logically complete. Check causality, timeline, location, capability, character knowledge, reveal gates, and mutually incompatible requirements. If an obvious missing fact or contradiction could change plot, character choice, world rules, reveal, or durable state, stop draft generation and request the missing information. Minor reversible ambiguity may be handled only as an explicitly labeled bounded assumption.
+
+Chinese-internet meme language may appear only through a character whose voice, relationship, knowledge, mood, and scene permit it. Do not leak real-world cultural lineage or create anachronistic platform/event references; prefer in-world meme-like phrasing when exact contemporary wording would exceed the reveal boundary. Memes cannot replace required information or emotional consequences.
+
+## Locked prose style
+
+All production prose from `CH_0009` onward uses `00_system/prose_style_profile.md` (`daily_light_detailed_v1`). Keep the baseline everyday, relaxed, and human while preserving the weight of grief, danger, conflict, and revelation. Strengthen environment and dialogue detail through character interaction, spatial/causal function, subtext, interruption, correction, and differentiated voices; do not turn detail into catalogs or dialogue into exposition Q&A.
+
+This profile changes expression only. It may not change plot, facts, causality, event order, knowledge boundaries, or useful information quantity. Do not silently switch profiles. Only an explicit author override recorded in the workflow may unlock or replace it.
+
+## Overall narrative-generation directive
+
+All drafting and prose review from `CH_0009` onward must read and apply `00_system/narrative_generation_directive.md` (`situated_prose_v1`). Treat character state, relationship, environment, dialogue, and narrative rhythm as one situated system. Maintain a scene through spatial relations, ongoing conditions, causal consequences, and distributed indirect cues; do not repeatedly name one object merely to preserve environmental consistency.
+
+Write prose, not a shot list. Avoid camera-stage language, one-action-per-line fragmentation, and extended one-line dialogue ladders with uniform action beats. Brief rapid exchanges and short-sentence sequences are allowed when pressure, conflict, timing, or comic rhythm specifically justifies them. Preserve fixed narrative information, distinguish reversible scene texture from durable state, and route any durable addition through Delta approval.
+
 ## Author-led setting change policy
 
 When the author introduces or changes a setting:
