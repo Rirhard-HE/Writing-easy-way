@@ -54,7 +54,7 @@
     {
       "path": ".codex/agents/character_continuity.toml",
       "ids": [],
-      "bytes": 596,
+      "bytes": 1567,
       "audience": "PROJECT",
       "context_policy": "STANDARD",
       "reader_state_effect": "UNSPECIFIED",
@@ -94,7 +94,7 @@
     {
       "path": ".codex/agents/plot_continuity.toml",
       "ids": [],
-      "bytes": 605,
+      "bytes": 868,
       "audience": "PROJECT",
       "context_policy": "STANDARD",
       "reader_state_effect": "UNSPECIFIED",
@@ -104,7 +104,7 @@
     {
       "path": ".codex/agents/prose_reviewer.toml",
       "ids": [],
-      "bytes": 577,
+      "bytes": 3232,
       "audience": "PROJECT",
       "context_policy": "STANDARD",
       "reader_state_effect": "UNSPECIFIED",
@@ -194,9 +194,10 @@
     {
       "path": "00_system/chapter_state_machine.md",
       "ids": [
-        "CH_0005"
+        "CH_0005",
+        "CH_0009"
       ],
-      "bytes": 3013,
+      "bytes": 4044,
       "audience": "PROJECT",
       "context_policy": "STANDARD",
       "reader_state_effect": "UNSPECIFIED",
@@ -281,11 +282,24 @@
       "retrieval_scope": "STANDARD"
     },
     {
+      "path": "00_system/narrative_generation_directive.md",
+      "ids": [
+        "CH_0009"
+      ],
+      "bytes": 6160,
+      "audience": "PROJECT",
+      "context_policy": "STANDARD",
+      "reader_state_effect": "UNSPECIFIED",
+      "reveal_status": null,
+      "retrieval_scope": "STANDARD"
+    },
+    {
       "path": "00_system/production_contract.md",
       "ids": [
-        "CH_0005"
+        "CH_0005",
+        "CH_0009"
       ],
-      "bytes": 2285,
+      "bytes": 4257,
       "audience": "PROJECT",
       "context_policy": "STANDARD",
       "reader_state_effect": "UNSPECIFIED",
@@ -294,8 +308,34 @@
     },
     {
       "path": "00_system/project_rules.md",
-      "ids": [],
-      "bytes": 1745,
+      "ids": [
+        "CH_0009"
+      ],
+      "bytes": 3341,
+      "audience": "PROJECT",
+      "context_policy": "STANDARD",
+      "reader_state_effect": "UNSPECIFIED",
+      "reveal_status": null,
+      "retrieval_scope": "STANDARD"
+    },
+    {
+      "path": "00_system/prose_generation_policy.md",
+      "ids": [
+        "CH_0009"
+      ],
+      "bytes": 8331,
+      "audience": "PROJECT",
+      "context_policy": "STANDARD",
+      "reader_state_effect": "UNSPECIFIED",
+      "reveal_status": null,
+      "retrieval_scope": "STANDARD"
+    },
+    {
+      "path": "00_system/prose_style_profile.md",
+      "ids": [
+        "CH_0009"
+      ],
+      "bytes": 4923,
       "audience": "PROJECT",
       "context_policy": "STANDARD",
       "reader_state_effect": "UNSPECIFIED",
@@ -317,9 +357,10 @@
     {
       "path": "00_system/style_guide.md",
       "ids": [
-        "CH_0005"
+        "CH_0005",
+        "CH_0009"
       ],
-      "bytes": 3171,
+      "bytes": 6686,
       "audience": "PROJECT",
       "context_policy": "STANDARD",
       "reader_state_effect": "UNSPECIFIED",
@@ -338,8 +379,10 @@
     },
     {
       "path": "00_system/workflow.md",
-      "ids": [],
-      "bytes": 3446,
+      "ids": [
+        "CH_0009"
+      ],
+      "bytes": 5743,
       "audience": "PROJECT",
       "context_policy": "STANDARD",
       "reader_state_effect": "UNSPECIFIED",
@@ -1778,7 +1821,7 @@
       "ids": [
         "CH_0008"
       ],
-      "bytes": 19159,
+      "bytes": 19158,
       "audience": "PROJECT",
       "context_policy": "STANDARD",
       "reader_state_effect": "UNSPECIFIED",
@@ -4221,7 +4264,7 @@
     {
       "path": "07_workbench/_templates/00_author_brief.md",
       "ids": [],
-      "bytes": 1322,
+      "bytes": 2157,
       "audience": "PROJECT",
       "context_policy": "STANDARD",
       "reader_state_effect": "UNSPECIFIED",
@@ -4241,7 +4284,7 @@
     {
       "path": "07_workbench/_templates/02_expansion.agent.md",
       "ids": [],
-      "bytes": 817,
+      "bytes": 2365,
       "audience": "PROJECT",
       "context_policy": "STANDARD",
       "reader_state_effect": "UNSPECIFIED",
@@ -4251,7 +4294,7 @@
     {
       "path": "07_workbench/_templates/03_conflict_report.agent.md",
       "ids": [],
-      "bytes": 624,
+      "bytes": 1112,
       "audience": "PROJECT",
       "context_policy": "STANDARD",
       "reader_state_effect": "UNSPECIFIED",
@@ -4261,7 +4304,7 @@
     {
       "path": "07_workbench/_templates/04_author_decision.md",
       "ids": [],
-      "bytes": 849,
+      "bytes": 959,
       "audience": "PROJECT",
       "context_policy": "STANDARD",
       "reader_state_effect": "UNSPECIFIED",
@@ -4271,7 +4314,7 @@
     {
       "path": "07_workbench/_templates/05_draft.md",
       "ids": [],
-      "bytes": 625,
+      "bytes": 1943,
       "audience": "PROJECT",
       "context_policy": "STANDARD",
       "reader_state_effect": "UNSPECIFIED",
@@ -4281,7 +4324,7 @@
     {
       "path": "07_workbench/_templates/05_length_decision.md",
       "ids": [],
-      "bytes": 1157,
+      "bytes": 2360,
       "audience": "PROJECT",
       "context_policy": "STANDARD",
       "reader_state_effect": "UNSPECIFIED",
@@ -4290,8 +4333,10 @@
     },
     {
       "path": "07_workbench/_templates/06_final_review.agent.md",
-      "ids": [],
-      "bytes": 541,
+      "ids": [
+        "CH_0009"
+      ],
+      "bytes": 2825,
       "audience": "PROJECT",
       "context_policy": "STANDARD",
       "reader_state_effect": "UNSPECIFIED",
@@ -4726,8 +4771,10 @@
     },
     {
       "path": "AGENTS.md",
-      "ids": [],
-      "bytes": 8358,
+      "ids": [
+        "CH_0009"
+      ],
+      "bytes": 11294,
       "audience": "PROJECT",
       "context_policy": "STANDARD",
       "reader_state_effect": "UNSPECIFIED",

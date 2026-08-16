@@ -14,8 +14,13 @@ REQUIRED_DIRS = [
 REQUIRED_FILES = [
     "AGENTS.md", "README.md", "START_HERE.md", ".codex/config.toml",
     "00_system/change_control.md", "00_system/chapter_state_machine.md",
+    "00_system/prose_generation_policy.md",
+    "00_system/prose_style_profile.md",
+    "00_system/narrative_generation_directive.md",
     "00_system/production_contract.md", "00_system/reader_state_policy.md",
     "00_system/truth_and_reveal_model.md", "00_system/workflow.md",
+    ".codex/agents/prose_reviewer.toml", ".codex/agents/plot_continuity.toml",
+    ".codex/agents/character_continuity.toml",
     "08_review/genesis_audit/07_source_segment_digest_pass2.md",
     "08_review/genesis_audit/08_source_entity_registry_pass2.md",
     "08_review/genesis_audit/09_source_event_ledger_pass2.md",
@@ -32,6 +37,18 @@ WORKBENCH_FILES = [
 ]
 LENGTH_GATE_FILE = "05_length_decision.md"
 LENGTH_GATE_ENFORCED_FROM = 5
+PROSE_FIDELITY_ENFORCED_FROM = 9
+PROSE_POLICY_ID = "prose_fidelity_v1"
+STYLE_PROFILE_ID = "daily_light_detailed_v1"
+NARRATIVE_DIRECTIVE_ID = "situated_prose_v1"
+PROSE_FINAL_REVIEW_FIELDS = (
+    "meaning_preservation_review",
+    "ai_pattern_review",
+    "style_consistency_review",
+    "meme_register_review",
+    "logic_gap_review",
+)
+AUTHOR_INPUT_LOGIC_STATUSES = {"PASS", "NEEDS_AUTHOR_INPUT", "AUTHOR_RESOLVED"}
 LENGTH_GATE_STATUSES = {
     "not_started", "awaiting_author", "pass", "author_retained",
     "revision_required", "stale"
@@ -168,6 +185,155 @@ if not length_gate_template.is_file():
     errors.append(f"Missing workbench template: {LENGTH_GATE_FILE}")
 elif not length_gate_template.read_text(encoding="utf-8").strip():
     errors.append(f"Empty workbench template: {LENGTH_GATE_FILE}")
+
+prose_policy_path = ROOT / "00_system" / "prose_generation_policy.md"
+if prose_policy_path.is_file():
+    prose_policy_data = parse_frontmatter(prose_policy_path)
+    if prose_policy_data.get("status") != "active":
+        errors.append("prose_generation_policy.md: status must be active")
+    if prose_policy_data.get("policy_id") != PROSE_POLICY_ID:
+        errors.append(
+            f"prose_generation_policy.md: policy_id must be {PROSE_POLICY_ID}"
+        )
+    if prose_policy_data.get("default_style_profile") != STYLE_PROFILE_ID:
+        errors.append(
+            f"prose_generation_policy.md: default_style_profile must be {STYLE_PROFILE_ID}"
+        )
+    if prose_policy_data.get("generation_directive") != NARRATIVE_DIRECTIVE_ID:
+        errors.append(
+            f"prose_generation_policy.md: generation_directive must be {NARRATIVE_DIRECTIVE_ID}"
+        )
+
+style_profile_path = ROOT / "00_system" / "prose_style_profile.md"
+if style_profile_path.is_file():
+    style_profile_data = parse_frontmatter(style_profile_path)
+    if style_profile_data.get("status") != "locked":
+        errors.append("prose_style_profile.md: status must be locked")
+    if style_profile_data.get("style_profile_id") != STYLE_PROFILE_ID:
+        errors.append(
+            f"prose_style_profile.md: style_profile_id must be {STYLE_PROFILE_ID}"
+        )
+    if style_profile_data.get("generation_directive") != NARRATIVE_DIRECTIVE_ID:
+        errors.append(
+            f"prose_style_profile.md: generation_directive must be {NARRATIVE_DIRECTIVE_ID}"
+        )
+
+narrative_directive_path = ROOT / "00_system" / "narrative_generation_directive.md"
+if narrative_directive_path.is_file():
+    narrative_directive_data = parse_frontmatter(narrative_directive_path)
+    if narrative_directive_data.get("status") != "active":
+        errors.append("narrative_generation_directive.md: status must be active")
+    if narrative_directive_data.get("directive_id") != NARRATIVE_DIRECTIVE_ID:
+        errors.append(
+            f"narrative_generation_directive.md: directive_id must be {NARRATIVE_DIRECTIVE_ID}"
+        )
+    if narrative_directive_data.get("default_application") != "automatic":
+        errors.append(
+            "narrative_generation_directive.md: default_application must be automatic"
+        )
+    if narrative_directive_data.get("author_review_absence_policy") != "enforce_locked_defaults":
+        errors.append(
+            "narrative_generation_directive.md: author_review_absence_policy must enforce locked defaults"
+        )
+
+required_template_markers = {
+    "00_author_brief.md": (
+        f"style_profile: {STYLE_PROFILE_ID}",
+        "style_override_requested: false",
+        f"narrative_directive: {NARRATIVE_DIRECTIVE_ID}",
+        "directive_override_requested: false",
+        "- 环境细节重点：",
+        "- 对话细节重点：",
+    ),
+    "02_expansion.agent.md": (
+        f"style_profile: {STYLE_PROFILE_ID}",
+        f"narrative_directive: {NARRATIVE_DIRECTIVE_ID}",
+        "# Author-input Logic and Information-gap Review",
+        "## Situated Narrative Plan",
+        "- environment continuity through spatial relations and indirect cues:",
+        "- cinematic shot-list risks and compression plan:",
+        "- dialogue-ladder risks and paragraph-rhythm plan:",
+        "## Prose Naturalization Plan",
+        "- functional environment-detail plan:",
+        "- layered dialogue-detail plan:",
+    ),
+    "03_conflict_report.agent.md": (
+        "author_input_logic_review: NOT_RUN",
+        "unresolved_logic_gap_count: null",
+        "# Author-input Logic and Information Gaps",
+    ),
+    "04_author_decision.md": (
+        "unresolved_logic_gap_count: 0",
+        "## Logic-gap Decisions",
+    ),
+    "05_draft.md": (
+        f"prose_policy: {PROSE_POLICY_ID}",
+        f"style_profile: {STYLE_PROFILE_ID}",
+        "style_profile_locked: true",
+        f"narrative_directive: {NARRATIVE_DIRECTIVE_ID}",
+        "directive_automatically_applied: true",
+        "meaning_preservation_required: true",
+    ),
+    "05_length_decision.md": (
+        "environment_continuity_review: NOT_RUN",
+        "cinematic_fragmentation_review: NOT_RUN",
+        "dialogue_ladder_review: NOT_RUN",
+        "## Environment-continuity Review",
+        "## Cinematic-fragmentation Review",
+        "## Dialogue-ladder Review",
+    ),
+    "06_final_review.agent.md": tuple(
+        f"{field}: NOT_RUN" for field in PROSE_FINAL_REVIEW_FIELDS
+    ) + (
+        "# Meaning and Information Preservation",
+        "# AI-pattern and Authorial-voice Review",
+        "# Meme / Slang / Register Review",
+        "# Author-input Logic-gap Review",
+        f"style_profile: {STYLE_PROFILE_ID}",
+        "style_profile_review: NOT_RUN",
+        "character_range_review: NOT_RUN",
+        "# Character Range and Situation Review",
+        f"narrative_directive: {NARRATIVE_DIRECTIVE_ID}",
+        "narrative_method_review: NOT_RUN",
+        "# Situated Narrative Method Review",
+    ),
+}
+for name, markers in required_template_markers.items():
+    template = ROOT / "07_workbench" / "_templates" / name
+    if not template.is_file():
+        continue
+    template_text = template.read_text(encoding="utf-8")
+    for marker in markers:
+        if marker not in template_text:
+            errors.append(f"{name}: missing prose-fidelity template marker {marker!r}")
+
+required_agent_markers = {
+    ".codex/agents/prose_reviewer.toml": (
+        "00_system/prose_generation_policy.md",
+        "00_system/prose_style_profile.md",
+        "00_system/narrative_generation_directive.md",
+        STYLE_PROFILE_ID,
+        NARRATIVE_DIRECTIVE_ID,
+        "meaning preservation",
+        "meme/register",
+        "logic gaps",
+    ),
+    ".codex/agents/plot_continuity.toml": (
+        "not as automatically complete logic",
+    ),
+    ".codex/agents/character_continuity.toml": (
+        "network-meme phrasing",
+        "unapproved cultural lineage",
+    ),
+}
+for rel, markers in required_agent_markers.items():
+    agent_path = ROOT / rel
+    if not agent_path.is_file():
+        continue
+    agent_text = agent_path.read_text(encoding="utf-8")
+    for marker in markers:
+        if marker not in agent_text:
+            errors.append(f"{rel}: missing prose-fidelity agent marker {marker!r}")
 
 phase_file = ROOT / "00_system" / "current_phase.md"
 if phase_file.is_file():
@@ -313,12 +479,84 @@ if wb.exists():
             context_ready = stage.get("01_context.auto.md", {}).get("status") == "generated_context"
             proposal_ready = stage.get("02_expansion.agent.md", {}).get("status") == "agent_proposal"
             review_ready = stage.get("03_conflict_report.agent.md", {}).get("status") == "agent_review"
+            review_data = stage.get("03_conflict_report.agent.md", {})
+            prose_fidelity_required = (
+                chapter_number is not None
+                and chapter_number >= PROSE_FIDELITY_ENFORCED_FROM
+            )
+            if prose_fidelity_required:
+                required_style_metadata = {
+                    "00_author_brief.md": stage.get("00_author_brief.md", {}),
+                    "02_expansion.agent.md": stage.get("02_expansion.agent.md", {}),
+                    "05_draft.md": stage.get("05_draft.md", {}),
+                    "06_final_review.agent.md": stage.get("06_final_review.agent.md", {}),
+                }
+                for style_name, style_data in required_style_metadata.items():
+                    if style_data.get("style_profile") != STYLE_PROFILE_ID:
+                        errors.append(
+                            f"{p.name}/{style_name}: style_profile must be {STYLE_PROFILE_ID}"
+                        )
+                if brief_data.get("style_override_requested") is not False:
+                    errors.append(
+                        f"{p.name}/00_author_brief.md: locked style requires "
+                        "style_override_requested false unless the workflow is explicitly revised"
+                    )
+                if stage.get("05_draft.md", {}).get("style_profile_locked") is not True:
+                    errors.append(
+                        f"{p.name}/05_draft.md: style_profile_locked must be true"
+                    )
+                required_directive_metadata = {
+                    "00_author_brief.md": stage.get("00_author_brief.md", {}),
+                    "02_expansion.agent.md": stage.get("02_expansion.agent.md", {}),
+                    "05_draft.md": stage.get("05_draft.md", {}),
+                    "06_final_review.agent.md": stage.get("06_final_review.agent.md", {}),
+                }
+                for directive_name, directive_data in required_directive_metadata.items():
+                    if directive_data.get("narrative_directive") != NARRATIVE_DIRECTIVE_ID:
+                        errors.append(
+                            f"{p.name}/{directive_name}: narrative_directive must be "
+                            f"{NARRATIVE_DIRECTIVE_ID}"
+                        )
+                if brief_data.get("directive_override_requested") is not False:
+                    errors.append(
+                        f"{p.name}/00_author_brief.md: automatic directive requires "
+                        "directive_override_requested false unless the workflow is explicitly revised"
+                    )
+                if stage.get("05_draft.md", {}).get("directive_automatically_applied") is not True:
+                    errors.append(
+                        f"{p.name}/05_draft.md: directive_automatically_applied must be true"
+                    )
+            author_input_logic_ready = not prose_fidelity_required
+            if prose_fidelity_required and review_ready:
+                logic_status = review_data.get("author_input_logic_review")
+                unresolved_logic_gaps = review_data.get("unresolved_logic_gap_count")
+                if logic_status not in AUTHOR_INPUT_LOGIC_STATUSES:
+                    errors.append(
+                        f"{p.name}/03_conflict_report.agent.md: invalid or missing "
+                        "author_input_logic_review"
+                    )
+                if not isinstance(unresolved_logic_gaps, int) or unresolved_logic_gaps < 0:
+                    errors.append(
+                        f"{p.name}/03_conflict_report.agent.md: "
+                        "unresolved_logic_gap_count must be a non-negative integer"
+                    )
+                author_input_logic_ready = (
+                    logic_status in {"PASS", "AUTHOR_RESOLVED"}
+                    and unresolved_logic_gaps == 0
+                )
             decision_data = stage.get("04_author_decision.md", {})
             decision_ready = (
                 decision_data.get("status") == "author_decided"
                 and decision_data.get("boundary_approved") is True
                 and decision_data.get("unresolved_blocker_count") == 0
                 and decision_data.get("unresolved_high_count") == 0
+                and (
+                    not prose_fidelity_required
+                    or (
+                        author_input_logic_ready
+                        and decision_data.get("unresolved_logic_gap_count") == 0
+                    )
+                )
             )
             draft_ready = stage.get("05_draft.md", {}).get("status") == "expanded_draft"
             final_status = stage.get("06_final_review.agent.md", {}).get("status")
@@ -358,6 +596,16 @@ if wb.exists():
                 errors.append(f"{p.name}: conflict review requires expansion proposal")
             if proposal_ready:
                 proposal_data = stage["02_expansion.agent.md"]
+                if prose_fidelity_required:
+                    proposal_text = (p / "02_expansion.agent.md").read_text(encoding="utf-8")
+                    for heading in (
+                        "# Author-input Logic and Information-gap Review",
+                        "## Prose Naturalization Plan",
+                    ):
+                        if heading not in proposal_text:
+                            errors.append(
+                                f"{p.name}/02_expansion.agent.md: missing required section {heading}"
+                            )
                 check_fingerprint(
                     p.name, "02_expansion.agent.md", proposal_data,
                     "source_brief_sha256", p / "00_author_brief.md"
@@ -367,7 +615,6 @@ if wb.exists():
                     "source_context_sha256", p / "01_context.auto.md"
                 )
             if review_ready:
-                review_data = stage["03_conflict_report.agent.md"]
                 check_fingerprint(
                     p.name, "03_conflict_report.agent.md", review_data,
                     "source_brief_sha256", p / "00_author_brief.md"
@@ -393,6 +640,15 @@ if wb.exists():
                 errors.append(f"{p.name}: expanded draft lacks author boundary/expansion authorization")
             if draft_ready:
                 draft_data = stage["05_draft.md"]
+                if prose_fidelity_required:
+                    if draft_data.get("prose_policy") != PROSE_POLICY_ID:
+                        errors.append(
+                            f"{p.name}/05_draft.md: prose_policy must be {PROSE_POLICY_ID}"
+                        )
+                    if draft_data.get("meaning_preservation_required") is not True:
+                        errors.append(
+                            f"{p.name}/05_draft.md: meaning_preservation_required must be true"
+                        )
                 check_fingerprint(
                     p.name, "05_draft.md", draft_data,
                     "source_author_material_sha256", p / "00_author_brief.md"
@@ -447,6 +703,14 @@ if wb.exists():
                             and actual_count <= 9000
                             and length_gate_data.get("repetition_review") == "PASS"
                             and length_gate_data.get("negative_catalog_review") == "PASS"
+                            and (
+                                not prose_fidelity_required
+                                or (
+                                    length_gate_data.get("environment_continuity_review") == "PASS"
+                                    and length_gate_data.get("cinematic_fragmentation_review") == "PASS"
+                                    and length_gate_data.get("dialogue_ladder_review") == "PASS"
+                                )
+                            )
                         )
 
                     draft_text = (p / "05_draft.md").read_text(encoding="utf-8")
@@ -466,12 +730,75 @@ if wb.exists():
                 errors.append(f"{p.name}: proposed delta requires draft and final review")
 
             final_data = stage.get("06_final_review.agent.md", {})
+            prose_reviews_pass = not prose_fidelity_required
+            if prose_fidelity_required and final_status in {"agent_review", "ready_for_approval"}:
+                prose_reviews_pass = True
+                for field in PROSE_FINAL_REVIEW_FIELDS:
+                    value = final_data.get(field)
+                    if value not in {"NOT_RUN", "PASS", "FAIL"}:
+                        errors.append(
+                            f"{p.name}/06_final_review.agent.md: invalid or missing {field}"
+                        )
+                        prose_reviews_pass = False
+                    elif value != "PASS":
+                        prose_reviews_pass = False
+                if final_data.get("style_profile") != STYLE_PROFILE_ID:
+                    errors.append(
+                        f"{p.name}/06_final_review.agent.md: style_profile must be {STYLE_PROFILE_ID}"
+                    )
+                    prose_reviews_pass = False
+                if final_data.get("style_profile_review") not in {"NOT_RUN", "PASS", "FAIL"}:
+                    errors.append(
+                        f"{p.name}/06_final_review.agent.md: invalid or missing style_profile_review"
+                    )
+                    prose_reviews_pass = False
+                elif final_data.get("style_profile_review") != "PASS":
+                    prose_reviews_pass = False
+                if final_data.get("character_range_review") not in {"NOT_RUN", "PASS", "FAIL"}:
+                    errors.append(
+                        f"{p.name}/06_final_review.agent.md: invalid or missing character_range_review"
+                    )
+                    prose_reviews_pass = False
+                elif final_data.get("character_range_review") != "PASS":
+                    prose_reviews_pass = False
+                if final_data.get("narrative_directive") != NARRATIVE_DIRECTIVE_ID:
+                    errors.append(
+                        f"{p.name}/06_final_review.agent.md: narrative_directive must be "
+                        f"{NARRATIVE_DIRECTIVE_ID}"
+                    )
+                    prose_reviews_pass = False
+                if final_data.get("narrative_method_review") not in {"NOT_RUN", "PASS", "FAIL"}:
+                    errors.append(
+                        f"{p.name}/06_final_review.agent.md: invalid or missing narrative_method_review"
+                    )
+                    prose_reviews_pass = False
+                elif final_data.get("narrative_method_review") != "PASS":
+                    prose_reviews_pass = False
+                final_review_text = (p / "06_final_review.agent.md").read_text(encoding="utf-8")
+                for heading in (
+                    "# Meaning and Information Preservation",
+                    "# AI-pattern and Authorial-voice Review",
+                    "# Style Consistency Review",
+                    "# Character Range and Situation Review",
+                    "# Situated Narrative Method Review",
+                    "# Meme / Slang / Register Review",
+                    "# Author-input Logic-gap Review",
+                ):
+                    if heading not in final_review_text:
+                        errors.append(
+                            f"{p.name}/06_final_review.agent.md: missing required section {heading}"
+                        )
+                        prose_reviews_pass = False
             if final_status == "ready_for_approval" and not (
                 final_data.get("ready_for_author_approval") is True
                 and final_data.get("unresolved_blocker_count") == 0
                 and final_data.get("unresolved_high_count") == 0
+                and prose_reviews_pass
             ):
-                errors.append(f"{p.name}: ready_for_approval has unresolved BLOCKER/HIGH or false verdict")
+                errors.append(
+                    f"{p.name}: ready_for_approval has unresolved BLOCKER/HIGH, "
+                    "incomplete prose-fidelity review, or false verdict"
+                )
             if final_status in {"agent_review", "ready_for_approval"}:
                 check_fingerprint(
                     p.name, "06_final_review.agent.md", final_data,
@@ -483,6 +810,10 @@ if wb.exists():
                         "source_length_decision_sha256", length_gate_path
                     )
             if delta_ready:
+                if prose_fidelity_required and not prose_reviews_pass:
+                    errors.append(
+                        f"{p.name}: Delta bypasses required prose-fidelity review"
+                    )
                 check_fingerprint(
                     p.name, "07_memory_delta.agent.yaml", stage["07_memory_delta.agent.yaml"],
                     "source_draft_sha256", p / "05_draft.md"

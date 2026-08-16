@@ -6,6 +6,7 @@ expand_author_material: false
 expansion_scope_approved: false
 unresolved_blocker_count: 0
 unresolved_high_count: 0
+unresolved_logic_gap_count: 0
 source_conflict_report_sha256: null
 ---
 # Author Decisions
@@ -19,6 +20,12 @@ source_conflict_report_sha256: null
 ## Conflict Decisions
 
 - C001: TBD
+
+## Logic-gap Decisions
+
+- gap_id: TBD
+- author_answer:
+- resulting_constraint:
 
 ## Setting Change Decisions
 
