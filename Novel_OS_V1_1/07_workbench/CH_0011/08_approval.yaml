@@ -1,0 +1,22 @@
+chapter: CH_0011
+approved: true
+approved_by: human_author
+approved_at: 2026-08-17
+approve_final_prose: true
+approve_title: true
+approve_memory_delta: true
+approve_setting_changes: true
+approved_change_ids:
+  - CHANGE_0033
+  - CHANGE_0034
+  - CHANGE_0035
+  - CHANGE_0036
+approved_stable_ids:
+  - SYS_0013
+  - EVT_000012
+approve_controlled_writeback: true
+stage_requested: true
+commit_requested: true
+push_requested: true
+target_branch: codex/repair-novel-os-scaffold
+notes: "Human author approved CH_0011 final prose/title, complete Delta, SYS_0013, EVT_000012, CHANGE_0033–0036, controlled writeback, final tree generation, Git commit, and remote branch update on 2026-08-17."

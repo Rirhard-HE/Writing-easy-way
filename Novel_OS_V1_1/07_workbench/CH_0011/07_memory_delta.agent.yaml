@@ -1,0 +1,30 @@
+chapter: CH_0011
+status: AUTHOR_APPROVED
+stable_ids:
+  - SYS_0013
+  - EVT_000012
+change_ids:
+  - CHANGE_0033
+  - CHANGE_0034
+  - CHANGE_0035
+  - CHANGE_0036
+character_updates:
+  - CHR_0001
+  - CHR_0003
+  - CHR_0004
+world_updates:
+  - LOC_0005
+  - LOC_0008
+  - FAC_0001
+  - FAC_0004
+question_updates:
+  - QUESTION_0001
+  - QUESTION_0003
+boundaries:
+  offer_state: personally_inclined_formal_acceptance_pending
+  dream_causality: UNKNOWN
+  identity_continuity: UNKNOWN
+  tomorrow_reunion: NOT_ESTABLISHED
+  debt_interest_pause: CONDITIONAL_OFFER_NOT_ACTIVE
+notes:
+  - "两家次日聚餐未展示执行；取消、推迟或由其他家庭成员继续均未建立。"
